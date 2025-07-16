@@ -1,32 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  /* Couleurs de base */
+  --color-primary: #000;
+  --color-primary-inverted: #fefefe;
+  --color-background: #fefefe;
+  --color-background-inverted: #121212;
+
+  /* Couleurs fonctionnelles */
+  --color-interactive: #3e3e3e;
+  --color-interactive-hover: #b3b3b3;
+
+  /* Textes et éléments secondaires */
+  --color-text-primary: #232323;
+  --color-text-secondary: #cecece;
+  --color-text-tertiary: #3e3e3e;
+}
+
+.dark {
+  --color-primary: #ffffff;
+  --color-primary-inverted: #232323;
+  --color-background: #121212;
+  --color-background-inverted: #ffffff;
+
+  --color-interactive: #525252;
+  --color-interactive-hover: #3e3e3e;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #2e2e2e;
+  --color-text-tertiary: #a0a0a0;
 }
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  background-color: #121212;
-  color: #fff;
-  overflow-x: hidden;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .container {
-  max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  @media (min-width: 640px) {
-    padding-left: 3rem;
-    padding-right: 3rem;
+  @apply w-full max-w-[80rem] mx-auto px-6;
+}
+
+@layer components {
+  .text-secondary {
+    color: var(--color-text-secondary);
   }
-  @media (min-width: 1024px) {
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .bg-interactive {
+    background-color: var(--color-interactive);
   }
+}
+
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }

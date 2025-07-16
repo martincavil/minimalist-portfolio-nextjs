@@ -3,7 +3,7 @@ import Image from "next/image";
 // components/Hero.tsx
 export default function Hero() {
   return (
-    <section className="container md:py-20 min-h-screen bg-black text-white flex items-center">
+    <section className="container md:py-20 min-h-screen text-white flex items-center">
       <div>
         {/* Left side - Content */}
         <div className="space-y-8">
