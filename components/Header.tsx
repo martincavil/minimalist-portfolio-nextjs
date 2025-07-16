@@ -233,43 +233,36 @@ export default function Header() {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-interactive dark:border-gray-700 bg-white/95 dark:bg-primary/95">
+          <div className="md:hidden border-t border-interactive rounded-b-xl">
             <nav className="py-4 space-y-2">
-              <a
-                href="#skills"
-                onClick={closeMenu}
-                className="block px-4 py-2 text-text-tertiary hover:text-primary transition-colors"
-              >
-                Compétences
-              </a>
-              <a
-                href="#about"
-                onClick={closeMenu}
-                className="block px-4 py-2 text-text-tertiary hover:text-primary transition-colors"
-              >
-                À propos
-              </a>
-              <a
-                href="#projects"
-                onClick={closeMenu}
-                className="block px-4 py-2 text-text-tertiary hover:text-primary transition-colors"
-              >
-                Projets
-              </a>
-              <a
-                href="#posts"
-                onClick={closeMenu}
-                className="block px-4 py-2 text-text-tertiary hover:text-primary transition-colors"
-              >
-                Articles
-              </a>
-              <div className="border-t border-interactive dark:border-gray-700 mt-2 pt-2">
+              {navItems.map((item, i) => (
+                <a
+                  key={i}
+                  href={`#${item.href}`}
+                  onClick={closeMenu}
+                  className="block px-4 py-2 text-primary transition-colors"
+                >
+                  {item.label}
+                </a>
+              ))}
+              <div className="border-t border-interactive mt-2 pt-2">
+                {isMoreItems.map((item, i) => (
+                  <a
+                    key={i}
+                    href={item.href}
+                    onClick={closeMenu}
+                    className="flex items-center px-4 py-2 text-primary transition-colors"
+                  >
+                    {item.icon}
+                    <span>{item.label}</span>
+                  </a>
+                ))}
                 <button
                   onClick={() => {
                     toggleDarkMode();
                     closeMenu();
                   }}
-                  className="w-full flex items-center px-4 py-2 text-text-tertiary hover:text-primary transition-colors"
+                  className="w-full flex items-center px-4 py-2 text-primary transition-colors"
                 >
                   {darkMode ? (
                     <>
@@ -283,13 +276,6 @@ export default function Header() {
                     </>
                   )}
                 </button>
-                <a
-                  href="mailto:martin.cavil98@gmail.com"
-                  onClick={closeMenu}
-                  className="block px-4 py-2 text-text-tertiary hover:text-primary transition-colors"
-                >
-                  Contactez-moi
-                </a>
               </div>
             </nav>
           </div>

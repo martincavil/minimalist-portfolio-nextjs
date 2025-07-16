@@ -1,57 +1,60 @@
-import Image from "next/image";
+"use client";
 
-// components/Hero.tsx
+import Image from "next/image";
+import { Mail } from "lucide-react";
+
 export default function Hero() {
   return (
-    <section className="container md:py-20 min-h-screen text-white flex items-center">
+    <section className="container pb-10 pt-24 md:pt-20 min-h-screen flex items-center">
       <div>
-        {/* Left side - Content */}
         <div className="space-y-8">
-          {/* Profile image */}
-          <div className="w-24 h-24 rounded-full bg-gray-800 overflow-hidden mb-8">
+          {/* Photo */}
+          <div className="w-24 h-24 rounded-full bg-interactive overflow-hidden mb-8">
             <Image
-              src=""
+              src="/Martin-2.png"
               alt="Martin Cavil"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover grayscale"
               width={96}
               height={96}
             />
           </div>
 
-          {/* Main heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-gray-400 font-light leading-tight">
-            Hi I'm <span className="text-white">Martin,</span> Développeur
-            Freelance
+          {/* Titre */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-light leading-tight text-text-tertiary">
+            Salut, moi c'est <span className="text-text-primary">Martin</span> —{" "}
+            <br />
+            Développeur freelance Next.js / React
           </h1>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-gray-400 font-light leading-relaxed">
-            Je suis un développeur freelance et designer travaillant à distance
-            dans le monde entier. Depuis 2020, je vis en France. Je crée des
-            applications utiles pour le web. Dans mon temps libre, j&#39;aime
-            cuisiner, lire et voyager.
+          <p className="text-lg md:text-xl font-light leading-relaxed max-w-5xl text-text-tertiary">
+            J'aide les entreprises à{" "}
+            <span className="text-text-primary">
+              créer des sites marketing animés, des MVPs ou des interfaces
+              produits sur-mesure
+            </span>
+            . Je code en{" "}
+            <span className="text-text-primary">React/Next.js, Tailwind</span>{" "}
+            et j'intègre des maquettes pixel-perfect depuis Figma.
           </p>
 
-          {/* CTA Button */}
+          {/* CTA */}
           <div className="pt-4">
-            <button className="inline-flex items-center text-white hover:text-gray-300 transition-colors duration-200 group">
-              <span className="text-lg font-light mr-2">Get in touch</span>
-              <div className="w-6 h-6 rounded-full border border-gray-600 flex items-center justify-center group-hover:border-gray-400 transition-colors duration-200">
-                <svg
-                  className="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </div>
-            </button>
+            <a
+              href="mailto:martin@email.com"
+              className="relative group inline-flex items-center px-5 py-3 rounded-3xl border border-interactive overflow-hidden transition-colors duration-300"
+            >
+              {/* Voile animé */}
+              <span className="absolute inset-0 bg-primary translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-out z-0"></span>
+
+              {/* Contenu du bouton */}
+              <span className="relative z-10 flex items-center gap-2 text-lg font-light text-text-primary group-hover:text-text-secondary transition-colors duration-300">
+                On échange ?
+                <div className="w-6 h-6 rounded-full border border-interactive flex items-center justify-center group-hover:border-interactive-hover transition-colors duration-200">
+                  <Mail className="w-3.5 h-3.5" />
+                </div>
+              </span>
+            </a>
           </div>
         </div>
       </div>
