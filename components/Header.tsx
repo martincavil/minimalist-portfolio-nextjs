@@ -1,6 +1,9 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import useTranslation from "next-translate/useTranslation";
+import Link from "next/link";
+
 // import { gsap } from "gsap";
 import {
   Ellipsis,
@@ -19,27 +22,28 @@ export default function Header() {
   const headerRef = useRef<HTMLElement>(null);
   const logoRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
+  const { t, lang } = useTranslation("common");
 
   const navItems = [
-    { label: "Compétences", href: "skills" },
-    { label: "À propos", href: "about" },
-    { label: "Projets", href: "projects" },
-    { label: "Articles", href: "posts" },
+    { label: t("header.skills"), href: "skills" },
+    { label: t("header.projects"), href: "projects" },
+    { label: t("header.about"), href: "about" },
+    { label: t("header.posts"), href: "posts" },
   ];
 
   const isMoreItems = [
     {
-      label: "Github",
+      label: t("header.github"),
       href: "https://github.com/martincavil/",
       icon: <Github className="mr-3 w-5" />,
     },
     {
-      label: "Linkedin",
+      label: t("header.linkedin"),
       href: "https://www.linkedin.com/in/martin-cavil/",
       icon: <Linkedin className="mr-3 w-5" />,
     },
     {
-      label: "Contactez-moi",
+      label: t("header.contact"),
       href: "mailto:martin.cavil98@gmail.com",
       icon: <UserPen className="mr-3 w-5" />,
     },
@@ -153,6 +157,15 @@ export default function Header() {
                 key={j}
                 href={`#${item.href}`}
                 className="text-text-tertiary hover:text-primary transition-colors duration-300 text-sm font-semibold"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const el = document.getElementById(item.href);
+                  if (el) {
+                    const y =
+                      el.getBoundingClientRect().top + window.scrollY - 120;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                  }
+                }}
               >
                 {item.label}
               </a>
@@ -184,7 +197,7 @@ export default function Header() {
                     ))}
                   </div>
 
-                  <div className="mt-3 flex items-center gap-3">
+                  <div className="mt-3 border-t border-interactive pt-3 flex items-center gap-3">
                     <button
                       onClick={toggleDarkMode}
                       className="w-8 h-8 rounded-full  flex items-center justify-center bg-text-secondary text-text-tertiary hover:bg-interactive-hover text-tertiary hover:text-text-primary transition-colors group"
@@ -195,6 +208,20 @@ export default function Header() {
                         <MoonIcon className="w-4 h-4 group-hover:rotate-12 group-hover:scale-105 duration-500 transition-all" />
                       )}
                     </button>
+                    <Link
+                      href="/"
+                      locale={lang === "en" ? "fr" : "en"}
+                      className="w-8 h-8 rounded-full flex items-center justify-center bg-text-secondary text-text-tertiary hover:bg-interactive-hover text-tertiary hover:text-text-primary transition-colors group"
+                      aria-label={
+                        lang === "fr" ? t("header.english") : t("header.french")
+                      }
+                    >
+                      {lang === "fr" ? (
+                        <span className="w-4">🇺🇸</span>
+                      ) : (
+                        <span className="w-4">🇫🇷</span>
+                      )}
+                    </Link>
                   </div>
                 </div>
               )}
@@ -239,7 +266,16 @@ export default function Header() {
                 <a
                   key={i}
                   href={`#${item.href}`}
-                  onClick={closeMenu}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    closeMenu();
+                    const el = document.getElementById(item.href);
+                    if (el) {
+                      const y =
+                        el.getBoundingClientRect().top + window.scrollY - 120;
+                      window.scrollTo({ top: y, behavior: "smooth" });
+                    }
+                  }}
                   className="block px-4 py-2 text-primary transition-colors"
                 >
                   {item.label}
@@ -262,20 +298,41 @@ export default function Header() {
                     toggleDarkMode();
                     closeMenu();
                   }}
-                  className="w-full flex items-center px-4 py-2 text-primary transition-colors"
+                  className="w-full flex items-center gap-3 px-4 py-2 text-primary transition-colors"
                 >
                   {darkMode ? (
                     <>
-                      <SunIcon className="mr-3 w-4 h-4" />
-                      Mode clair
+                      <SunIcon className="w-4 h-4" />
+                      {t("header.light_mode")}
                     </>
                   ) : (
                     <>
-                      <MoonIcon className="mr-3 w-4 h-4" />
-                      Mode sombre
+                      <MoonIcon className="w-4 h-4" />
+                      {t("header.dark_mode")}
                     </>
                   )}
                 </button>
+                <Link
+                  href="/"
+                  locale={lang === "en" ? "fr" : "en"}
+                  className="w-full flex items-center px-4 py-2 text-primary transition-colors"
+                  aria-label={
+                    lang === "fr" ? t("header.english") : t("header.french")
+                  }
+                  onClick={closeMenu}
+                >
+                  {lang === "fr" ? (
+                    <div className="flex items-center gap-3">
+                      <span className="w-4">🇺🇸</span>
+                      <span>{t("header.english")}</span>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-3">
+                      <span className="w-4">🇫🇷</span>
+                      <span>{t("header.french")}</span>
+                    </div>
+                  )}
+                </Link>
               </div>
             </nav>
           </div>

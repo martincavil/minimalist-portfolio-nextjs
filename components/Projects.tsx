@@ -1,5 +1,74 @@
 "use client";
+import { useState, useRef } from "react";
+import { projects } from "../data/projects";
+import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Projects() {
-  return <section id="projects" className="container pb-10"></section>;
+  const [hovered, setHovered] = useState<number | null>(null);
+  const [mouse, setMouse] = useState({ x: 0, y: 0 });
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const { t, lang } = useTranslation("common");
+
+  return (
+    <section id="projects" className="container pb-10">
+      <h2 className="text-2xl md:text-3xl font-bold mb-8">
+        {t("projects.title")}
+      </h2>
+      <div className="relative">
+        <ul className="divide-y divide-interactive">
+          {projects.map((project, idx) => (
+            <Link href={project.url} key={project.name} passHref>
+              <li
+                key={project.name}
+                className="grid grid-cols-8 gap-8 items-center rounded-lg p-6 cursor-pointer group relative hover:bg-primary-inverted"
+                onMouseEnter={() => setHovered(idx)}
+                onMouseLeave={() => setHovered(null)}
+                onMouseMove={(e) => {
+                  const rect = sectionRef.current?.getBoundingClientRect();
+                  setMouse({
+                    x: e.clientX - (rect?.left ?? 0),
+                    y: e.clientY - (rect?.top ?? 0),
+                  });
+                }}
+                onClick={() => window.open(project.url, "_blank")}
+              >
+                <span className="text-text-tertiary">{project.year}</span>
+                <span className="text-xl font-semibold md:col-span-3">
+                  {project.name}
+                </span>
+                <span className="text-text-tertiary md:col-span-3">
+                  {project.domain[lang as "fr" | "en"]}
+                </span>
+                <ArrowUpRight className="w-5 text-text-tertiary group-hover:text-primary transition-colors duration-500 justify-self-end" />
+                {hovered === idx && (
+                  <span
+                    className="pointer-events-none absolute z-30 transition-transform duration-75"
+                    style={{
+                      left: mouse.x + 24,
+                      top: mouse.y - 150,
+                    }}
+                  >
+                    <Image
+                      src={project.image}
+                      alt={project.name}
+                      width={300}
+                      height={169}
+                      className="w-[300px] h-[169px] object-cover rounded-lg shadow-lg border border-interactive bg-primary-inverted"
+                    />
+                  </span>
+                )}
+              </li>
+            </Link>
+          ))}
+        </ul>
+        <div
+          ref={sectionRef}
+          className="absolute inset-0 pointer-events-none"
+        />
+      </div>
+    </section>
+  );
 }

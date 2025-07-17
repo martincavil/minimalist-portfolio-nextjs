@@ -1,0 +1,52 @@
+{
+  "header": {
+    "skills": "Compétences",
+    "about": "À propos",
+    "projects": "Projets",
+    "posts": "Articles",
+    "github": "Github",
+    "linkedin": "Linkedin",
+    "contact": "Contactez-moi",
+    "light_mode": "Mode clair",
+    "dark_mode": "Mode sombre",
+    "french": "Français",
+    "english": "Anglais"
+  },
+  "hero": {
+    "availability": "Disponible pour de nouveaux projets",
+    "headline1": "Bienvenue, moi c'est",
+    "headline2": "Martin",
+    "headline3": "Développeur freelance Next.js / React",
+    "description": "J'aide les entreprises à créer des sites marketing animés, des MVPs ou des interfaces produits sur-mesure.",
+    "contact": "Contactez-moi"
+  },
+  "skills": {
+    "title": "Comment je vous aide à atteindre vos objectifs",
+    "description": "Mon approche va bien au-delà du code : je m’implique pour que votre projet réponde à vos enjeux business et prenne une longueur d’avance sur la concurrence.",
+    "list": [
+      {
+        "title": "Sites web performants & SEO-ready",
+        "description": "Des sites rapides, optimisés pour Google et pensés pour convertir vos visiteurs en clients."
+      },
+      {
+        "title": "Design pixel perfect",
+        "description": "Respect total de votre identité visuelle et des maquettes, pour un rendu professionnel et impactant."
+      },
+      {
+        "title": "Vision business & conseil",
+        "description": "Je challenge vos idées et propose des solutions concrètes pour maximiser la valeur de votre projet."
+      },
+      {
+        "title": "Stack moderne & CMS maîtrisés",
+        "description": "Next.js, React, Tailwind CSS, Webflow, Prismic, Strapi… Je choisis les meilleurs outils pour vos besoins."
+      },
+      {
+        "title": "Accompagnement sur-mesure",
+        "description": "Un suivi proactif, de la conception à la mise en ligne, pour garantir la réussite et la pérennité de votre projet."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "header": {
+    "skills": "Skills",
+    "about": "About",
+    "projects": "Projects",
+    "posts": "Posts",
+    "github": "Github",
+    "linkedin": "Linkedin",
+    "contact": "Contact me",
+    "light_mode": "Light mode",
+    "dark_mode": "Dark mode",
+    "french": "French",
+    "english": "English"
+  },
+  "hero": {
+    "availability": "Available for new projects",
+    "headline1": "Welcome, I'm",
+    "headline2": "Martin",
+    "headline3": "Freelance Next.js / React Developer",
+    "description": "I help businesses create dynamic marketing sites, MVPs, or custom product interfaces.",
+    "contact": "Get in touch"
+  },
+  "skills": {
+    "title": "How I Help You Achieve Your Goals",
+    "description": "My approach goes far beyond code: I’m committed to making your project solve real business challenges and stand out from the competition.",
+    "list": [
+      {
+        "title": "High-performance & SEO-ready websites",
+        "description": "Fast, Google-optimized sites designed to turn visitors into customers."
+      },
+      {
+        "title": "Pixel-perfect design",
+        "description": "Flawless implementation of your visual identity and mockups for a professional, impactful result."
+      },
+      {
+        "title": "Business vision & advice",
+        "description": "I challenge your ideas and suggest concrete solutions to maximize your project’s value."
+      },
+      {
+        "title": "Modern stack & CMS expertise",
+        "description": "Next.js, React, Tailwind CSS, Webflow, Prismic, Strapi… I select the best tools for your needs."
+      },
+      {
+        "title": "Tailored support",
+        "description": "Proactive guidance from conception to launch, ensuring your project’s success and longevity."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects"
+  }
+}
