@@ -13,8 +13,8 @@ export default function Projects() {
   const { t, lang } = useTranslation("common");
 
   return (
-    <section id="projects" className="container pb-10">
-      <h2 className="text-2xl md:text-3xl font-bold mb-8">
+    <section id="projects" className="container py-10 md:py-16">
+      <h2 className="text-2xl md:text-4xl  bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent font-semibold mb-8">
         {t("projects.title")}
       </h2>
       <div className="relative">
@@ -23,7 +23,7 @@ export default function Projects() {
             <Link href={project.url} key={project.name} passHref>
               <li
                 key={project.name}
-                className="grid grid-cols-8 gap-8 items-center rounded-lg p-6 cursor-pointer group relative hover:bg-primary-inverted"
+                className="grid items-center grid-cols-4 md:grid-cols-8 gap-8 rounded-lg p-6 cursor-pointer group relative hover:bg-primary-inverted"
                 onMouseEnter={() => setHovered(idx)}
                 onMouseLeave={() => setHovered(null)}
                 onMouseMove={(e) => {
@@ -36,10 +36,10 @@ export default function Projects() {
                 onClick={() => window.open(project.url, "_blank")}
               >
                 <span className="text-text-tertiary">{project.year}</span>
-                <span className="text-xl font-semibold md:col-span-3">
+                <span className="md:text-xl font-semibold col-span-2 md:col-span-3">
                   {project.name}
                 </span>
-                <span className="text-text-tertiary md:col-span-3">
+                <span className="hidden md:flex text-text-tertiary md:col-span-3">
                   {project.domain[lang as "fr" | "en"]}
                 </span>
                 <ArrowUpRight className="w-5 text-text-tertiary group-hover:text-primary transition-colors duration-500 justify-self-end" />

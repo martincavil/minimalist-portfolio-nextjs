@@ -60,14 +60,14 @@ export default function Skills() {
 
   return (
     <section id="skills" className="container pb-10 relative z-20">
-      <div className="border border-interactive px-8 py-16 rounded-lg bg-background space-y-6 relative z-20">
+      <div className="md:border md:border-interactive md:px-8 py-10 md:py-16 rounded-lg bg-background space-y-6 relative z-20">
         <div className="text-center space-y-6">
-          <h2 className="text-2xl md:text-3xl font-semibold">
+          <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent">
             {t("skills.title")}
           </h2>
           <p className="text-text-tertiary">{t("skills.description")}</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {skills.map((skill, i) => {
             const iconMap: Record<string, React.ElementType> = {
               Rocket,

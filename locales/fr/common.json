@@ -14,9 +14,7 @@
   },
   "hero": {
     "availability": "Disponible pour de nouveaux projets",
-    "headline1": "Bienvenue, moi c'est",
-    "headline2": "Martin",
-    "headline3": "Développeur freelance Next.js / React",
+    "headline": "Bienvenue, moi c'est Martin— Développeur freelance Next.js / React",
     "description": "J'aide les entreprises à créer des sites marketing animés, des MVPs ou des interfaces produits sur-mesure.",
     "contact": "Contactez-moi"
   },
@@ -48,5 +46,13 @@
   },
   "projects": {
     "title": "Projets"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "description1": "Passionné par le développement web, j’ai commencé ma carrière en tant que développeur full-stack avant de me spécialiser dans Next.js et React. J’adore relever des défis techniques et transformer des idées en solutions concrètes.",
+    "description2": "En dehors du code, je suis un grand amateur de musique et de voyages. J’aime découvrir de nouvelles cultures et m’inspirer de mes expériences pour enrichir mes projets."
+  },
+  "posts": {
+    "title": "Quelque chose se prépare bientôt 🤭"
   }
 }

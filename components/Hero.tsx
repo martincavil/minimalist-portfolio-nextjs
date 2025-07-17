@@ -8,7 +8,7 @@ export default function Hero() {
   const { t } = useTranslation("common");
 
   return (
-    <section className="container pb-10 pt-24 md:pt-20 min-h-screen flex items-center">
+    <section className="container pb-10 pt-24 md:pt-20 md:min-h-screen flex items-center">
       <div>
         <div className="space-y-6">
           {/* Photo & avalaibility*/}
@@ -29,11 +29,8 @@ export default function Hero() {
           </div>
 
           {/* Titre */}
-          <h1 className="text-3xl md:text-5xl font-light leading-tight text-text-tertiary">
-            {t("hero.headline1")}{" "}
-            <span className="text-text-primary">{t("hero.headline2")}</span> —{" "}
-            <br />
-            <span>{t("hero.headline3")}</span>
+          <h1 className="text-3xl md:text-5xl font-light leading-tight bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent">
+            {t("hero.headline")}
           </h1>
 
           {/* Description */}
