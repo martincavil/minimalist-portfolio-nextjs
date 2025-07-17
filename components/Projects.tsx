@@ -20,9 +20,14 @@ export default function Projects() {
       <div className="relative">
         <ul className="divide-y divide-interactive">
           {projects.map((project, idx) => (
-            <Link href={project.url} key={project.name} passHref>
+            <Link
+              href={project.url}
+              key={project.name}
+              passHref
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <li
-                key={project.name}
                 className="grid items-center grid-cols-4 md:grid-cols-8 gap-8 rounded-lg p-6 cursor-pointer group relative hover:bg-primary-inverted"
                 onMouseEnter={() => setHovered(idx)}
                 onMouseLeave={() => setHovered(null)}
@@ -33,7 +38,6 @@ export default function Projects() {
                     y: e.clientY - (rect?.top ?? 0),
                   });
                 }}
-                onClick={() => window.open(project.url, "_blank")}
               >
                 <span className="text-text-tertiary">{project.year}</span>
                 <span className="md:text-xl font-semibold col-span-2 md:col-span-3">

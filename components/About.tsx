@@ -24,7 +24,7 @@ export default function About() {
           />
         </div>
         <div className="md:col-span-2 flex items-center border-l border-interactive pl-6">
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-text-tertiary leading-relaxed">
             {t("about.description1")}
           </p>
         </div>
@@ -33,7 +33,7 @@ export default function About() {
       {/* Ligne 2 */}
       <div className="grid md:grid-cols-3 gap-8 border-b border-interactive">
         <div className="md:col-span-2 flex items-center order-2 md:order-none border-r border-interactive pr-6">
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-text-tertiary leading-relaxed">
             {t("about.description1")}
           </p>
         </div>
