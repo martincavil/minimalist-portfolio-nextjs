@@ -13,8 +13,8 @@
     "english": "English"
   },
   "hero": {
-    "availability": "Available for new projects",
-    "headline": "Welcome, I'm Martin— Freelance Next.js / React Developer",
+    "availability": "Available now",
+    "headline": "Welcome, I'm Martin— Freelance Next.js / React & Tailwind Developer",
     "description": "I help businesses create dynamic marketing sites, MVPs, or custom product interfaces.",
     "contact": "Get in touch"
   },
@@ -49,8 +49,8 @@
   },
   "about": {
     "title": "About Me",
-    "description1": "Passionate about web development, I started my career as a full-stack developer before specializing in Next.js and React. I love tackling technical challenges and turning ideas into concrete solutions.",
-    "description2": "Outside of coding, I'm a big fan of music and travel. I enjoy discovering new cultures and drawing inspiration from my experiences to enrich my projects."
+    "description1": "I’m a frontend developer with a strong focus on React, Next.js, and Tailwind, and a real attention to design, UX, and pixel-perfect execution. Over the years, I’ve worked on ambitious projects within collaborative teams — including a 10-developer squad at Uptoo. I’m curious, organized, and enjoy turning designs into smooth, high-performing web experiences. I care about clean code, SEO, and business impact, always aiming to deliver quality with clarity and intention.",
+    "description2": "Outside of tech, I’m passionate about sports — especially running, trail, and football — and always eager to challenge myself. I value simple, meaningful moments with friends and family, and I now live in sunny Valencia, Spain. It’s a place that brings me balance and daily inspiration, both personally and creatively."
   },
   "posts": {
     "title": "Someting interesting coming soon 🤭"

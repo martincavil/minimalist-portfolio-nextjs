@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
+import ScrambleText from "./ScrambleText";
 
 // import { gsap } from "gsap";
 import {
@@ -28,7 +29,7 @@ export default function Header() {
     { label: t("header.skills"), href: "skills" },
     { label: t("header.projects"), href: "projects" },
     { label: t("header.about"), href: "about" },
-    { label: t("header.posts"), href: "posts" },
+    // { label: t("header.posts"), href: "posts" },
   ];
 
   const isMoreItems = [
@@ -36,12 +37,23 @@ export default function Header() {
       label: t("header.github"),
       href: "https://github.com/martincavil/",
       icon: <Github className="mr-3 w-5" />,
+      target: "_blank",
+      rel: "noopener noreferrer",
     },
     {
       label: t("header.linkedin"),
       href: "https://www.linkedin.com/in/martin-cavil/",
       icon: <Linkedin className="mr-3 w-5" />,
+      target: "_blank",
+      rel: "noopener noreferrer",
     },
+    // {
+    //   label: t("header.codeur"),
+    //   href: "https://www.codeur.com/-martincavil",
+    //   icon: <UserPen className="mr-3 w-5" />,
+    //   target: "_blank",
+    //   rel: "noopener noreferrer",
+    // },
     {
       label: t("header.contact"),
       href: "mailto:martin.cavil98@gmail.com",
@@ -143,9 +155,21 @@ export default function Header() {
       <div className="container">
         <div className="flex justify-between items-center py-6">
           {/* Logo */}
-          <div ref={logoRef} className="text-3xl font-pacifico text-primary">
-            Martin C.
-          </div>
+          <a
+            href="#hero"
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("hero");
+              if (el) {
+                const y = el.getBoundingClientRect().top + window.scrollY - 120;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
+            }}
+          >
+            <div ref={logoRef} className="text-3xl font-pacifico text-primary">
+              <ScrambleText text="Martin C." className="" />
+            </div>
+          </a>
 
           {/* Navigation - Desktop */}
           <nav
@@ -167,7 +191,7 @@ export default function Header() {
                   }
                 }}
               >
-                {item.label}
+                <ScrambleText text={item.label} className="" />
               </a>
             ))}
 
@@ -190,9 +214,11 @@ export default function Header() {
                         key={k}
                         href={item.href}
                         className="flex items-center text-sm duration-300 text-text-tertiary hover:text-primary transition-colors font-semibold"
+                        target={item.target}
+                        rel={item.rel}
                       >
                         {item.icon}
-                        <span>{item.label}</span>
+                        <ScrambleText text={item.label} className="" />
                       </a>
                     ))}
                   </div>
@@ -203,9 +229,13 @@ export default function Header() {
                       className="w-8 h-8 rounded-full  flex items-center justify-center bg-text-secondary text-text-tertiary hover:bg-interactive-hover text-tertiary hover:text-text-primary transition-colors group"
                     >
                       {darkMode ? (
-                        <SunIcon className="w-4 h-4 group-hover:rotate-180 group-hover:scale-105 duration-500 transition-all" />
+                        <>
+                          <SunIcon className="w-4 h-4 group-hover:rotate-180 group-hover:scale-105 duration-500 transition-all" />
+                        </>
                       ) : (
-                        <MoonIcon className="w-4 h-4 group-hover:rotate-12 group-hover:scale-105 duration-500 transition-all" />
+                        <>
+                          <MoonIcon className="w-4 h-4 group-hover:rotate-12 group-hover:scale-105 duration-500 transition-all" />
+                        </>
                       )}
                     </button>
                     <Link
@@ -217,9 +247,13 @@ export default function Header() {
                       }
                     >
                       {lang === "fr" ? (
-                        <span className="w-4">🇺🇸</span>
+                        <>
+                          <span className="w-4">🇺🇸</span>
+                        </>
                       ) : (
-                        <span className="w-4">🇫🇷</span>
+                        <>
+                          <span className="w-4">🇫🇷</span>
+                        </>
                       )}
                     </Link>
                   </div>

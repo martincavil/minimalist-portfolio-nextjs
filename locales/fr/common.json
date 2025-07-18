@@ -13,8 +13,8 @@
     "english": "Anglais"
   },
   "hero": {
-    "availability": "Disponible pour de nouveaux projets",
-    "headline": "Bienvenue, moi c'est Martin— Développeur freelance Next.js / React",
+    "availability": "Disponible maintenant",
+    "headline": "Bienvenue, moi c'est Martin— Développeur freelance Next.js / React & Tailwind",
     "description": "J'aide les entreprises à créer des sites marketing animés, des MVPs ou des interfaces produits sur-mesure.",
     "contact": "Contactez-moi"
   },
@@ -49,10 +49,10 @@
   },
   "about": {
     "title": "À propos de moi",
-    "description1": "Passionné par le développement web, j’ai commencé ma carrière en tant que développeur full-stack avant de me spécialiser dans Next.js et React. J’adore relever des défis techniques et transformer des idées en solutions concrètes.",
-    "description2": "En dehors du code, je suis un grand amateur de musique et de voyages. J’aime découvrir de nouvelles cultures et m’inspirer de mes expériences pour enrichir mes projets."
+    "description1": "Développeur front de formation, j’ai construit mon expertise autour de React, Next.js et Tailwind, avec une vraie sensibilité pour le design, l’UX et le détail pixel perfect. Mon parcours m’a amené à collaborer avec des équipes tech exigeantes, comme chez Uptoo où nous étions 10 développeurs sur des projets complexes. Curieux, organisé et à l’écoute, j’aime transformer des maquettes en expériences fluides, tout en gardant en tête les enjeux business, la performance et le SEO. J’avance avec méthode, sans jamais perdre le goût du beau code et du travail bien fait.",
+    "description2": "En dehors du code, je suis un passionné de sport : running, trail, football, et globalement tout ce qui me pousse à me dépasser. J’aime la simplicité, les moments partagés avec mes amis ou ma famille, et les découvertes au quotidien. Je vis aujourd’hui entre València (Espagne), où je trouve l’équilibre entre travail, soleil, sport et vie sociale — une source d’inspiration précieuse dans tout ce que je crée."
   },
   "posts": {
-    "title": "Quelque chose se prépare bientôt 🤭"
+    "title": "Quelque chose se prépare en coulisse 🤭"
   }
 }
