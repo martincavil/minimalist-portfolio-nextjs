@@ -28,7 +28,7 @@ export default function Projects() {
               rel="noopener noreferrer"
             >
               <li
-                className="grid items-center grid-cols-4 md:grid-cols-8 gap-8 rounded-lg p-6 cursor-pointer group relative hover:bg-primary-inverted"
+                className="grid items-center grid-cols-6 md:grid-cols-8 gap-8 rounded-lg py-6 md:px-6 cursor-pointer group relative hover:bg-primary-inverted"
                 onMouseEnter={() => setHovered(idx)}
                 onMouseLeave={() => setHovered(null)}
                 onMouseMove={(e) => {
@@ -39,8 +39,10 @@ export default function Projects() {
                   });
                 }}
               >
-                <span className="text-text-tertiary">{project.year}</span>
-                <span className="md:text-xl font-semibold col-span-2 md:col-span-3">
+                <span className="md:col-span-1 col-span-2 text-text-tertiary">
+                  {project.year}
+                </span>
+                <span className="md:text-xl font-semibold col-span-3">
                   {project.name}
                 </span>
                 <span className="hidden md:flex text-text-tertiary md:col-span-3">
