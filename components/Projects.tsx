@@ -28,7 +28,7 @@ export default function Projects() {
               rel="noopener noreferrer"
             >
               <li
-                className="grid items-center grid-cols-6 md:grid-cols-8 gap-8 rounded-lg py-6 md:px-6 cursor-pointer group relative hover:bg-primary-inverted"
+                className="grid items-center grid-cols-6 md:grid-cols-8 gap-8 rounded-lg py-6 px-2 md:px-6 cursor-pointer group relative hover:bg-primary-inverted"
                 onMouseEnter={() => setHovered(idx)}
                 onMouseLeave={() => setHovered(null)}
                 onMouseMove={(e) => {
