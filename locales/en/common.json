@@ -1,4 +1,9 @@
 {
+  "seo": {
+    "title": "Martin Cavil Portfolio - Freelance Next.js Developer",
+    "description": "Explore the portfolio of Martin Cavil, a freelance developer specializing in Next.js, React, and Tailwind. High-performance, custom projects.",
+    "keywords": "Martin Cavil, freelance frontend developer, Next.js, React, Tailwind, portfolio"
+  },
   "header": {
     "skills": "Skills",
     "about": "About",
