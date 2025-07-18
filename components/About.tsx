@@ -7,14 +7,14 @@ export default function About() {
 
   return (
     <section id="about" className="container py-10 md:py-16">
-      {/* Titre */}
+      {/* Title */}
       <h2 className="text-center text-2xl md:text-4xl  bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent font-semibold mb-8">
         {t("about.title")}
       </h2>
 
       {/* Grid */}
       <div className="grid md:grid-cols-5 md:border-y border-interactive mb-6 md:mb-0">
-        {/* Ligne 1 */}
+        {/* Row 1 */}
         <div className="md:p-6 col-span-2 mb-4 md:mb-0">
           <div className="aspect-video relative">
             <Image
@@ -32,7 +32,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* Ligne 2 */}
+      {/* Row 2 */}
       <div className="grid md:grid-cols-5 md:border-b border-interactive">
         <div className="md:col-span-3 flex items-center order-2 md:order-none md:border-r border-interactive md:pr-6">
           <p className="text-text-tertiary leading-relaxed">

@@ -13,7 +13,7 @@ export default function ScrambleText({
   tag = "span",
   minHeight,
 }: ScrambleTextProps) {
-  // Détection mobile simple (window.innerWidth < 768)
+  // Simple mobile detection (window.innerWidth < 768)
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
   const [display, setDisplay] = useState<string>(text);
   const ref = useRef<HTMLElement>(null);

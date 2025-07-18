@@ -61,7 +61,7 @@ export default function Header() {
     },
   ];
 
-  // Gestion du scroll avec GSAP
+  // Scroll management with GSAP
   // useEffect(() => {
   //   const handleScroll = () => {
   //     const scrollY = window.scrollY || window.pageYOffset;
@@ -103,16 +103,16 @@ export default function Header() {
   // }, []);
 
   // Appliquer le thème au chargement et quand il change
-  useEffect(() => {
-    // Vérifier la préférence système ou le localStorage
-    const isDark =
-      localStorage.getItem("darkMode") === "true" ||
-      (!("darkMode" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches);
-    setDarkMode(isDark);
-    updateTheme(isDark);
-  }, []);
-
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollY = window.scrollY || window.pageYOffset;
+  //     const triggerPosition = 100;
+  //     console.log("scrollY > triggerPosition", scrollY > triggerPosition);
+  //     if (scrollY > triggerPosition) {
+  //       // Animation to hide the logo and center the nav
+  //     }
+  //   };
+  // });
   const toggleDarkMode = () => {
     const newMode = !darkMode;
     setDarkMode(newMode);

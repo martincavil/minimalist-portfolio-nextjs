@@ -62,9 +62,11 @@ export default function Skills() {
     <section id="skills" className="container pb-10 relative z-20">
       <div className="md:border md:border-interactive md:px-8 py-10 md:py-16 rounded-lg bg-background space-y-6 relative z-20">
         <div className="text-center space-y-6">
+          {/* Title */}
           <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent">
             {t("skills.title")}
           </h2>
+          {/* Skills list */}
           <p className="text-text-tertiary">{t("skills.description")}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

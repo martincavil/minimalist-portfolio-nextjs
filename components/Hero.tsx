@@ -8,7 +8,7 @@ import ScrambleText from "./ScrambleText";
 
 const Hero = () => {
   const { t, lang } = useTranslation("common");
-  // Pour la hauteur fixe, calculer la plus longue version des textes
+  // For fixed height, calculate the longest version of the texts
   const headlineFr =
     "Bienvenue, moi c'est Martin— Développeur freelance Next.js / React & Tailwind";
   const headlineEn =
@@ -28,7 +28,7 @@ const Hero = () => {
     >
       <div className="w-full flex flex-col justify-center">
         <div className="space-y-6">
-          {/* Photo & avalaibility*/}
+          {/* Photo & availability */}
           <div className="flex items-start gap-6">
             <div className="w-24 h-24 rounded-full bg-interactive overflow-hidden mb-8">
               <Image
@@ -45,7 +45,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Titre */}
+          {/* Headline */}
           <ScrambleText
             text={t("hero.headline")}
             tag="h1"
@@ -69,10 +69,10 @@ const Hero = () => {
               aria-label="Contact Martin Cavil"
               tabIndex={0}
             >
-              {/* Voile animé */}
+              {/* Animated overlay */}
               <span className="absolute inset-0 bg-primary translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 ease-out z-0"></span>
 
-              {/* Contenu du bouton */}
+              {/* Button content */}
               <ScrambleText
                 text={t("hero.contact")}
                 className="relative z-10 flex items-center gap-2 text-lg font-light text-text-primary group-hover:text-text-secondary transition-colors duration-300"
@@ -83,7 +83,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        {/* Icône scroll (souris) */}
+        {/* Scroll icon (mouse) */}
         <div className="flex justify-center mt-12">
           <div className="flex flex-col items-center gap-2">
             <Mouse
