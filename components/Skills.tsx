@@ -12,7 +12,9 @@ export default function Skills() {
 
   useEffect(() => {
     if (!cardsRef.current) return;
-    const elements = cardsRef.current;
+    const elements = cardsRef.current.filter(
+      (el): el is HTMLDivElement => el !== null
+    );
     gsap.set(elements, { opacity: 0, scale: 0.95 });
 
     const getCols = () => {
