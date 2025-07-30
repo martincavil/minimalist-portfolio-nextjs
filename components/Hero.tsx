@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="container pb-10 pt-24 md:pt-20 min-h-screen flex items-center"
+      className="container pt-24 md:pt-20 min-h-screen flex items-center"
     >
       <div className="w-full flex flex-col justify-center">
         <div className="space-y-6">

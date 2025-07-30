@@ -59,8 +59,8 @@ export default function Home() {
       <DotGridBackground />
       <Header />
       <Hero />
-      <Skills />
       <Projects />
+      <Skills />
       <About />
       <Posts />
       <Footer />

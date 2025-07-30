@@ -13,7 +13,7 @@ export default function Projects() {
   const { t, lang } = useTranslation("common");
 
   return (
-    <section id="projects" className="container py-10 md:py-16">
+    <section id="projects" className="container py-10 md:pt-12 md:pb-16">
       <h2 className="text-2xl md:text-4xl  bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent font-semibold mb-8">
         {t("projects.title")}
       </h2>
