@@ -30,14 +30,14 @@ export const projects: Project[] = [
     url: "https://www.padel15.fr",
     image: "/images/projects/padel15.webp",
   },
-  {
-    name: "Victor Villemin",
-    year: "2022",
-    domain: {
-      fr: "Art contemporain",
-      en: "Contemporary art",
-    },
-    url: "https://victorvillemin.com/",
-    image: "/images/projects/victor-villemin.webp",
-  },
+  // {
+  //   name: "Victor Villemin",
+  //   year: "2022",
+  //   domain: {
+  //     fr: "Art contemporain",
+  //     en: "Contemporary art",
+  //   },
+  //   url: "https://victorvillemin.com/",
+  //   image: "/images/projects/victor-villemin.webp",
+  // },
 ];
