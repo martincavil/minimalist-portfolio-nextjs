@@ -248,11 +248,11 @@ export default function Header() {
                     >
                       {lang === "fr" ? (
                         <>
-                          <span className="w-4">🇺🇸</span>
+                          <span className="w-5">🇺🇸</span>
                         </>
                       ) : (
                         <>
-                          <span className="w-4">🇫🇷</span>
+                          <span className="w-5">🇫🇷</span>
                         </>
                       )}
                     </Link>

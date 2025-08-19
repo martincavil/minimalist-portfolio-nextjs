@@ -4,31 +4,36 @@ import { projects } from "../data/projects";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
+import ProjectModal from "./ProjectModal";
 
 export default function Projects() {
   const [hovered, setHovered] = useState<number | null>(null);
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
+  const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
   const { t, lang } = useTranslation("common");
 
+  const handleProjectClick = (e: React.MouseEvent, projectIndex: number) => {
+    e.preventDefault();
+    setSelectedProject(projectIndex);
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
-    <section id="projects" className="container py-10 md:pt-12 md:pb-16">
-      <h2 className="text-2xl md:text-4xl  bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent font-semibold mb-8">
-        {t("projects.title")}
-      </h2>
-      <div className="relative">
-        <ul className="divide-y divide-interactive">
-          {projects.map((project, idx) => (
-            <Link
-              href={project.url}
-              key={project.name}
-              passHref
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+    <>
+      <section id="projects" className="container py-10 md:pt-12 md:pb-16">
+        <h2 className="text-2xl md:text-4xl bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent font-semibold mb-8">
+          {t("projects.title")}
+        </h2>
+        <div className="relative">
+          <ul className="divide-y divide-interactive">
+            {projects.map((project, idx) => (
               <li
-                className="grid items-center grid-cols-6 md:grid-cols-8 gap-8 rounded-lg py-6 px-2 md:px-6 cursor-pointer group relative hover:bg-primary-inverted"
+                key={project.name}
+                className="grid items-center grid-cols-6 md:grid-cols-8 gap-8  py-6 px-2 md:px-6 cursor-pointer group relative hover:bg-primary-inverted"
                 onMouseEnter={() => setHovered(idx)}
                 onMouseLeave={() => setHovered(null)}
                 onMouseMove={(e) => {
@@ -38,6 +43,7 @@ export default function Projects() {
                     y: e.clientY - (rect?.top ?? 0),
                   });
                 }}
+                onClick={(e) => handleProjectClick(e, idx)}
               >
                 <span className="col-span-2 lg:col-span-1 text-text-tertiary">
                   {project.year}
@@ -46,14 +52,15 @@ export default function Projects() {
                   {project.name}
                 </span>
                 <div className="hidden lg:flex items-center gap-1 flex-wrap lg:col-span-3">
-                  {project.skills.map((skill, skillId) => (
-                    <div
-                      key={skillId}
-                      className="rounded-md bg-interactive px-2 py-1 text-xs text-text-primary font-semibold"
-                    >
-                      {skill}
-                    </div>
-                  ))}
+                  {project?.skills &&
+                    project.skills.map((skill, skillId) => (
+                      <div
+                        key={skillId}
+                        className="rounded-md bg-text-secondary  px-2 py-1 text-xs text-text-primary font-semibold"
+                      >
+                        {skill}
+                      </div>
+                    ))}
                 </div>
                 <span className="hidden md:flex text-text-tertiary md:col-span-3 lg:col-span-2">
                   {project.domain[lang as "fr" | "en"]}
@@ -68,7 +75,7 @@ export default function Projects() {
                     }}
                   >
                     <Image
-                      src={project.image}
+                      src={project.cover}
                       alt={project.name}
                       width={300}
                       height={169}
@@ -77,14 +84,22 @@ export default function Projects() {
                   </span>
                 )}
               </li>
-            </Link>
-          ))}
-        </ul>
-        <div
-          ref={sectionRef}
-          className="absolute inset-0 pointer-events-none"
+            ))}
+          </ul>
+          <div
+            ref={sectionRef}
+            className="absolute inset-0 pointer-events-none"
+          />
+        </div>
+      </section>
+
+      {selectedProject !== null && (
+        <ProjectModal
+          project={projects[selectedProject]}
+          isOpen={selectedProject !== null}
+          onClose={closeModal}
         />
-      </div>
-    </section>
+      )}
+    </>
   );
 }
