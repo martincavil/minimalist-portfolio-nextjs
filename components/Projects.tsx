@@ -39,13 +39,23 @@ export default function Projects() {
                   });
                 }}
               >
-                <span className="md:col-span-1 col-span-2 text-text-tertiary">
+                <span className="col-span-2 lg:col-span-1 text-text-tertiary">
                   {project.year}
                 </span>
-                <span className="md:text-xl font-semibold col-span-3">
+                <span className="col-span-3 md:col-span-2 lg:col-span-1 lg:text-xl font-semibold">
                   {project.name}
                 </span>
-                <span className="hidden md:flex text-text-tertiary md:col-span-3">
+                <div className="hidden lg:flex items-center gap-1 flex-wrap lg:col-span-3">
+                  {project.skills.map((skill, skillId) => (
+                    <div
+                      key={skillId}
+                      className="rounded-md bg-interactive px-2 py-1 text-xs text-text-primary font-semibold"
+                    >
+                      {skill}
+                    </div>
+                  ))}
+                </div>
+                <span className="hidden md:flex text-text-tertiary md:col-span-3 lg:col-span-2">
                   {project.domain[lang as "fr" | "en"]}
                 </span>
                 <ArrowUpRight className="w-5 text-text-tertiary group-hover:text-primary transition-colors duration-500 justify-self-end" />

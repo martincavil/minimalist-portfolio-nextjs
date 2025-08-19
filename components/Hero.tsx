@@ -64,7 +64,7 @@ const Hero = () => {
           {/* CTA */}
           <div className="pt-4">
             <a
-              href="mailto:martin@email.com"
+              href="mailto:martin.cavil98@gmail.com"
               className="relative w-full md:w-fit group inline-flex justify-center items-center px-5 py-3 rounded-3xl border border-interactive overflow-hidden transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               aria-label="Contact Martin Cavil"
               tabIndex={0}

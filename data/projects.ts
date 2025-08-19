@@ -5,6 +5,7 @@ export type Project = {
     fr: string;
     en: string;
   };
+  skills: string[];
   url: string;
   image: string;
 };
@@ -17,6 +18,16 @@ export const projects: Project[] = [
       fr: "Agence spécialiste de la vente",
       en: "Sales specialist agency",
     },
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "Tailwind CSS",
+      "Prismic",
+      "Strapi",
+    ],
     url: "https://www.uptoo.fr",
     image: "/images/projects/uptoo.webp",
   },
@@ -27,6 +38,7 @@ export const projects: Project[] = [
       fr: "Club de padel à Paris",
       en: "Padel club in Paris",
     },
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
     url: "https://www.padel15.fr",
     image: "/images/projects/padel15.webp",
   },
