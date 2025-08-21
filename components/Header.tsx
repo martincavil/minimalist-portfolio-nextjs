@@ -26,8 +26,8 @@ export default function Header() {
   const { t, lang } = useTranslation("common");
 
   const navItems = [
-    { label: t("header.skills"), href: "skills" },
     { label: t("header.projects"), href: "projects" },
+    { label: t("header.skills"), href: "skills" },
     { label: t("header.about"), href: "about" },
     // { label: t("header.posts"), href: "posts" },
   ];

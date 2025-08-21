@@ -27,6 +27,10 @@ interface ProjectModalProps {
         fr: string;
         en: string;
       };
+      title5: {
+        fr: string;
+        en: string;
+      };
     };
     skills: string[];
     technicalChallenges?: {
@@ -164,22 +168,24 @@ export default function ProjectModal({
                 </p>
               </div>
             )}
-            <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-3">
-                {project.dialog?.title2[lang as "fr" | "en"]}
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {project.KPIs.map((kpi, idx) => (
-                  <div
-                    key={idx}
-                    className="flex flex-col items-center gap-2 text-text-tertiary"
-                  >
-                    <span className="text-4xl">{kpi.number} </span>
-                    <span>{kpi[lang as "fr" | "en"]}</span>
-                  </div>
-                ))}
+            {project.KPIs.length > 0 && (
+              <div className="mb-6">
+                <h3 className="text-lg font-semibold mb-3">
+                  {project.dialog?.title2[lang as "fr" | "en"]}
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  {project.KPIs.map((kpi, idx) => (
+                    <div
+                      key={idx}
+                      className="flex flex-col items-center gap-2 text-text-tertiary"
+                    >
+                      <span className="text-4xl">{kpi.number} </span>
+                      <span>{kpi[lang as "fr" | "en"]}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-3">
                 {project.dialog?.title3[lang as "fr" | "en"]}
@@ -197,14 +203,14 @@ export default function ProjectModal({
             </div>
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-3">
-                {project.dialog?.title3[lang as "fr" | "en"]}
+                {project.dialog?.title4[lang as "fr" | "en"]}
               </h3>
               <div className="prose dark:prose-invert max-w-none">
                 <p className="text-text-tertiary leading-relaxed mb-4">
                   {project.about[lang as "fr" | "en"]}
                 </p>
                 <h3 className="text-lg font-semibold mb-3">
-                  {project.dialog?.title4[lang as "fr" | "en"]}
+                  {project.dialog?.title5[lang as "fr" | "en"]}
                 </h3>
                 <ul className="list-disc list-inside text-text-tertiary space-y-2">
                   {project.technicalChallenges?.map((challenge, idx) => (
