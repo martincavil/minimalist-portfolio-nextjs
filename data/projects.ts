@@ -68,16 +68,16 @@ export const projects: Project[] = [
         en: "Key figures : ",
       },
       title3: {
-        fr: "Stacks utilisées : ",
-        en: "Stacks used: ",
+        fr: "Stack technique : ",
+        en: "Tech stack : ",
       },
       title4: {
         fr: "À propos de l'entreprise : ",
         en: "About the company : ",
       },
       title5: {
-        fr: "Challenge technique : ",
-        en: "Technical challenge : ",
+        fr: "Challenges techniques : ",
+        en: "Technical challenges : ",
       },
     },
     skills: [
@@ -171,16 +171,16 @@ export const projects: Project[] = [
         en: "Key figures : ",
       },
       title3: {
-        fr: "Stacks utilisées : ",
-        en: "Stacks used: ",
+        fr: "Stack technique : ",
+        en: "Tech stack : ",
       },
       title4: {
         fr: "À propos du club : ",
         en: "About the club : ",
       },
       title5: {
-        fr: "Challenge technique : ",
-        en: "Technical challenge : ",
+        fr: "Challenges techniques : ",
+        en: "Technical challenges : ",
       },
     },
     skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
