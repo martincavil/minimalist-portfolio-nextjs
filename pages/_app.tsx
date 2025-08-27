@@ -7,7 +7,7 @@ import { useEffect } from "react";
 // Add global type for window.gtag
 declare global {
   interface Window {
-    gtag?: (...args: any[]) => void;
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
