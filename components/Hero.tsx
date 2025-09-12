@@ -3,16 +3,15 @@
 import Image from "next/image";
 import { Mail, Mouse } from "lucide-react";
 import useTranslation from "next-translate/useTranslation";
-import { useEffect, useRef, useState } from "react";
 import ScrambleText from "./ScrambleText";
 
 const Hero = () => {
-  const { t, lang } = useTranslation("common");
+  const { t } = useTranslation("common");
   // For fixed height, calculate the longest version of the texts
   const headlineFr =
-    "Bienvenue, moi c'est Martin— Développeur freelance Next.js / React & Tailwind";
+    "Plus qu’un Développeur Next/React, un Partenaire de Confiance qui s’implique dans Votre Réussite.";
   const headlineEn =
-    "Welcome, I'm Martin— Freelance Next.js / React & Tailwind Developer";
+    "Not just a Next/React Developer, but a long-term partner dedicated to your success.";
   const maxHeadlineLength = Math.max(headlineFr.length, headlineEn.length);
   const minHeadlineHeight = "72px";
   const descFr =
