@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Martin Cavil Portfolio - Freelance Next.js Developer",
-    "description": "Explore the portfolio of Martin Cavil, a freelance developer specializing in Next.js, React, and Tailwind. High-performance, custom projects.",
+    "description": "Discover the portfolio of Martin Cavil, a freelance developer specializing in Next.js, React, and Tailwind. High-performance, custom projects.",
     "keywords": "Martin Cavil, freelance frontend developer, Next.js, React, Tailwind, portfolio"
   },
   "header": {
@@ -19,33 +19,33 @@
   },
   "hero": {
     "availability": "Available now",
-    "headline": "Not just a Next/React Developer, but a long-term partner dedicated to your success.",
-    "description": "I help businesses create dynamic marketing sites, MVPs, or custom product interfaces.",
-    "contact": "Get in touch"
+    "headline": "Product-focused frontend developer for startups who want to scale without hiring.",
+    "description": "I help businesses create animated marketing sites, MVPs, or custom product interfaces.",
+    "contact": "Let's discuss your project"
   },
   "skills": {
     "title": "How I Help You Achieve Your Goals",
-    "description": "My approach goes far beyond code: I’m committed to making your project solve real business challenges and stand out from the competition.",
+    "description": "My approach goes far beyond code: I’m committed to making your project meet your business needs and get ahead of the competition.",
     "list": [
       {
         "title": "High-performance & SEO-ready websites",
-        "description": "Fast, Google-optimized sites designed to turn visitors into customers."
+        "description": "Fast, Google-optimized sites designed to turn your visitors into clients."
       },
       {
         "title": "Pixel-perfect design",
-        "description": "Flawless implementation of your visual identity and mockups for a professional, impactful result."
+        "description": "Total respect for your visual identity and mockups, for a professional and impactful result."
       },
       {
         "title": "Business vision & advice",
-        "description": "I challenge your ideas and suggest concrete solutions to maximize your project’s value."
+        "description": "I challenge your ideas and offer concrete solutions to maximize your project’s value."
       },
       {
         "title": "Modern stack & CMS expertise",
-        "description": "Next.js, React, Tailwind CSS, Webflow, Prismic, Strapi… I select the best tools for your needs."
+        "description": "Next.js, React, Tailwind CSS, Webflow, Prismic, Strapi… I choose the best tools for your needs."
       },
       {
         "title": "Tailored support",
-        "description": "Proactive guidance from conception to launch, ensuring your project’s success and longevity."
+        "description": "Proactive support, from conception to launch, to ensure your project’s success and longevity."
       }
     ]
   },
@@ -54,10 +54,10 @@
   },
   "about": {
     "title": "About Me",
-    "description1": "I’m a frontend developer with a strong focus on React, Next.js, and Tailwind, and a real attention to design, UX, and pixel-perfect execution. Over the years, I’ve worked on ambitious projects within collaborative teams — including a 10-developer squad at Uptoo. I’m curious, organized, and enjoy turning designs into smooth, high-performing web experiences. I care about clean code, SEO, and business impact, always aiming to deliver quality with clarity and intention.",
-    "description2": "Outside of coding, I’m passionate about sports: running, trail running, football, and anything that pushes me to excel. I appreciate simplicity, quality time with friends and family, and daily discoveries. Currently based in Valencia (Spain), I find a balance between work, sunshine, sports, and social life — a source of inspiration for everything I create."
+    "description1": "A frontend developer by training, I’ve built my expertise around React, Next.js, and Tailwind, with a real sensitivity for design, UX, and pixel-perfect detail. My journey has led me to collaborate with demanding tech teams, like at Uptoo where we were 10 developers on complex projects. Curious, organized, and attentive, I love turning mockups into smooth experiences, always keeping business goals, performance, and SEO in mind. I move forward methodically, never losing my taste for clean code and a job well done.",
+    "description2": "Outside of code, I’m passionate about sports: running, trail running, soccer, and basically anything that pushes me to excel. I love simplicity, moments shared with friends or family, and daily discoveries. I now live in Valencia (Spain), where I find balance between work, sunshine, sports, and social life — a precious source of inspiration in everything I create."
   },
   "posts": {
-    "title": "Someting interesting coming soon 🤭"
+    "title": "Something is brewing behind the scenes 🤭"
   }
 }
