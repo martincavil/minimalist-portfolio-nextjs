@@ -52,6 +52,64 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    name: "Maison Du Temps",
+    year: "2025",
+    domain: {
+      fr: "Site e-commerce de montres",
+      en: "E-commerce site for watches",
+    },
+    dialog: {
+      title1: {
+        fr: "Ce que j'ai apporté au projet Maison Du Temps : ",
+        en: "What I brought to the project Maison Du Temps : ",
+      },
+      title2: {
+        fr: "Chiffres clés : ",
+        en: "Key figures : ",
+      },
+      title3: {
+        fr: "Stack technique : ",
+        en: "Tech stack : ",
+      },
+      title4: {
+        fr: "À propos du club : ",
+        en: "About the club : ",
+      },
+      title5: {
+        fr: "Challenges techniques : ",
+        en: "Technical challenges : ",
+      },
+    },
+    skills: ["Shopify", "Liquid", "JavaScript", "HTML", "CSS"],
+    url: "https://maisondutemps.com/",
+    cover: "/images/projects/maisondutemps/cover.webp",
+    excerpt: {
+      fr: "Refonte et optimisation du site e-commerce Maison Du Temps, avec la création de modules sur-mesure et l'amélioration continue de l'expérience utilisateur.",
+      en: "Redesign and optimization of Maison Du Temps's e-commerce platform, including custom module development and ongoing user experience improvements.",
+    },
+    about: {
+      fr: "Maison du Temps propose une sélection de montres haut de gamme. J'ai accompagné la marque sur la refonte de son site Shopify, en développant des fonctionnalités avancées et en assurant la performance et la stabilité de la boutique en ligne.",
+      en: "Maison Du Temps offers a curated selection of premium watches. I supported the brand with a Shopify site overhaul, building advanced features and ensuring the online store's performance and reliability.",
+    },
+    KPIs: [],
+    technicalChallenges: [
+      {
+        fr: "Maintenance et amélioration continue du site e-commerce avec Shopify.",
+        en: "Maintenance and continuous improvement of the e-commerce site with Shopify.",
+      },
+      {
+        fr: "Optimisation du site, Création de composants from scratch",
+        en: "Site optimization, creation of components from scratch.",
+      },
+    ],
+    images: [
+      "/images/projects/maisondutemps/cover.webp",
+      "/images/projects/maisondutemps/maisondutemps-1.webp",
+      "/images/projects/maisondutemps/maisondutemps-2.webp",
+      "/images/projects/maisondutemps/maisondutemps-3.webp",
+    ],
+  },
+  {
     name: "Uptoo",
     year: "2022-2025",
     domain: {
@@ -153,7 +211,6 @@ export const projects: Project[] = [
       "/images/projects/uptoo/uptoo-3.webp",
     ],
   },
-
   {
     name: "Padel15",
     year: "2025",
@@ -187,14 +244,30 @@ export const projects: Project[] = [
     url: "https://www.padel15.fr",
     cover: "/images/projects/padel15/cover.webp",
     excerpt: {
-      fr: "Création complète du site web du club Padel15 à Paris, de la conception au déploiement. Performances Lighthouse : 100/100 en SEO, 100/100 en bonnes pratiques, 94/100 en performance, 91/100 en accessibilité. La V2 avec réservation en ligne et blog arrive prochainement.",
-      en: "Complete creation of the Padel15 club website in Paris, from design to deployment. Lighthouse scores: 100/100 in SEO, 100/100 in best practices, 94/100 in performance, 91/100 in accessibility. V2 with online booking and blog coming soon.",
+      fr: "Site vitrine dynamique pour le club Padel15, avec une interface moderne, des scores Lighthouse exemplaires et une évolution prévue vers la réservation en ligne.",
+      en: "Dynamic showcase website for Padel15 club, featuring a modern interface, top Lighthouse scores, and an upcoming evolution to online booking.",
     },
     about: {
-      fr: "Padel15 est un club de padel situé à Paris, pour lequel j'ai conçu et développé le site web seul, en quelques jours, avec Next.js, React, Tailwind et déploiement sur Vercel. La V2 apportera de nombreuses nouvelles fonctionnalités.",
-      en: "Padel15 is a padel club in Paris for which I designed and developed the website solo, in just a few days, using Next.js, React, Tailwind, and deployment on Vercel. V2 will bring many new features.",
+      fr: "Padel15 est un club de padel parisien qui souhaitait une présence digitale à la hauteur de son dynamisme. J'ai imaginé et développé un site rapide, esthétique et évolutif, prêt à accueillir de nouvelles fonctionnalités comme la réservation en ligne et un blog.",
+      en: "Padel15 is a Paris-based padel club seeking a digital presence to match its energy. I designed and built a fast, visually appealing, and scalable site, ready for future features like online booking and a blog.",
     },
-    KPIs: [],
+    KPIs: [
+      {
+        number: "+10K",
+        en: "Visitors since September 2025",
+        fr: "Visiteurs depuis septembre 2025",
+      },
+      {
+        number: "100",
+        en: "Best Practices (Lighthouse)",
+        fr: "Bonnes pratiques (Lighthouse)",
+      },
+      {
+        number: "100",
+        en: "SEO (Lighthouse)",
+        fr: "SEO (Lighthouse)",
+      },
+    ],
     technicalChallenges: [
       {
         fr: "Développement et design from scratch en quelques jours, gestion complète du projet.",
@@ -214,6 +287,122 @@ export const projects: Project[] = [
       "/images/projects/padel15/padel15-1.webp",
       "/images/projects/padel15/padel15-2.webp",
       "/images/projects/padel15/padel15-3.webp",
+    ],
+  },
+  {
+    name: "Les Yeux - Détectives Privés",
+    year: "2025",
+    domain: {
+      fr: "Site pour un cabinet de détectives privés",
+      en: "Site for a private detective agency",
+    },
+    dialog: {
+      title1: {
+        fr: "Ce que j'ai apporté au projet pharmExecutive : ",
+        en: "What I brought to the project pharmExecutive : ",
+      },
+      title2: {
+        fr: "Chiffres clés : ",
+        en: "Key figures : ",
+      },
+      title3: {
+        fr: "Stack technique : ",
+        en: "Tech stack : ",
+      },
+      title4: {
+        fr: "À propos du club : ",
+        en: "About the club : ",
+      },
+      title5: {
+        fr: "Challenges techniques : ",
+        en: "Technical challenges : ",
+      },
+    },
+    skills: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    url: "https://les-yeux-detectives.com/",
+    cover: "/images/projects/les-yeux-detectives/cover.webp",
+    excerpt: {
+      fr: "Mise en ligne d'une plateforme sobre et rassurante pour Les Yeux - Détectives Privés, valorisant leur expertise et facilitant la prise de contact.",
+      en: "Launched a sleek, trustworthy platform for Les Yeux - Détectives Privés, highlighting their expertise and making it easy for clients to get in touch.",
+    },
+    about: {
+      fr: "Pour ce cabinet de détectives privés, j'ai conçu un site web qui inspire confiance et professionnalisme, avec une navigation claire et des outils marketing intégrés pour soutenir leur activité.",
+      en: "For this private detective agency, I designed a website that inspires trust and professionalism, featuring clear navigation and integrated marketing tools to support their business.",
+    },
+    KPIs: [],
+    technicalChallenges: [
+      {
+        fr: "Création du site web de formation avec Next.js en quelques jours.",
+        en: "Creation of the training site with Next.js in a few days.",
+      },
+      {
+        fr: "Gestion des différentes campagnes de mailing via Brevo et intégration des outils marketing.",
+        en: "Management of various mailing campaigns via Brevo and integration of marketing tools.",
+      },
+    ],
+    images: [
+      "/images/projects/les-yeux-detectives/cover.webp",
+      "/images/projects/les-yeux-detectives/les-yeux-detectives-1.webp",
+      "/images/projects/les-yeux-detectives/les-yeux-detectives-2.webp",
+      "/images/projects/les-yeux-detectives/les-yeux-detectives-3.webp",
+    ],
+  },
+  {
+    name: "pharmExecutive",
+    year: "2024-2025",
+    domain: {
+      fr: "Site de formation pour pharmaciens d'officine",
+      en: "Training site for pharmacists",
+    },
+    dialog: {
+      title1: {
+        fr: "Ce que j'ai apporté au projet pharmExecutive : ",
+        en: "What I brought to the project pharmExecutive : ",
+      },
+      title2: {
+        fr: "Chiffres clés : ",
+        en: "Key figures : ",
+      },
+      title3: {
+        fr: "Stack technique : ",
+        en: "Tech stack : ",
+      },
+      title4: {
+        fr: "À propos du club : ",
+        en: "About the club : ",
+      },
+      title5: {
+        fr: "Challenges techniques : ",
+        en: "Technical challenges : ",
+      },
+    },
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    url: "https://pharmexecutive.fr/",
+    cover: "/images/projects/pharmexecutive/cover.webp",
+    excerpt: {
+      fr: "Développement d'une plateforme pédagogique intuitive pour pharmExecutive, dédiée à la formation continue des pharmaciens d'officine.",
+      en: "Developed an intuitive educational platform for pharmExecutive, dedicated to ongoing training for pharmacists.",
+    },
+    about: {
+      fr: "pharmExecutive accompagne les pharmaciens dans leur montée en compétences grâce à des modules de formation en ligne. J'ai conçu un site ergonomique, évolutif et performant, intégrant des outils marketing et des fonctionnalités sur-mesure.",
+      en: "pharmExecutive supports pharmacists in their professional development with online training modules. I designed an ergonomic, scalable, and high-performance site, integrating marketing tools and custom features.",
+    },
+    KPIs: [],
+    technicalChallenges: [
+      {
+        fr: "Création du site web de formation avec Next.js en quelques jours.",
+        en: "Creation of the training site with Next.js in a few days.",
+      },
+      {
+        fr: "Gestion des différentes campagnes de mailing via Brevo et intégration des outils marketing.",
+        en: "Management of various mailing campaigns via Brevo and integration of marketing tools.",
+      },
+    ],
+    images: [
+      "/images/projects/pharmExecutive/cover.webp",
+      "/images/projects/pharmExecutive/pharmExecutive-1.webp",
+      "/images/projects/pharmExecutive/pharmExecutive-2.webp",
+      "/images/projects/pharmExecutive/pharmExecutive-3.webp",
     ],
   },
 ];

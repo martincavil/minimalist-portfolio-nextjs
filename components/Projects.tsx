@@ -33,7 +33,7 @@ export default function Projects() {
             {projects.map((project, idx) => (
               <li
                 key={project.name}
-                className="grid items-center grid-cols-6 md:grid-cols-8 gap-8  py-6 px-2 md:px-6 cursor-pointer group relative hover:bg-primary-inverted"
+                className="grid items-center grid-cols-6 md:grid-cols-9 gap-8  py-6 px-2 md:px-6 cursor-pointer group relative hover:bg-primary-inverted"
                 onMouseEnter={() => setHovered(idx)}
                 onMouseLeave={() => setHovered(null)}
                 onMouseMove={(e) => {
@@ -48,7 +48,7 @@ export default function Projects() {
                 <span className="col-span-2 lg:col-span-1 text-text-tertiary">
                   {project.year}
                 </span>
-                <span className="col-span-3 md:col-span-2 lg:col-span-1 lg:text-xl font-semibold">
+                <span className="col-span-3 md:col-span-2 lg:text-xl font-semibold">
                   {project.name}
                 </span>
                 <div className="hidden lg:flex items-center gap-1 flex-wrap lg:col-span-3">
