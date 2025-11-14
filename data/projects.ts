@@ -68,9 +68,6 @@ export const projects: Project[] = [
     },
     images: [
       "https://res.cloudinary.com/martincvl/image/upload/v1763147434/portfolio/projects/maisondutemps/cover.webp",
-      "/images/projects/maisondutemps/maisondutemps-1.webp",
-      "/images/projects/maisondutemps/maisondutemps-2.webp",
-      "/images/projects/maisondutemps/maisondutemps-3.webp",
     ],
     companyHistory: {
       fr: "Maison du Temps est une boutique en ligne dédiée aux montres haut de gamme, offrant une sélection raffinée de pièces horlogères d'exception. Fondée avec la passion de l'horlogerie et le souci du détail, l'entreprise s'est rapidement imposée comme une référence pour les amateurs de belles montres cherchant qualité et authenticité.",
@@ -295,9 +292,6 @@ export const projects: Project[] = [
     },
     images: [
       "https://res.cloudinary.com/martincvl/image/upload/v1763147430/portfolio/projects/les-yeux-detectives/cover.webp",
-      "/images/projects/les-yeux-detectives/les-yeux-detectives-1.webp",
-      "/images/projects/les-yeux-detectives/les-yeux-detectives-2.webp",
-      "/images/projects/les-yeux-detectives/les-yeux-detectives-3.webp",
     ],
     companyHistory: {
       fr: "Les Yeux est un cabinet de détectives privés basé en France, spécialisé dans les investigations privées et professionnelles. Avec une approche discrète et professionnelle, le cabinet accompagne particuliers et entreprises dans leurs besoins d'enquête et de surveillance. L'équipe se distingue par son expertise juridique et sa capacité à fournir des preuves recevables en justice.",
@@ -342,17 +336,14 @@ export const projects: Project[] = [
     },
     skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     url: "https://pharmexecutive.fr/",
-    cover: "/images/projects/pharmexecutive/cover.webp",
-    gifCover: "/images/projects/pharmexecutive/pharmexecutive.gif",
+    cover: "https://res.cloudinary.com/martincvl/image/upload/v1763147451/portfolio/projects/pharmExecutive/cover.webp",
+    gifCover: "https://res.cloudinary.com/martincvl/video/upload/v1763147452/portfolio/projects/pharmExecutive/pharmexecutive.mp4",
     excerpt: {
       fr: "Développement d'une plateforme pédagogique intuitive pour pharmExecutive, dédiée à la formation continue des pharmaciens d'officine.",
       en: "Developed an intuitive educational platform for pharmExecutive, dedicated to ongoing training for pharmacists.",
     },
     images: [
       "https://res.cloudinary.com/martincvl/image/upload/v1763147451/portfolio/projects/pharmExecutive/cover.webp",
-      "/images/projects/pharmExecutive/pharmExecutive-1.webp",
-      "/images/projects/pharmExecutive/pharmExecutive-2.webp",
-      "/images/projects/pharmExecutive/pharmExecutive-3.webp",
     ],
     companyHistory: {
       fr: "pharmExecutive est une plateforme de formation continue dédiée aux pharmaciens d'officine. Fondée par des professionnels du secteur pharmaceutique, l'entreprise propose des modules de formation adaptés aux besoins spécifiques des pharmaciens, leur permettant de rester à jour sur les évolutions réglementaires, les nouveaux traitements et les meilleures pratiques du métier.",
