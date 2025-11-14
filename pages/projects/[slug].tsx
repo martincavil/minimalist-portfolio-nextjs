@@ -7,7 +7,7 @@ import useTranslation from "next-translate/useTranslation";
 import { projects, Project } from "@/data/projects";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import DotGridBackground from "@/components/DotGridBackground";
+// import DotGridBackground from "@/components/DotGridBackground";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 
@@ -79,7 +79,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
         />
         <meta name="twitter:image" content={project.cover} />
       </Head>
-      <DotGridBackground />
+      {/* <DotGridBackground /> */}
       <Header />
 
       <main className="container pt-32 md:pt-40 pb-16">
@@ -115,16 +115,18 @@ export default function ProjectPage({ project }: ProjectPageProps) {
           </p>
         </div>
 
-        {/* Cover GIF */}
+        {/* Cover Video */}
         <div className="mb-16 rounded-lg overflow-hidden">
-          <Image
-            src={project.gifCover ?? "/default-gif-cover.gif"}
-            alt={project.name}
-            width={1200}
-            height={675}
-            className="w-full h-auto"
-            priority
-          />
+          {project.gifCover && (
+            <video
+              src={project.gifCover}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-auto"
+            />
+          )}
         </div>
 
         {/* Company History */}
