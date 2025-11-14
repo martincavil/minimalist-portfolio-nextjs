@@ -1,142 +1,117 @@
 export type Project = {
   name: string;
+  slug: string;
   year: string;
   domain: {
     fr: string;
     en: string;
-  };
-  dialog: {
-    title1: {
-      fr: string;
-      en: string;
-    };
-    title2: {
-      fr: string;
-      en: string;
-    };
-    title3: {
-      fr: string;
-      en: string;
-    };
-    title4: {
-      fr: string;
-      en: string;
-    };
-    title5: {
-      fr: string;
-      en: string;
-    };
   };
   skills: string[];
   excerpt: {
     fr: string;
     en: string;
   };
-  about: {
+  url: string;
+  cover: string;
+  gifCover?: string;
+  images?: string[];
+  // Detailed page content
+  companyHistory?: {
     fr: string;
     en: string;
   };
-  technicalChallenges?: {
+  testimony?: {
+    fr: string;
+    en: string;
+    author: string;
+    role: string;
+  };
+  context?: {
+    fr: string;
+    en: string;
+  };
+  challenges?: {
     fr: string;
     en: string;
   }[];
-  KPIs: {
+  work?: {
+    fr: string;
+    en: string;
+  };
+  results?: {
+    fr: string;
+    en: string;
+  };
+  KPIs?: {
     number: string;
     fr: string;
     en: string;
   }[];
-  url: string;
-  cover: string;
-  images?: string[];
 };
 
 export const projects: Project[] = [
   {
     name: "Maison Du Temps",
+    slug: "maison-du-temps",
     year: "2025",
     domain: {
       fr: "Site e-commerce de montres",
       en: "E-commerce site for watches",
     },
-    dialog: {
-      title1: {
-        fr: "Ce que j'ai apporté au projet Maison Du Temps : ",
-        en: "What I brought to the project Maison Du Temps : ",
-      },
-      title2: {
-        fr: "Chiffres clés : ",
-        en: "Key figures : ",
-      },
-      title3: {
-        fr: "Stack technique : ",
-        en: "Tech stack : ",
-      },
-      title4: {
-        fr: "À propos du club : ",
-        en: "About the club : ",
-      },
-      title5: {
-        fr: "Challenges techniques : ",
-        en: "Technical challenges : ",
-      },
-    },
     skills: ["Shopify", "Liquid", "JavaScript", "HTML", "CSS"],
     url: "https://maisondutemps.com/",
     cover: "/images/projects/maisondutemps/cover.webp",
+    gifCover: "/images/projects/maisondutemps/maisondutemps.gif",
     excerpt: {
       fr: "Refonte et optimisation du site e-commerce Maison Du Temps, avec la création de modules sur-mesure et l'amélioration continue de l'expérience utilisateur.",
       en: "Redesign and optimization of Maison Du Temps's e-commerce platform, including custom module development and ongoing user experience improvements.",
     },
-    about: {
-      fr: "Maison du Temps propose une sélection de montres haut de gamme. J'ai accompagné la marque sur la refonte de son site Shopify, en développant des fonctionnalités avancées et en assurant la performance et la stabilité de la boutique en ligne.",
-      en: "Maison Du Temps offers a curated selection of premium watches. I supported the brand with a Shopify site overhaul, building advanced features and ensuring the online store's performance and reliability.",
-    },
-    KPIs: [],
-    technicalChallenges: [
-      {
-        fr: "Maintenance et amélioration continue du site e-commerce avec Shopify.",
-        en: "Maintenance and continuous improvement of the e-commerce site with Shopify.",
-      },
-      {
-        fr: "Optimisation du site, Création de composants from scratch",
-        en: "Site optimization, creation of components from scratch.",
-      },
-    ],
     images: [
       "/images/projects/maisondutemps/cover.webp",
       "/images/projects/maisondutemps/maisondutemps-1.webp",
       "/images/projects/maisondutemps/maisondutemps-2.webp",
       "/images/projects/maisondutemps/maisondutemps-3.webp",
     ],
+    companyHistory: {
+      fr: "Maison du Temps est une boutique en ligne dédiée aux montres haut de gamme, offrant une sélection raffinée de pièces horlogères d'exception. Fondée avec la passion de l'horlogerie et le souci du détail, l'entreprise s'est rapidement imposée comme une référence pour les amateurs de belles montres cherchant qualité et authenticité.",
+      en: "Maison du Temps is an online boutique dedicated to high-end watches, offering a refined selection of exceptional timepieces. Founded with a passion for watchmaking and attention to detail, the company has quickly established itself as a reference for watch enthusiasts seeking quality and authenticity.",
+    },
+    testimony: {
+      fr: "Martin a su comprendre nos besoins et transformer notre vision en réalité. Son expertise technique et son sens du détail ont considérablement amélioré l'expérience de nos clients.",
+      en: "Martin understood our needs and transformed our vision into reality. His technical expertise and attention to detail significantly improved our customers' experience.",
+      author: "Client Maison Du Temps",
+      role: "Founder",
+    },
+    context: {
+      fr: "Maison Du Temps souhaitait moderniser son site e-commerce pour offrir une meilleure expérience utilisateur et augmenter ses conversions. L'objectif était de créer une boutique en ligne performante, élégante et facile à maintenir.",
+      en: "Maison Du Temps wanted to modernize its e-commerce site to provide a better user experience and increase conversions. The goal was to create a high-performing, elegant, and easy-to-maintain online store.",
+    },
+    challenges: [
+      {
+        fr: "Nécessité d'optimiser les performances du site pour gérer un catalogue important de produits",
+        en: "Need to optimize site performance to handle a large product catalog",
+      },
+      {
+        fr: "Créer une expérience utilisateur fluide et intuitive pour valoriser les montres haut de gamme",
+        en: "Create a smooth and intuitive user experience to showcase high-end watches",
+      },
+    ],
+    work: {
+      fr: "J'ai développé des modules Shopify personnalisés, optimisé les performances du site, et créé des composants sur-mesure pour améliorer l'expérience utilisateur. Technologies utilisées : Shopify, Liquid, JavaScript, HTML, CSS. Méthodologie : développement agile avec tests continus et optimisation SEO.",
+      en: "I developed custom Shopify modules, optimized site performance, and created custom components to enhance user experience. Technologies used: Shopify, Liquid, JavaScript, HTML, CSS. Methodology: agile development with continuous testing and SEO optimization.",
+    },
+    results: {
+      fr: "Le site e-commerce de Maison Du Temps bénéficie maintenant d'une expérience utilisateur améliorée, de temps de chargement réduits et d'une interface moderne qui valorise les produits. Les clients profitent d'une navigation fluide et intuitive.",
+      en: "Maison Du Temps's e-commerce site now benefits from an improved user experience, reduced loading times, and a modern interface that showcases products. Customers enjoy smooth and intuitive navigation.",
+    },
   },
   {
     name: "Uptoo",
+    slug: "uptoo",
     year: "2022-2025",
     domain: {
       fr: "Agence spécialiste de la vente",
       en: "Sales specialist agency",
-    },
-    dialog: {
-      title1: {
-        fr: "Ce que j'ai apporté au projet Uptoo : ",
-        en: "What I brought to the project Uptoo : ",
-      },
-      title2: {
-        fr: "Chiffres clés : ",
-        en: "Key figures : ",
-      },
-      title3: {
-        fr: "Stack technique : ",
-        en: "Tech stack : ",
-      },
-      title4: {
-        fr: "À propos de l'entreprise : ",
-        en: "About the company : ",
-      },
-      title5: {
-        fr: "Challenges techniques : ",
-        en: "Technical challenges : ",
-      },
     },
     skills: [
       "React",
@@ -152,13 +127,56 @@ export const projects: Project[] = [
     ],
     url: "https://www.uptoo.fr",
     cover: "/images/projects/uptoo/cover.webp",
+    gifCover: "/images/projects/uptoo/uptoo.gif",
     excerpt: {
       fr: "Responsable Frontend pendant 3 ans, j'ai piloté et développé des dizaines de projets web pour Uptoo : outils internes pour les collaborateurs, plateformes pour les candidats (ex : CV Maker connecté à nos bases de données et système de matching), et interfaces clients pour le suivi de recrutement, la formation et la gestion d'annonces. J'ai été référent technique sur tout ce qui touche au frontend.",
       en: "Frontend Lead for 3 years, I led and developed dozens of web projects for Uptoo: internal tools for employees, platforms for candidates (e.g., CV Maker connected to our databases and matching system), and client interfaces for recruitment tracking, training, and job posting. I was the technical reference for all things frontend.",
     },
-    about: {
-      fr: "Uptoo est une agence spécialisée dans la vente, générant +25 millions d'euros de chiffre d'affaires annuel, avec une base de +700 000 candidats et +9 000 clients entreprises. J'ai mis en place tous les process frontend, collaboré avec les équipes métiers, marketing, produit et dev pour fluidifier la communication et garantir une agilité optimale.",
-      en: "Uptoo is a sales specialist agency generating over €25M in annual revenue, with a database of 700,000+ candidates and 9,000+ client companies. I implemented all frontend processes, worked closely with business, marketing, product, and dev teams to improve communication and ensure optimal agility.",
+    images: [
+      "/images/projects/uptoo/uptoo-1.webp",
+      "/images/projects/uptoo/uptoo-4.webp",
+      "/images/projects/uptoo/uptoo-2.webp",
+      "/images/projects/uptoo/uptoo-3.webp",
+    ],
+    companyHistory: {
+      fr: "Uptoo est le leader français du recrutement commercial, générant plus de 25 millions d'euros de chiffre d'affaires annuel. Avec une base de données de plus de 700 000 candidats et plus de 9 000 clients entreprises, Uptoo accompagne les entreprises dans leur développement commercial depuis plus de 15 ans. L'entreprise se distingue par son expertise pointue du métier de la vente et sa capacité à matcher les meilleurs profils avec les opportunités les plus pertinentes.",
+      en: "Uptoo is France's leading sales recruitment agency, generating over €25 million in annual revenue. With a database of over 700,000 candidates and more than 9,000 corporate clients, Uptoo has been supporting companies in their commercial development for over 15 years. The company stands out for its sharp expertise in sales professions and its ability to match the best profiles with the most relevant opportunities.",
+    },
+    testimony: {
+      fr: "Martin a été un atout précieux pour notre équipe. Sa capacité à comprendre nos enjeux business et à traduire nos besoins en solutions techniques performantes a vraiment fait la différence. Son leadership technique et sa rigueur ont permis d'élever la qualité de tous nos projets frontend.",
+      en: "Martin was a valuable asset to our team. His ability to understand our business challenges and translate our needs into high-performing technical solutions really made a difference. His technical leadership and rigor helped elevate the quality of all our frontend projects.",
+      author: "Tech Team Uptoo",
+      role: "CTO",
+    },
+    context: {
+      fr: "En tant que Responsable Frontend, ma mission était de structurer et professionnaliser l'ensemble de l'écosystème frontend de l'entreprise : du site vitrine aux outils internes, en passant par les plateformes candidats et clients. L'enjeu était de garantir cohérence, performance et scalabilité sur l'ensemble des projets, tout en accompagnant la montée en compétence des équipes.",
+      en: "As Frontend Lead, my mission was to structure and professionalize the company's entire frontend ecosystem: from the showcase website to internal tools, including candidate and client platforms. The challenge was to ensure consistency, performance, and scalability across all projects, while supporting team skill development.",
+    },
+    challenges: [
+      {
+        fr: "Mise en place d'un UI Kit complet avec plus de 100 composants sur Storybook pour garantir cohérence et rapidité",
+        en: "Implementation of a complete UI Kit with over 100 components on Storybook to ensure consistency and speed",
+      },
+      {
+        fr: "Coordination technique entre équipes multidisciplinaires (business, marketing, produit, dev backend)",
+        en: "Technical coordination between multidisciplinary teams (business, marketing, product, backend dev)",
+      },
+      {
+        fr: "Optimisation des performances et du SEO pour atteindre des scores Lighthouse de 100/100",
+        en: "Performance and SEO optimization to achieve Lighthouse scores of 100/100",
+      },
+      {
+        fr: "Développement d'outils innovants (CV Maker, système de matching, interfaces de suivi)",
+        en: "Development of innovative tools (CV Maker, matching system, tracking interfaces)",
+      },
+    ],
+    work: {
+      fr: "J'ai structuré l'ensemble de l'architecture frontend de l'entreprise en développant un UI Kit complet sur Storybook, en mettant en place des process de développement agile, et en pilotant techniquement des dizaines de projets. Technologies utilisées : React, Next.js, TypeScript, Tailwind CSS, Framer Motion, Prismic, Strapi. Méthodologie : Scrum, code reviews systématiques, tests automatisés, CI/CD, optimisation continue des performances et du SEO.",
+      en: "I structured the company's entire frontend architecture by developing a complete UI Kit on Storybook, implementing agile development processes, and technically leading dozens of projects. Technologies used: React, Next.js, TypeScript, Tailwind CSS, Framer Motion, Prismic, Strapi. Methodology: Scrum, systematic code reviews, automated testing, CI/CD, continuous performance and SEO optimization.",
+    },
+    results: {
+      fr: "Mise en place d'un écosystème frontend performant et scalable, avec des scores Lighthouse de 100/100 sur l'accessibilité, le SEO et les bonnes pratiques. Développement de plusieurs dizaines de projets web (sites, plateformes, outils internes) utilisés par des centaines de milliers d'utilisateurs. Montée en compétence des équipes et amélioration significative de la communication inter-équipes.",
+      en: "Implementation of a high-performing and scalable frontend ecosystem, with Lighthouse scores of 100/100 on accessibility, SEO, and best practices. Development of several dozen web projects (sites, platforms, internal tools) used by hundreds of thousands of users. Team skill development and significant improvement in inter-team communication.",
     },
     KPIs: [
       {
@@ -182,74 +200,64 @@ export const projects: Project[] = [
         fr: "Accessibilité, SEO, Bonnes pratiques (Lighthouse)",
       },
     ],
-    technicalChallenges: [
-      {
-        fr: "Développement et maintenance d'un UI Kit complet sur Storybook (+100 composants) en collaboration avec les designers pour garantir cohérence et rapidité de développement.",
-        en: "Development and maintenance of a complete UI Kit on Storybook (100+ components) with designers to ensure consistency and fast development.",
-      },
-      {
-        fr: "Mise en place de process frontend, encadrement des projets et référent technique pour les équipes, y compris les développeurs seniors orientés backend.",
-        en: "Implementation of frontend processes, project supervision, and technical reference for teams, including senior backend developers.",
-      },
-      {
-        fr: "Optimisation des performances, accessibilité et SEO pour viser le score maximal sur Lighthouse.",
-        en: "Performance, accessibility, and SEO optimization to achieve top Lighthouse scores.",
-      },
-      {
-        fr: "Collaboration transverse avec les équipes métiers, marketing, produit et dev pour améliorer l'agilité et la communication.",
-        en: "Cross-team collaboration with business, marketing, product, and dev teams to improve agility and communication.",
-      },
-      {
-        fr: "Intégration d'APIs tierces et développement d'outils innovants (matching, suivi, etc.) pour les clients et candidats.",
-        en: "Integration of third-party APIs and development of innovative tools (matching, tracking, etc.) for clients and candidates.",
-      },
-    ],
-    images: [
-      "/images/projects/uptoo/uptoo-1.webp",
-      "/images/projects/uptoo/uptoo-4.webp",
-      "/images/projects/uptoo/uptoo-2.webp",
-      "/images/projects/uptoo/uptoo-3.webp",
-    ],
   },
   {
     name: "Padel15",
+    slug: "padel15",
     year: "2025",
     domain: {
       fr: "Club de padel à Paris",
       en: "Padel club in Paris",
     },
-    dialog: {
-      title1: {
-        fr: "Ce que j'ai apporté au projet Padel15 : ",
-        en: "What I brought to the project Padel15 : ",
-      },
-      title2: {
-        fr: "Chiffres clés : ",
-        en: "Key figures : ",
-      },
-      title3: {
-        fr: "Stack technique : ",
-        en: "Tech stack : ",
-      },
-      title4: {
-        fr: "À propos du club : ",
-        en: "About the club : ",
-      },
-      title5: {
-        fr: "Challenges techniques : ",
-        en: "Technical challenges : ",
-      },
-    },
     skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     url: "https://www.padel15.fr",
     cover: "/images/projects/padel15/cover.webp",
+    gifCover: "/images/projects/padel15/padel15.gif",
     excerpt: {
       fr: "Site vitrine dynamique pour le club Padel15, avec une interface moderne, des scores Lighthouse exemplaires et une évolution prévue vers la réservation en ligne.",
       en: "Dynamic showcase website for Padel15 club, featuring a modern interface, top Lighthouse scores, and an upcoming evolution to online booking.",
     },
-    about: {
-      fr: "Padel15 est un club de padel parisien qui souhaitait une présence digitale à la hauteur de son dynamisme. J'ai imaginé et développé un site rapide, esthétique et évolutif, prêt à accueillir de nouvelles fonctionnalités comme la réservation en ligne et un blog.",
-      en: "Padel15 is a Paris-based padel club seeking a digital presence to match its energy. I designed and built a fast, visually appealing, and scalable site, ready for future features like online booking and a blog.",
+    images: [
+      "/images/projects/padel15/cover.webp",
+      "/images/projects/padel15/padel15-1.webp",
+      "/images/projects/padel15/padel15-2.webp",
+      "/images/projects/padel15/padel15-3.webp",
+    ],
+    companyHistory: {
+      fr: "Padel15 est un club de padel dynamique situé dans le 15ème arrondissement de Paris. Fondé par des passionnés de ce sport en plein essor, le club propose des terrains de qualité dans une ambiance conviviale et accessible à tous les niveaux. Padel15 s'est rapidement fait un nom dans la communauté parisienne du padel grâce à son emplacement stratégique et la qualité de ses installations.",
+      en: "Padel15 is a dynamic padel club located in the 15th arrondissement of Paris. Founded by enthusiasts of this booming sport, the club offers quality courts in a friendly atmosphere accessible to all levels. Padel15 quickly made a name for itself in the Parisian padel community thanks to its strategic location and the quality of its facilities.",
+    },
+    testimony: {
+      fr: "Martin a créé un site qui reflète parfaitement l'esprit de notre club : moderne, dynamique et accessible. Le résultat a dépassé nos attentes et nous avons déjà eu de nombreux retours positifs de nos membres.",
+      en: "Martin created a website that perfectly reflects the spirit of our club: modern, dynamic, and accessible. The result exceeded our expectations and we've already received numerous positive feedback from our members.",
+      author: "Équipe Padel15",
+      role: "Founders",
+    },
+    context: {
+      fr: "Padel15 avait besoin d'un site web vitrine pour développer sa visibilité en ligne et faciliter la découverte du club par de nouveaux membres. Le site devait être rapide, moderne, bien référencé sur Google et prêt à évoluer vers des fonctionnalités plus avancées comme la réservation en ligne.",
+      en: "Padel15 needed a showcase website to develop its online visibility and make it easier for new members to discover the club. The site had to be fast, modern, well-ranked on Google, and ready to evolve towards more advanced features like online booking.",
+    },
+    challenges: [
+      {
+        fr: "Développement rapide du site en quelques jours tout en maintenant une qualité optimale",
+        en: "Rapid site development in a few days while maintaining optimal quality",
+      },
+      {
+        fr: "Optimisation SEO locale pour se positionner sur les recherches de clubs de padel à Paris",
+        en: "Local SEO optimization to rank for padel club searches in Paris",
+      },
+      {
+        fr: "Architecture évolutive pour faciliter l'ajout futur de fonctionnalités (réservation, blog)",
+        en: "Scalable architecture to facilitate future addition of features (booking, blog)",
+      },
+    ],
+    work: {
+      fr: "J'ai pris en charge l'intégralité du projet : design, développement et déploiement. Le site a été développé avec Next.js pour garantir performance et SEO, Tailwind CSS pour un design moderne et responsive, et déployé sur Vercel pour une mise en ligne instantanée. Méthodologie : conception rapide, développement itératif, tests de performance, optimisation SEO locale, et préparation de l'architecture pour les évolutions futures.",
+      en: "I handled the entire project: design, development, and deployment. The site was built with Next.js to ensure performance and SEO, Tailwind CSS for a modern and responsive design, and deployed on Vercel for instant online deployment. Methodology: rapid design, iterative development, performance testing, local SEO optimization, and architecture preparation for future evolutions.",
+    },
+    results: {
+      fr: "Lancement réussi du site avec plus de 10 000 visiteurs depuis septembre 2025. Scores Lighthouse parfaits de 100/100 sur les bonnes pratiques et le SEO. Le site est maintenant prêt pour la V2 qui intégrera la réservation en ligne et un blog pour engager davantage la communauté.",
+      en: "Successful site launch with over 10,000 visitors since September 2025. Perfect Lighthouse scores of 100/100 on best practices and SEO. The site is now ready for V2 which will integrate online booking and a blog to further engage the community.",
     },
     KPIs: [
       {
@@ -268,141 +276,119 @@ export const projects: Project[] = [
         fr: "SEO (Lighthouse)",
       },
     ],
-    technicalChallenges: [
-      {
-        fr: "Développement et design from scratch en quelques jours, gestion complète du projet.",
-        en: "Design and development from scratch in a few days, full project management.",
-      },
-      {
-        fr: "Optimisation SEO locale et score maximal sur Lighthouse.",
-        en: "Local SEO optimization and top Lighthouse scores.",
-      },
-      {
-        fr: "Préparation de la V2 avec réservation en ligne et blog.",
-        en: "Preparation of V2 with online booking and blog.",
-      },
-    ],
-    images: [
-      "/images/projects/padel15/cover.webp",
-      "/images/projects/padel15/padel15-1.webp",
-      "/images/projects/padel15/padel15-2.webp",
-      "/images/projects/padel15/padel15-3.webp",
-    ],
   },
   {
     name: "Les Yeux - Détectives Privés",
+    slug: "les-yeux-detectives",
     year: "2025",
     domain: {
       fr: "Site pour un cabinet de détectives privés",
       en: "Site for a private detective agency",
     },
-    dialog: {
-      title1: {
-        fr: "Ce que j'ai apporté au projet pharmExecutive : ",
-        en: "What I brought to the project pharmExecutive : ",
-      },
-      title2: {
-        fr: "Chiffres clés : ",
-        en: "Key figures : ",
-      },
-      title3: {
-        fr: "Stack technique : ",
-        en: "Tech stack : ",
-      },
-      title4: {
-        fr: "À propos du club : ",
-        en: "About the club : ",
-      },
-      title5: {
-        fr: "Challenges techniques : ",
-        en: "Technical challenges : ",
-      },
-    },
     skills: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     url: "https://les-yeux-detectives.com/",
     cover: "/images/projects/les-yeux-detectives/cover.webp",
+    gifCover: "/images/projects/les-yeux-detectives/les-yeux-detectives.gif",
     excerpt: {
       fr: "Mise en ligne d'une plateforme sobre et rassurante pour Les Yeux - Détectives Privés, valorisant leur expertise et facilitant la prise de contact.",
       en: "Launched a sleek, trustworthy platform for Les Yeux - Détectives Privés, highlighting their expertise and making it easy for clients to get in touch.",
     },
-    about: {
-      fr: "Pour ce cabinet de détectives privés, j'ai conçu un site web qui inspire confiance et professionnalisme, avec une navigation claire et des outils marketing intégrés pour soutenir leur activité.",
-      en: "For this private detective agency, I designed a website that inspires trust and professionalism, featuring clear navigation and integrated marketing tools to support their business.",
-    },
-    KPIs: [],
-    technicalChallenges: [
-      {
-        fr: "Création du site web de formation avec Next.js en quelques jours.",
-        en: "Creation of the training site with Next.js in a few days.",
-      },
-      {
-        fr: "Gestion des différentes campagnes de mailing via Brevo et intégration des outils marketing.",
-        en: "Management of various mailing campaigns via Brevo and integration of marketing tools.",
-      },
-    ],
     images: [
       "/images/projects/les-yeux-detectives/cover.webp",
       "/images/projects/les-yeux-detectives/les-yeux-detectives-1.webp",
       "/images/projects/les-yeux-detectives/les-yeux-detectives-2.webp",
       "/images/projects/les-yeux-detectives/les-yeux-detectives-3.webp",
     ],
+    companyHistory: {
+      fr: "Les Yeux est un cabinet de détectives privés basé en France, spécialisé dans les investigations privées et professionnelles. Avec une approche discrète et professionnelle, le cabinet accompagne particuliers et entreprises dans leurs besoins d'enquête et de surveillance. L'équipe se distingue par son expertise juridique et sa capacité à fournir des preuves recevables en justice.",
+      en: "Les Yeux is a private detective agency based in France, specializing in private and professional investigations. With a discreet and professional approach, the agency supports individuals and businesses in their investigation and surveillance needs. The team stands out for its legal expertise and ability to provide admissible evidence in court.",
+    },
+    testimony: {
+      fr: "Martin a parfaitement compris l'image que nous souhaitions véhiculer : sérieux, discrétion et professionnalisme. Le site reflète exactement nos valeurs et nous aide à établir la confiance avec nos futurs clients dès le premier contact.",
+      en: "Martin perfectly understood the image we wanted to convey: seriousness, discretion, and professionalism. The site exactly reflects our values and helps us establish trust with our future clients from the first contact.",
+      author: "Les Yeux Team",
+      role: "Managing Director",
+    },
+    context: {
+      fr: "Le cabinet Les Yeux avait besoin d'une présence en ligne professionnelle pour développer sa clientèle et rassurer les prospects sur son sérieux et son expertise. Le site devait inspirer confiance tout en restant sobre et discret, à l'image du métier de détective privé.",
+      en: "The Les Yeux agency needed a professional online presence to develop its clientele and reassure prospects about its seriousness and expertise. The site had to inspire trust while remaining sober and discreet, reflecting the private detective profession.",
+    },
+    challenges: [
+      {
+        fr: "Créer une identité visuelle qui inspire confiance et professionnalisme dans un domaine sensible",
+        en: "Create a visual identity that inspires trust and professionalism in a sensitive field",
+      },
+      {
+        fr: "Intégrer des outils marketing (Brevo) pour gérer les leads et campagnes tout en respectant la confidentialité",
+        en: "Integrate marketing tools (Brevo) to manage leads and campaigns while respecting confidentiality",
+      },
+    ],
+    work: {
+      fr: "J'ai développé un site web sobre et professionnel qui met en avant l'expertise du cabinet. Le site intègre des formulaires de contact sécurisés, une présentation claire des services, et des outils marketing via Brevo pour gérer les campagnes de mailing. Technologies utilisées : Next.js, TypeScript, Tailwind CSS, Vercel. Méthodologie : design centré sur la confiance, développement rapide, intégration marketing, optimisation SEO.",
+      en: "I developed a sober and professional website that highlights the agency's expertise. The site integrates secure contact forms, a clear presentation of services, and marketing tools via Brevo to manage mailing campaigns. Technologies used: Next.js, TypeScript, Tailwind CSS, Vercel. Methodology: trust-centered design, rapid development, marketing integration, SEO optimization.",
+    },
+    results: {
+      fr: "Lancement réussi d'un site web professionnel qui inspire confiance et facilite la prise de contact. Les outils marketing intégrés permettent au cabinet de gérer efficacement ses campagnes et de suivre les leads. Le site contribue à renforcer la crédibilité et la visibilité en ligne du cabinet.",
+      en: "Successful launch of a professional website that inspires trust and facilitates contact. Integrated marketing tools allow the agency to effectively manage its campaigns and track leads. The site contributes to strengthening the agency's credibility and online visibility.",
+    },
   },
   {
     name: "pharmExecutive",
+    slug: "pharmexecutive",
     year: "2024-2025",
     domain: {
       fr: "Site de formation pour pharmaciens d'officine",
       en: "Training site for pharmacists",
     },
-    dialog: {
-      title1: {
-        fr: "Ce que j'ai apporté au projet pharmExecutive : ",
-        en: "What I brought to the project pharmExecutive : ",
-      },
-      title2: {
-        fr: "Chiffres clés : ",
-        en: "Key figures : ",
-      },
-      title3: {
-        fr: "Stack technique : ",
-        en: "Tech stack : ",
-      },
-      title4: {
-        fr: "À propos du club : ",
-        en: "About the club : ",
-      },
-      title5: {
-        fr: "Challenges techniques : ",
-        en: "Technical challenges : ",
-      },
-    },
     skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     url: "https://pharmexecutive.fr/",
     cover: "/images/projects/pharmexecutive/cover.webp",
+    gifCover: "/images/projects/pharmexecutive/pharmexecutive.gif",
     excerpt: {
       fr: "Développement d'une plateforme pédagogique intuitive pour pharmExecutive, dédiée à la formation continue des pharmaciens d'officine.",
       en: "Developed an intuitive educational platform for pharmExecutive, dedicated to ongoing training for pharmacists.",
     },
-    about: {
-      fr: "pharmExecutive accompagne les pharmaciens dans leur montée en compétences grâce à des modules de formation en ligne. J'ai conçu un site ergonomique, évolutif et performant, intégrant des outils marketing et des fonctionnalités sur-mesure.",
-      en: "pharmExecutive supports pharmacists in their professional development with online training modules. I designed an ergonomic, scalable, and high-performance site, integrating marketing tools and custom features.",
-    },
-    KPIs: [],
-    technicalChallenges: [
-      {
-        fr: "Création du site web de formation avec Next.js en quelques jours.",
-        en: "Creation of the training site with Next.js in a few days.",
-      },
-      {
-        fr: "Gestion des différentes campagnes de mailing via Brevo et intégration des outils marketing.",
-        en: "Management of various mailing campaigns via Brevo and integration of marketing tools.",
-      },
-    ],
     images: [
       "/images/projects/pharmExecutive/cover.webp",
       "/images/projects/pharmExecutive/pharmExecutive-1.webp",
       "/images/projects/pharmExecutive/pharmExecutive-2.webp",
       "/images/projects/pharmExecutive/pharmExecutive-3.webp",
     ],
+    companyHistory: {
+      fr: "pharmExecutive est une plateforme de formation continue dédiée aux pharmaciens d'officine. Fondée par des professionnels du secteur pharmaceutique, l'entreprise propose des modules de formation adaptés aux besoins spécifiques des pharmaciens, leur permettant de rester à jour sur les évolutions réglementaires, les nouveaux traitements et les meilleures pratiques du métier.",
+      en: "pharmExecutive is a continuing education platform dedicated to community pharmacists. Founded by pharmaceutical sector professionals, the company offers training modules tailored to pharmacists' specific needs, enabling them to stay current on regulatory changes, new treatments, and best practices in the profession.",
+    },
+    testimony: {
+      fr: "Nous avions besoin d'une plateforme moderne et facile à utiliser pour nos formations. Martin a livré un site qui dépasse nos attentes : intuitif pour nos utilisateurs, facile à maintenir pour notre équipe, et parfaitement intégré avec nos outils marketing.",
+      en: "We needed a modern and easy-to-use platform for our training courses. Martin delivered a site that exceeds our expectations: intuitive for our users, easy to maintain for our team, and perfectly integrated with our marketing tools.",
+      author: "pharmExecutive Team",
+      role: "CEO",
+    },
+    context: {
+      fr: "pharmExecutive souhaitait lancer une plateforme en ligne pour proposer ses formations aux pharmaciens d'officine. Le site devait être ergonomique, rapide à mettre en ligne, et intégrer des outils marketing pour gérer les inscriptions et les campagnes de communication.",
+      en: "pharmExecutive wanted to launch an online platform to offer its training to community pharmacists. The site had to be ergonomic, quick to launch, and integrate marketing tools to manage registrations and communication campaigns.",
+    },
+    challenges: [
+      {
+        fr: "Développement rapide d'une plateforme fonctionnelle pour respecter les délais de lancement",
+        en: "Rapid development of a functional platform to meet launch deadlines",
+      },
+      {
+        fr: "Intégration des outils de mailing (Brevo) pour automatiser la communication avec les participants",
+        en: "Integration of mailing tools (Brevo) to automate communication with participants",
+      },
+      {
+        fr: "Création d'une interface intuitive adaptée au public cible des pharmaciens",
+        en: "Creation of an intuitive interface tailored to the target audience of pharmacists",
+      },
+    ],
+    work: {
+      fr: "J'ai développé une plateforme de formation complète avec présentation des modules, formulaires d'inscription, et intégration des outils marketing. Le site a été conçu pour être facile à maintenir et à faire évoluer. Technologies utilisées : Next.js, TypeScript, Tailwind CSS, Brevo, Vercel. Méthodologie : développement agile, livraison rapide, intégration marketing, optimisation UX pour le secteur médical.",
+      en: "I developed a complete training platform with module presentation, registration forms, and marketing tools integration. The site was designed to be easy to maintain and evolve. Technologies used: Next.js, TypeScript, Tailwind CSS, Brevo, Vercel. Methodology: agile development, rapid delivery, marketing integration, UX optimization for the medical sector.",
+    },
+    results: {
+      fr: "Lancement réussi de la plateforme pharmExecutive en quelques jours. Le site permet aux pharmaciens de découvrir et de s'inscrire facilement aux formations. Les outils marketing intégrés facilitent la gestion des campagnes et le suivi des inscriptions. La plateforme est maintenant prête pour évoluer avec de nouvelles fonctionnalités.",
+      en: "Successful launch of the pharmExecutive platform in a few days. The site allows pharmacists to easily discover and register for training courses. Integrated marketing tools facilitate campaign management and registration tracking. The platform is now ready to evolve with new features.",
+    },
   },
 ];

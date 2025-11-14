@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import PageTransition from "@/components/PageTransition";
+import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
@@ -32,7 +34,11 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <GoogleAnalytics ga_id="G-0V3YE7VJ9L" />
 
-      <Component {...pageProps} />
+      <AnimatePresence mode="wait" initial={false}>
+        <PageTransition key={router.asPath}>
+          <Component {...pageProps} />
+        </PageTransition>
+      </AnimatePresence>
     </>
   );
 }

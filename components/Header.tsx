@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
-import ScrambleText from "./ScrambleText";
+import { useRouter } from "next/router";
 
 // import { gsap } from "gsap";
 import {
@@ -24,12 +24,14 @@ export default function Header() {
   const logoRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
   const { t, lang } = useTranslation("common");
+  const router = useRouter();
+  const isHomePage = router.pathname === "/";
 
   const navItems = [
-    { label: t("header.projects"), href: "projects" },
-    { label: t("header.skills"), href: "skills" },
-    { label: t("header.about"), href: "about" },
-    // { label: t("header.posts"), href: "posts" },
+    { label: t("header.projects"), href: "/projects/", isPage: true },
+    { label: t("header.skills"), href: "skills", isPage: false },
+    { label: t("header.about"), href: "about", isPage: false },
+    // { label: t("header.posts"), href: "posts", isPage: true },
   ];
 
   const isMoreItems = [
@@ -155,45 +157,45 @@ export default function Header() {
       <div className="container">
         <div className="flex justify-between items-center py-6">
           {/* Logo */}
-          <a
-            href="#hero"
-            onClick={(e) => {
-              e.preventDefault();
-              const el = document.getElementById("hero");
-              if (el) {
-                const y = el.getBoundingClientRect().top + window.scrollY - 120;
-                window.scrollTo({ top: y, behavior: "smooth" });
-              }
-            }}
-          >
+          <Link href="/">
             <div ref={logoRef} className="text-3xl font-pacifico text-primary">
-              <ScrambleText text="Martin C." className="" />
+              Martin C.
             </div>
-          </a>
+          </Link>
 
           {/* Navigation - Desktop */}
           <nav
             ref={navRef}
             className="hidden md:flex items-center justify-between gap-8 relative bg-primary-inverted border border-interactive rounded-full px-4 py-2"
           >
-            {navItems.map((item, j) => (
-              <a
-                key={j}
-                href={`#${item.href}`}
-                className="text-text-tertiary hover:text-primary transition-colors duration-300 text-sm font-semibold"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const el = document.getElementById(item.href);
-                  if (el) {
-                    const y =
-                      el.getBoundingClientRect().top + window.scrollY - 120;
-                    window.scrollTo({ top: y, behavior: "smooth" });
-                  }
-                }}
-              >
-                <ScrambleText text={item.label} className="" />
-              </a>
-            ))}
+            {navItems.map((item, j) =>
+              item.isPage ? (
+                <Link
+                  key={j}
+                  href={item.href}
+                  className="text-text-tertiary hover:text-primary transition-colors duration-300 text-sm font-semibold"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={j}
+                  href={`#${item.href}`}
+                  className="text-text-tertiary hover:text-primary transition-colors duration-300 text-sm font-semibold"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const el = document.getElementById(item.href);
+                    if (el) {
+                      const y =
+                        el.getBoundingClientRect().top + window.scrollY - 120;
+                      window.scrollTo({ top: y, behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {item.label}
+                </a>
+              )
+            )}
 
             {/* More menu */}
             <div className="relative" ref={moreMenuRef}>
@@ -218,7 +220,7 @@ export default function Header() {
                         rel={item.rel}
                       >
                         {item.icon}
-                        <ScrambleText text={item.label} className="" />
+                        {item.label}
                       </a>
                     ))}
                   </div>
@@ -239,7 +241,7 @@ export default function Header() {
                       )}
                     </button>
                     <Link
-                      href="/"
+                      href={router.asPath}
                       locale={lang === "en" ? "fr" : "en"}
                       className="w-8 h-8 rounded-full flex items-center justify-center bg-text-secondary text-text-tertiary hover:bg-interactive-hover text-tertiary hover:text-text-primary transition-colors group"
                       aria-label={
@@ -296,25 +298,45 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden border-t border-interactive rounded-b-xl">
             <nav className="py-4 space-y-2">
-              {navItems.map((item, i) => (
-                <a
-                  key={i}
-                  href={`#${item.href}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    closeMenu();
-                    const el = document.getElementById(item.href);
-                    if (el) {
-                      const y =
-                        el.getBoundingClientRect().top + window.scrollY - 120;
-                      window.scrollTo({ top: y, behavior: "smooth" });
-                    }
-                  }}
-                  className="block px-4 py-2 text-primary transition-colors"
-                >
-                  {item.label}
-                </a>
-              ))}
+              {navItems.map((item, i) =>
+                item.isPage ? (
+                  <Link
+                    key={i}
+                    href={item.href}
+                    onClick={closeMenu}
+                    className="block px-4 py-2 text-primary transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                ) : isHomePage ? (
+                  <a
+                    key={i}
+                    href={`#${item.href}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      closeMenu();
+                      const el = document.getElementById(item.href);
+                      if (el) {
+                        const y =
+                          el.getBoundingClientRect().top + window.scrollY - 120;
+                        window.scrollTo({ top: y, behavior: "smooth" });
+                      }
+                    }}
+                    className="block px-4 py-2 text-primary transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={i}
+                    href={`/#${item.href}`}
+                    onClick={closeMenu}
+                    className="block px-4 py-2 text-primary transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                )
+              )}
               <div className="border-t border-interactive mt-2 pt-2">
                 {isMoreItems.map((item, i) => (
                   <a
@@ -347,7 +369,7 @@ export default function Header() {
                   )}
                 </button>
                 <Link
-                  href="/"
+                  href={router.asPath}
                   locale={lang === "en" ? "fr" : "en"}
                   className="w-full flex items-center px-4 py-2 text-primary transition-colors"
                   aria-label={

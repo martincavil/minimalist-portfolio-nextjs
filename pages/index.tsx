@@ -2,7 +2,9 @@ import Head from "next/head";
 import DotGridBackground from "@/components/DotGridBackground";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Results from "@/components/Results";
 import Skills from "@/components/Skills";
+import Process from "@/components/Process";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Posts from "@/components/Posts";
@@ -59,8 +61,10 @@ export default function Home() {
       <DotGridBackground />
       <Header />
       <Hero />
+      <Results />
       <Projects />
       <Skills />
+      <Process />
       <About />
       <Posts />
       <Footer />

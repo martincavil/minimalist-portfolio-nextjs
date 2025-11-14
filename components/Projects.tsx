@@ -3,37 +3,35 @@ import { useState, useRef } from "react";
 import { projects } from "../data/projects";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import ProjectModal from "./ProjectModal";
 
 export default function Projects() {
   const [hovered, setHovered] = useState<number | null>(null);
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
-  const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
   const { t, lang } = useTranslation("common");
 
-  const handleProjectClick = (e: React.MouseEvent, projectIndex: number) => {
-    e.preventDefault();
-    setSelectedProject(projectIndex);
-  };
-
-  const closeModal = () => {
-    setSelectedProject(null);
-  };
-
   return (
-    <>
-      <section id="projects" className="container py-10 md:pt-12 md:pb-16">
-        <h2 className="text-2xl md:text-4xl bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent font-semibold mb-8">
+    <section id="projects" className="container py-10 md:pt-12 md:pb-16">
+      <div className="flex items-center justify-between mb-8">
+        <h2 className="text-2xl md:text-4xl bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent font-semibold">
           {t("projects.title")}
         </h2>
-        <div className="relative">
-          <ul className="divide-y divide-interactive">
-            {projects.map((project, idx) => (
-              <li
-                key={project.name}
-                className="grid items-center grid-cols-6 md:grid-cols-9 gap-8  py-6 px-2 md:px-6 cursor-pointer group relative hover:bg-primary-inverted"
+        <Link
+          href="/projects"
+          className="text-text-tertiary hover:text-primary transition-colors text-sm md:text-base"
+        >
+          {t("projects.viewAll")} →
+        </Link>
+      </div>
+      <div className="relative">
+        <ul className="divide-y divide-interactive">
+          {projects.slice(0, 3).map((project, idx) => (
+            <li key={project.slug}>
+              <Link
+                href={`/projects/${project.slug}`}
+                className="grid items-center grid-cols-6 md:grid-cols-9 gap-8 py-6 px-2 md:px-6 cursor-pointer group relative hover:bg-primary-inverted"
                 onMouseEnter={() => setHovered(idx)}
                 onMouseLeave={() => setHovered(null)}
                 onMouseMove={(e) => {
@@ -43,7 +41,6 @@ export default function Projects() {
                     y: e.clientY - (rect?.top ?? 0),
                   });
                 }}
-                onClick={(e) => handleProjectClick(e, idx)}
               >
                 <span className="col-span-2 lg:col-span-1 text-text-tertiary">
                   {project.year}
@@ -56,7 +53,7 @@ export default function Projects() {
                     project.skills.map((skill, skillId) => (
                       <div
                         key={skillId}
-                        className="rounded-md bg-text-secondary  px-2 py-1 text-xs text-text-primary font-semibold"
+                        className="rounded-md bg-text-secondary px-2 py-1 text-xs text-text-primary font-semibold"
                       >
                         {skill}
                       </div>
@@ -83,23 +80,15 @@ export default function Projects() {
                     />
                   </span>
                 )}
-              </li>
-            ))}
-          </ul>
-          <div
-            ref={sectionRef}
-            className="absolute inset-0 pointer-events-none"
-          />
-        </div>
-      </section>
-
-      {selectedProject !== null && (
-        <ProjectModal
-          project={projects[selectedProject]}
-          isOpen={selectedProject !== null}
-          onClose={closeModal}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div
+          ref={sectionRef}
+          className="absolute inset-0 pointer-events-none"
         />
-      )}
-    </>
+      </div>
+    </section>
   );
 }
