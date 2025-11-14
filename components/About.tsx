@@ -18,7 +18,7 @@ export default function About() {
         <div className="md:p-6 col-span-2 mb-4 md:mb-0">
           <div className="aspect-video relative">
             <Image
-              src="/images/about/martin-works.webp"
+              src="https://res.cloudinary.com/martincvl/image/upload/v1763147427/portfolio/about/martin-works.webp"
               alt="about-image-1"
               fill
               className="object-cover rounded-lg md:rounded-none"
@@ -42,7 +42,7 @@ export default function About() {
         <div className="md:p-6 col-span-2 mb-4 md:mb-0">
           <div className="aspect-video relative">
             <Image
-              src="/images/about/valencia-ciutat-vella.webp"
+              src="https://res.cloudinary.com/martincvl/image/upload/v1763147428/portfolio/about/valencia-ciutat-vella.webp"
               alt="about-image-2"
               fill
               className="object-cover rounded-lg md:rounded-none"

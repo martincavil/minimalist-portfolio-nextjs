@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="flex items-start gap-6">
             <div className="w-24 h-24 rounded-full bg-interactive overflow-hidden mb-8">
               <Image
-                src="/images/hero/martin-profile.webp"
+                src="https://res.cloudinary.com/martincvl/image/upload/v1763147429/portfolio/hero/martin-profile.webp"
                 alt="Martin Cavil"
                 className="w-full h-full object-cover grayscale"
                 width={96}
