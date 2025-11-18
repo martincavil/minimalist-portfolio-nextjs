@@ -105,9 +105,9 @@ export default function ProjectPage({ project }: ProjectPageProps) {
               {t("projects.details.visitWebsite")}
             </Button>
           </div>
-          <div className="flex flex-wrap items-center gap-4 text-text-tertiary mb-6">
+          <div className="flex flex-col md:flex-row md:items-center gap-4 text-text-tertiary mb-6">
             <span>{project.year}</span>
-            <span>•</span>
+            <span className="hidden md:flex">•</span>
             <span>{project.domain[lang as "fr" | "en"]}</span>
           </div>
           <p className="text-lg text-text-tertiary leading-relaxed">
@@ -300,7 +300,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
         )}
 
         {/* CTA */}
-        <section className="text-center py-16 bg-background rounded-lg border border-interactive">
+        <section className="text-center py-16 px-4 bg-background rounded-lg border border-interactive">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
             {t("projects.details.bookMeeting")}
           </h2>

@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DotGridBackground from "@/components/DotGridBackground";
 import ProjectsList from "@/components/ProjectsList";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 export default function ProjectsPage() {
   const { t } = useTranslation("common");
@@ -36,6 +38,13 @@ export default function ProjectsPage() {
 
       <main className="container pt-32 md:pt-40 pb-16">
         <div className="mb-12">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-text-tertiary hover:text-primary transition-colors mb-8"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            {t("projects.details.backToHome")}
+          </Link>
           <h1 className="text-3xl md:text-5xl bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent font-semibold mb-4">
             {t("projectsPage.title")}
           </h1>
