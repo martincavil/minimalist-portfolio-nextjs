@@ -177,7 +177,7 @@ export default function Header() {
                 >
                   {item.label}
                 </Link>
-              ) : (
+              ) : isHomePage ? (
                 <a
                   key={j}
                   href={`#${item.href}`}
@@ -194,6 +194,14 @@ export default function Header() {
                 >
                   {item.label}
                 </a>
+              ) : (
+                <Link
+                  key={j}
+                  href={`/#${item.href}`}
+                  className="text-text-tertiary hover:text-primary transition-colors duration-300 text-sm font-semibold"
+                >
+                  {item.label}
+                </Link>
               )
             )}
 
