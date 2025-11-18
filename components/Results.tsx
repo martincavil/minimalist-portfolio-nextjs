@@ -12,7 +12,7 @@ export default function Results() {
     {
       key: "maison-du-temps",
       emoji: "⌚",
-      metric: "20 000",
+      metric: "+20 000",
       metricLabel: "results.maisonDuTemps.metricLabel",
       title: "results.maisonDuTemps.title",
       description: "results.maisonDuTemps.description",
