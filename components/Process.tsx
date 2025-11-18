@@ -8,6 +8,7 @@ import { Search, FileText, Rocket, CheckCircle } from "lucide-react";
 export default function Process() {
   const { t } = useTranslation("common");
   const stepsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const lineRef = useRef<HTMLDivElement>(null);
 
   const processSteps = [
     {
@@ -47,10 +48,25 @@ export default function Process() {
     );
     gsap.set(elements, { opacity: 0, y: 30 });
 
+    // Animation de la ligne (de gauche à droite)
+    if (lineRef.current) {
+      gsap.set(lineRef.current, { scaleX: 0, transformOrigin: "left" });
+    }
+
     const observer = new window.IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            // Animer la ligne
+            if (lineRef.current) {
+              gsap.to(lineRef.current, {
+                scaleX: 1,
+                duration: 1.2,
+                ease: "power2.out",
+              });
+            }
+
+            // Animer les étapes
             const idx = elements.findIndex((el) => el === entry.target);
             gsap.to(elements[idx], {
               opacity: 1,
@@ -85,7 +101,10 @@ export default function Process() {
         {/* Timeline - Mobile: vertical, Desktop: horizontal */}
         <div className="relative max-w-6xl mx-auto">
           {/* Timeline line - positioned at center of icons (24px from top = half of 48px icon height) */}
-          <div className="hidden md:block absolute top-6 left-0 right-0 h-px bg-interactive" />
+          <div
+            ref={lineRef}
+            className="hidden md:block absolute top-6 left-0 right-0 h-px bg-interactive"
+          />
 
           {/* Steps */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
