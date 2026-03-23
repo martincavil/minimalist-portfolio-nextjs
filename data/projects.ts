@@ -51,6 +51,90 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    name: "MasteredByEdouard",
+    slug: "masteredbyedouard",
+    year: "2026",
+    domain: {
+      fr: "Studio de mastering audio professionnel",
+      en: "Professional audio mastering studio",
+    },
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Dropbox SDK",
+      "jsPDF",
+      "Strapi",
+      "Vercel",
+    ],
+    url: "https://www.masteredbyedouard.com",
+    cover:
+      "https://res.cloudinary.com/martincvl/image/upload/v1774299452/portfolio/projects/masteredbyedouard/mastered-by-edourard-cover.webp",
+    gifCover:
+      "https://res.cloudinary.com/martincvl/video/upload/v1774299457/portfolio/projects/masteredbyedouard/masteredbyedouard.mp4",
+    excerpt: {
+      fr: "Conception et développement complet du site de Edouard Carbonne, ingénieur de mastering international. Site pensé comme une app — non-scrollable, full-screen, ultra-rapide. Les clients déposent leurs fichiers audio directement dans son Dropbox via le site. Bilingue FR/EN.",
+      en: "Full design and development of Edouard Carbonne's site — international mastering engineer. Built like an app: non-scrollable, full-screen, ultra-fast. Clients upload their audio files directly to his Dropbox through the site. Bilingual FR/EN.",
+    },
+    images: [
+      "https://res.cloudinary.com/martincvl/image/upload/v1774299452/portfolio/projects/masteredbyedouard/mastered-by-edourard-cover.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1774299622/portfolio/projects/masteredbyedouard/mastered-by-edouard-1.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1774299449/portfolio/projects/masteredbyedouard/mastered-by-edouard-2.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1774299450/portfolio/projects/masteredbyedouard/mastered-by-edouard-3.webp",
+    ],
+    companyHistory: {
+      fr: "Edouard Carbonne est ingénieur de mastering international, ayant travaillé avec des artistes reconnus dans l'industrie musicale. Fort d'une expertise technique pointue et d'une oreille affûtée par des années d'expérience, il accompagne musiciens, producteurs et labels dans la dernière étape cruciale de la production musicale : le mastering. Son approche allie maîtrise technique des outils audio professionnels et sensibilité artistique pour sublimer chaque projet musical.",
+      en: "Edouard Carbonne is an international mastering engineer who has worked with acclaimed artists in the music industry. With sharp technical expertise and an ear honed by years of experience, he supports musicians, producers, and labels in the crucial final stage of music production: mastering. His approach combines technical mastery of professional audio tools with artistic sensitivity to elevate each musical project.",
+    },
+    context: {
+      fr: "Edouard Carbonne avait besoin d'un site web qui reflète son niveau d'exigence professionnelle et se démarque dans l'univers du mastering audio. Son ancien site ne correspondait plus à son positionnement premium ni à l'évolution de son activité. L'objectif était de créer une expérience unique, pensée comme une application web moderne, avec un parcours client fluide permettant aux artistes de déposer leurs fichiers audio directement et de générer des fiches de production professionnelles.",
+      en: "Edouard Carbonne needed a website that reflects his level of professional quality and stands out in the audio mastering world. His previous site no longer matched his premium positioning or his business evolution. The goal was to create a unique experience, designed as a modern web application, with a smooth client journey allowing artists to upload their audio files directly and generate professional production sheets.",
+    },
+    challenges: [
+      {
+        fr: "Créer une expérience web non-scrollable, pensée comme une application mobile avec navigation fluide entre sections full-screen",
+        en: "Create a non-scrollable web experience designed like a mobile app with smooth navigation between full-screen sections",
+      },
+      {
+        fr: "Intégrer le Dropbox SDK pour permettre aux clients de déposer leurs fichiers audio directement dans l'espace Dropbox d'Edouard",
+        en: "Integrate the Dropbox SDK to allow clients to upload their audio files directly to Edouard's Dropbox",
+      },
+      {
+        fr: "Développer un système de génération de PDF (jsPDF) pour les fiches de production à partir d'un formulaire multi-étapes",
+        en: "Develop a PDF generation system (jsPDF) for production sheets from a multi-step form",
+      },
+      {
+        fr: "Créer un site entièrement bilingue FR/EN avec gestion de contenu via Strapi",
+        en: "Create a fully bilingual FR/EN site with content management via Strapi",
+      },
+    ],
+    work: {
+      fr: "J'ai conçu et développé une plateforme web unique pensée comme une application mobile, avec une navigation non-scrollable où chaque section occupe 100% de la hauteur de l'écran et des transitions fluides entre les pages. J'ai intégré le Dropbox SDK pour permettre aux clients de déposer leurs fichiers audio directement dans l'espace Dropbox d'Edouard, sans passer par un serveur intermédiaire. J'ai développé un formulaire multi-étapes avec génération automatique de fiches de production en PDF via jsPDF. Le site est entièrement bilingue (FR/EN) avec gestion de contenu via Strapi. Technologies utilisées : Next.js, TypeScript, Tailwind CSS, Dropbox SDK, jsPDF, Strapi, Vercel. Méthodologie : design thinking app-first, développement agile, architecture scalable, intégration API tierces.",
+      en: "I designed and developed a unique web platform designed like a mobile application, with non-scrollable navigation where each section occupies 100% of the screen height and smooth transitions between pages. I integrated the Dropbox SDK to allow clients to upload their audio files directly to Edouard's Dropbox, without going through an intermediary server. I developed a multi-step form with automatic production sheet generation in PDF via jsPDF. The site is fully bilingual (FR/EN) with content management via Strapi. Technologies used: Next.js, TypeScript, Tailwind CSS, Dropbox SDK, jsPDF, Strapi, Vercel. Methodology: app-first design thinking, agile development, scalable architecture, third-party API integration.",
+    },
+    results: {
+      fr: "Lancement réussi d'une plateforme web unique qui se démarque dans l'univers du mastering audio. L'expérience non-scrollable type application mobile offre une navigation fluide et moderne qui renforce le positionnement premium d'Edouard. Le système de dépôt de fichiers via Dropbox simplifie considérablement le processus pour les clients, qui peuvent envoyer leurs fichiers audio en quelques clics. La génération automatique de fiches de production en PDF professionnalise les échanges et facilite la gestion de projets. Le site bilingue permet à Edouard de toucher une clientèle internationale.",
+      en: "Successful launch of a unique web platform that stands out in the audio mastering world. The mobile app-like non-scrollable experience offers smooth and modern navigation that strengthens Edouard's premium positioning. The Dropbox file upload system significantly simplifies the process for clients, who can send their audio files in just a few clicks. Automatic PDF production sheet generation professionalizes exchanges and facilitates project management. The bilingual site allows Edouard to reach an international clientele.",
+    },
+    KPIs: [
+      {
+        number: "App-like",
+        fr: "Expérience non-scrollable full-screen",
+        en: "Non-scrollable full-screen experience",
+      },
+      {
+        number: "Dropbox",
+        fr: "Dépôt de fichiers intégré directement",
+        en: "Integrated direct file upload",
+      },
+      {
+        number: "FR/EN",
+        fr: "Site entièrement bilingue",
+        en: "Fully bilingual site",
+      },
+    ],
+  },
+  {
     name: "Maison Du Temps",
     slug: "maison-du-temps",
     year: "2025",
@@ -210,88 +294,6 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
-    name: "MasteredByEdouard",
-    slug: "masteredbyedouard",
-    year: "2025",
-    domain: {
-      fr: "Studio de mastering audio professionnel",
-      en: "Professional audio mastering studio",
-    },
-    skills: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Dropbox SDK",
-      "jsPDF",
-      "Strapi",
-      "Vercel",
-    ],
-    url: "https://www.masteredbyedouard.com",
-    cover: "/images/projects/masteredbyedouard/cover.webp",
-    excerpt: {
-      fr: "Conception et développement complet du site de Edouard Carbonne, ingénieur de mastering international. Site pensé comme une app — non-scrollable, full-screen, ultra-rapide. Les clients déposent leurs fichiers audio directement dans son Dropbox via le site. Bilingue FR/EN.",
-      en: "Full design and development of Edouard Carbonne's site — international mastering engineer. Built like an app: non-scrollable, full-screen, ultra-fast. Clients upload their audio files directly to his Dropbox through the site. Bilingual FR/EN.",
-    },
-    images: [
-      "/images/projects/masteredbyedouard/cover.webp",
-      "/images/projects/masteredbyedouard/mbe-1.webp",
-      "/images/projects/masteredbyedouard/mbe-2.webp",
-      "/images/projects/masteredbyedouard/mbe-3.webp",
-    ],
-    companyHistory: {
-      fr: "Edouard Carbonne est ingénieur de mastering international, ayant travaillé avec des artistes reconnus dans l'industrie musicale. Fort d'une expertise technique pointue et d'une oreille affûtée par des années d'expérience, il accompagne musiciens, producteurs et labels dans la dernière étape cruciale de la production musicale : le mastering. Son approche allie maîtrise technique des outils audio professionnels et sensibilité artistique pour sublimer chaque projet musical.",
-      en: "Edouard Carbonne is an international mastering engineer who has worked with acclaimed artists in the music industry. With sharp technical expertise and an ear honed by years of experience, he supports musicians, producers, and labels in the crucial final stage of music production: mastering. His approach combines technical mastery of professional audio tools with artistic sensitivity to elevate each musical project.",
-    },
-    context: {
-      fr: "Edouard Carbonne avait besoin d'un site web qui reflète son niveau d'exigence professionnelle et se démarque dans l'univers du mastering audio. Son ancien site ne correspondait plus à son positionnement premium ni à l'évolution de son activité. L'objectif était de créer une expérience unique, pensée comme une application web moderne, avec un parcours client fluide permettant aux artistes de déposer leurs fichiers audio directement et de générer des fiches de production professionnelles.",
-      en: "Edouard Carbonne needed a website that reflects his level of professional quality and stands out in the audio mastering world. His previous site no longer matched his premium positioning or his business evolution. The goal was to create a unique experience, designed as a modern web application, with a smooth client journey allowing artists to upload their audio files directly and generate professional production sheets.",
-    },
-    challenges: [
-      {
-        fr: "Créer une expérience web non-scrollable, pensée comme une application mobile avec navigation fluide entre sections full-screen",
-        en: "Create a non-scrollable web experience designed like a mobile app with smooth navigation between full-screen sections",
-      },
-      {
-        fr: "Intégrer le Dropbox SDK pour permettre aux clients de déposer leurs fichiers audio directement dans l'espace Dropbox d'Edouard",
-        en: "Integrate the Dropbox SDK to allow clients to upload their audio files directly to Edouard's Dropbox",
-      },
-      {
-        fr: "Développer un système de génération de PDF (jsPDF) pour les fiches de production à partir d'un formulaire multi-étapes",
-        en: "Develop a PDF generation system (jsPDF) for production sheets from a multi-step form",
-      },
-      {
-        fr: "Créer un site entièrement bilingue FR/EN avec gestion de contenu via Strapi",
-        en: "Create a fully bilingual FR/EN site with content management via Strapi",
-      },
-    ],
-    work: {
-      fr: "J'ai conçu et développé une plateforme web unique pensée comme une application mobile, avec une navigation non-scrollable où chaque section occupe 100% de la hauteur de l'écran et des transitions fluides entre les pages. J'ai intégré le Dropbox SDK pour permettre aux clients de déposer leurs fichiers audio directement dans l'espace Dropbox d'Edouard, sans passer par un serveur intermédiaire. J'ai développé un formulaire multi-étapes avec génération automatique de fiches de production en PDF via jsPDF. Le site est entièrement bilingue (FR/EN) avec gestion de contenu via Strapi. Technologies utilisées : Next.js, TypeScript, Tailwind CSS, Dropbox SDK, jsPDF, Strapi, Vercel. Méthodologie : design thinking app-first, développement agile, architecture scalable, intégration API tierces.",
-      en: "I designed and developed a unique web platform designed like a mobile application, with non-scrollable navigation where each section occupies 100% of the screen height and smooth transitions between pages. I integrated the Dropbox SDK to allow clients to upload their audio files directly to Edouard's Dropbox, without going through an intermediary server. I developed a multi-step form with automatic production sheet generation in PDF via jsPDF. The site is fully bilingual (FR/EN) with content management via Strapi. Technologies used: Next.js, TypeScript, Tailwind CSS, Dropbox SDK, jsPDF, Strapi, Vercel. Methodology: app-first design thinking, agile development, scalable architecture, third-party API integration.",
-    },
-    results: {
-      fr: "Lancement réussi d'une plateforme web unique qui se démarque dans l'univers du mastering audio. L'expérience non-scrollable type application mobile offre une navigation fluide et moderne qui renforce le positionnement premium d'Edouard. Le système de dépôt de fichiers via Dropbox simplifie considérablement le processus pour les clients, qui peuvent envoyer leurs fichiers audio en quelques clics. La génération automatique de fiches de production en PDF professionnalise les échanges et facilite la gestion de projets. Le site bilingue permet à Edouard de toucher une clientèle internationale.",
-      en: "Successful launch of a unique web platform that stands out in the audio mastering world. The mobile app-like non-scrollable experience offers smooth and modern navigation that strengthens Edouard's premium positioning. The Dropbox file upload system significantly simplifies the process for clients, who can send their audio files in just a few clicks. Automatic PDF production sheet generation professionalizes exchanges and facilitates project management. The bilingual site allows Edouard to reach an international clientele.",
-    },
-    KPIs: [
-      {
-        number: "App-like",
-        fr: "Expérience non-scrollable full-screen",
-        en: "Non-scrollable full-screen experience",
-      },
-      {
-        number: "Dropbox",
-        fr: "Dépôt de fichiers intégré directement",
-        en: "Integrated direct file upload",
-      },
-      {
-        number: "FR/EN",
-        fr: "Site entièrement bilingue",
-        en: "Fully bilingual site",
-      },
-    ],
-  },
-
   {
     name: "Padel15",
     slug: "padel15",

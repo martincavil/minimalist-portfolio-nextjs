@@ -101,6 +101,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
               icon={<ExternalLink className="w-4 h-4" />}
               ariaLabel="External link to project website"
               as="a"
+              target="_blank"
             >
               {t("projects.details.visitWebsite")}
             </Button>
