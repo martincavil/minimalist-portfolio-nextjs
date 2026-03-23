@@ -18,18 +18,37 @@
     "english": "Anglais"
   },
   "hero": {
-    "availability": "Disponible maintenant",
-    "headline": "Bienvenue, moi c'est Martin— Développeur freelance Next.js / React & Tailwind",
-    "description": "J'aide les entreprises à créer des sites marketing animés, des MVPs ou des interfaces produits sur-mesure.",
-    "contact": "Contactez-moi"
+    "availability": "Disponible dès maintenant | Réponse sous 24h",
+    "headline": "Développeur front-end produit pour startups qui veulent scaler sans recruter.",
+    "description": "J'aide les startups et e-commerces à améliorer leur conversion avec des accompagnements 1 à 3 jours par semaine.",
+    "contact": "Audit gratuit de 30 minutes"
+  },
+  "results": {
+    "title": "Résultats Concrets",
+    "description": "Des projets qui ont généré un impact mesurable pour mes clients.",
+    "padel15": {
+      "metricLabel": "réservations générées",
+      "title": "Padel15 - Site vitrine du premier complexe de Padel à Paris intramuros",
+      "description": "Création du site + Optimisation conversion et SEO"
+    },
+    "maisonDuTemps": {
+      "metricLabel": "clients",
+      "title": "Maison du Temps - E-commerce horlogerie",
+      "description": "Refonte e-commerce Shopify + amélioration SEO / Performance"
+    },
+    "uptoo": {
+      "metricLabel": "CA annuel",
+      "title": "Uptoo - Agence spécialiste de la vente et du recrutement",
+      "description": "Refonte + SEO + création d'outils internes. Développement de Uptoo Home et refonte complète du site uptoo.fr"
+    }
   },
   "skills": {
     "title": "Comment je vous aide à atteindre vos objectifs",
-    "description": "Mon approche va bien au-delà du code : je m’implique pour que votre projet réponde à vos enjeux business et prenne une longueur d’avance sur la concurrence.",
+    "description": "Mon approche va bien au-delà du code : je m'implique pour que votre projet réponde à vos enjeux business et prenne une longueur d'avance sur la concurrence.",
     "list": [
       {
         "title": "Sites web performants & SEO-ready",
-        "description": "Des sites rapides, optimisés pour Google et pensés pour convertir vos visiteurs en clients."
+        "description": "Des sites rapides, optimisés pour les moteurs de recherches et pensés pour convertir vos visiteurs en clients."
       },
       {
         "title": "Design pixel perfect",
@@ -49,13 +68,54 @@
       }
     ]
   },
+  "process": {
+    "title": "Comment nous travaillons ensemble",
+    "description": "Un processus simple et transparent, sans engagement. Vous gardez le contrôle à chaque étape.",
+    "steps": {
+      "audit": {
+        "title": "Audit gratuit (30 min)",
+        "description": "Nous analysons votre site ou produit pour identifier les opportunités d'amélioration et les quick wins."
+      },
+      "proposal": {
+        "title": "Proposition (48h)",
+        "description": "Je vous envoie un plan d'action détaillé avec une estimation précise des coûts et du calendrier."
+      },
+      "sprint": {
+        "title": "Premier sprint (1-2 semaines)",
+        "description": "Je livre un résultat mesurable et concret pour valider notre collaboration et générer de la valeur rapidement."
+      },
+      "decision": {
+        "title": "Vous décidez de la suite",
+        "description": "Zéro engagement. Vous évaluez les résultats et décidez librement si vous souhaitez poursuivre ou non."
+      }
+    }
+  },
   "projects": {
-    "title": "Projets"
+    "title": "Mes Derniers Projets",
+    "viewAll": "Voir tous les projets",
+    "details": {
+      "companyHistory": "Histoire de l'entreprise",
+      "testimony": "Témoignage client",
+      "context": "Contexte de la mission",
+      "challenges": "Points bloquants",
+      "work": "Travail fourni",
+      "results": "Résultats",
+      "technologies": "Technologies & Méthodologies",
+      "kpis": "Chiffres clés",
+      "backToHome": "Retour à l'accueil",
+      "backToProjects": "Retour aux projets",
+      "visitWebsite": "Visiter le site",
+      "bookMeeting": "Prenez rendez-vous avec moi"
+    }
+  },
+  "projectsPage": {
+    "title": "Tous mes projets",
+    "description": "Découvrez une sélection de projets sur lesquels j'ai travaillé, avec des résultats concrets pour mes clients."
   },
   "about": {
     "title": "À propos de moi",
-    "description1": "Développeur front de formation, j’ai construit mon expertise autour de React, Next.js et Tailwind, avec une vraie sensibilité pour le design, l’UX et le détail pixel perfect. Mon parcours m’a amené à collaborer avec des équipes tech exigeantes, comme chez Uptoo où nous étions 10 développeurs sur des projets complexes. Curieux, organisé et à l’écoute, j’aime transformer des maquettes en expériences fluides, tout en gardant en tête les enjeux business, la performance et le SEO. J’avance avec méthode, sans jamais perdre le goût du beau code et du travail bien fait.",
-    "description2": "En dehors du code, je suis un passionné de sport : running, trail, football, et globalement tout ce qui me pousse à me dépasser. J’aime la simplicité, les moments partagés avec mes amis ou ma famille, et les découvertes au quotidien. Je vis aujourd’hui à València (Espagne), où je trouve l’équilibre entre travail, soleil, sport et vie sociale — une source d’inspiration précieuse dans tout ce que je crée."
+    "description1": "Développeur front de formation, j’ai construit mon expertise autour de React, Next.js et Tailwind. Mais mon vrai rôle va au-delà du code : j’aide les entreprises à faire évoluer leurs produits, améliorer leur acquisition et transformer leurs interfaces en leviers business. Chez Uptoo, j’ai travaillé au sein d’une équipe tech d’une dizaine de développeurs sur des projets complexes directement connectés au chiffre d’affaires. Cette expérience m’a appris à créer des interfaces qui ne sont pas juste belles — mais qui convertissent, qui simplifient, et qui accompagnent la croissance. J’aime comprendre comment une entreprise fonctionne, identifier ce qui bloque (performance, UX, parcours, SEO, cohérence produit), puis proposer et implémenter des solutions concrètes. Je ne suis pas un simple exécutant : je m’intègre dans l’équipe, je challenge, j’améliore, et j’avance avec méthode. Mon objectif : aider mes clients à aller plus vite, plus loin, et avec un produit plus performant.",
+    "description2": "En dehors du code, je suis un passionné de sport : running, trail, football, et globalement tout ce qui me pousse à me dépasser. J’aime la simplicité, les moments partagés avec mes amis ou ma famille, et les découvertes au quotidien. Je vis aujourd’hui à Valencia (Espagne), où je trouve l’équilibre entre travail, soleil, sport et vie sociale — une source d’inspiration précieuse dans tout ce que je crée."
   },
   "posts": {
     "title": "Quelque chose se prépare en coulisses 🤭"

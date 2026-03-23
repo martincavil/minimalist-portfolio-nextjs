@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Martin Cavil Portfolio - Freelance Next.js Developer",
-    "description": "Explore the portfolio of Martin Cavil, a freelance developer specializing in Next.js, React, and Tailwind. High-performance, custom projects.",
+    "description": "Discover the portfolio of Martin Cavil, a freelance developer specializing in Next.js, React, and Tailwind. High-performance, custom projects.",
     "keywords": "Martin Cavil, freelance frontend developer, Next.js, React, Tailwind, portfolio"
   },
   "header": {
@@ -18,46 +18,106 @@
     "english": "English"
   },
   "hero": {
-    "availability": "Available now",
-    "headline": "Welcome, I'm Martin— Freelance Next.js / React & Tailwind Developer",
-    "description": "I help businesses create dynamic marketing sites, MVPs, or custom product interfaces.",
-    "contact": "Get in touch"
+    "availability": "Available now | Response within 24h",
+    "headline": "Product-focused frontend developer for startups who want to scale without hiring.",
+    "description": "I help startups and e-commerce businesses improve their conversion rates with support ranging from 1 to 3 days per week.",
+    "contact": "📞 Free 30-min audit"
+  },
+  "results": {
+    "title": "Concrete Results",
+    "description": "Projects that generated measurable impact for my clients.",
+    "padel15": {
+      "metricLabel": "bookings generated",
+      "title": "Padel15 - Showcase site of the first Padel complex in Paris intramuros",
+      "description": "Site creation + Conversion and SEO optimization"
+    },
+    "maisonDuTemps": {
+      "metricLabel": "customers",
+      "title": "Maison du Temps - Watch E-commerce",
+      "description": "Shopify e-commerce redesign + SEO / Performance improvement"
+    },
+    "uptoo": {
+      "metricLabel": "annual revenue",
+      "title": "Uptoo - HR & Sales Agency",
+      "description": "Redesign + SEO + internal tools development. Built Uptoo Home platform and complete uptoo.fr website redesign"
+    }
   },
   "skills": {
     "title": "How I Help You Achieve Your Goals",
-    "description": "My approach goes far beyond code: I’m committed to making your project solve real business challenges and stand out from the competition.",
+    "description": "My approach goes far beyond code: I'm committed to making your project meet your business needs and get ahead of the competition.",
     "list": [
       {
         "title": "High-performance & SEO-ready websites",
-        "description": "Fast, Google-optimized sites designed to turn visitors into customers."
+        "description": "Fast, search engine optimized sites designed to turn your visitors into clients."
       },
       {
         "title": "Pixel-perfect design",
-        "description": "Flawless implementation of your visual identity and mockups for a professional, impactful result."
+        "description": "Total respect for your visual identity and mockups, for a professional and impactful result."
       },
       {
         "title": "Business vision & advice",
-        "description": "I challenge your ideas and suggest concrete solutions to maximize your project’s value."
+        "description": "I challenge your ideas and offer concrete solutions to maximize your project's value."
       },
       {
         "title": "Modern stack & CMS expertise",
-        "description": "Next.js, React, Tailwind CSS, Webflow, Prismic, Strapi… I select the best tools for your needs."
+        "description": "Next.js, React, Tailwind CSS, Webflow, Prismic, Strapi… I choose the best tools for your needs."
       },
       {
         "title": "Tailored support",
-        "description": "Proactive guidance from conception to launch, ensuring your project’s success and longevity."
+        "description": "Proactive support, from conception to launch, to ensure your project's success and longevity."
       }
     ]
   },
+  "process": {
+    "title": "How We Work Together",
+    "description": "A simple and transparent process, with no commitment. You stay in control at every step.",
+    "steps": {
+      "audit": {
+        "title": "Free audit (30 min)",
+        "description": "We analyze your website or product to identify improvement opportunities and quick wins."
+      },
+      "proposal": {
+        "title": "Proposal (48h)",
+        "description": "I send you a detailed action plan with precise cost and timeline estimates."
+      },
+      "sprint": {
+        "title": "First sprint (1-2 weeks)",
+        "description": "I deliver a measurable and concrete result to validate our collaboration and generate value quickly."
+      },
+      "decision": {
+        "title": "You decide what's next",
+        "description": "Zero commitment. You evaluate the results and freely decide whether you want to continue or not."
+      }
+    }
+  },
   "projects": {
-    "title": "Projects"
+    "title": "Lasts Projects",
+    "viewAll": "View all projects",
+    "details": {
+      "companyHistory": "Company History",
+      "testimony": "Client Testimony",
+      "context": "Mission Context",
+      "challenges": "Key Challenges",
+      "work": "Work Provided",
+      "results": "Results",
+      "technologies": "Technologies & Methodologies",
+      "kpis": "Key Metrics",
+      "backToHome": "Back to home",
+      "backToProjects": "Back to projects",
+      "visitWebsite": "Visit website",
+      "bookMeeting": "Book a meeting with me"
+    }
+  },
+  "projectsPage": {
+    "title": "All My Projects",
+    "description": "Discover a selection of projects I've worked on, with concrete results for my clients."
   },
   "about": {
     "title": "About Me",
-    "description1": "I’m a frontend developer with a strong focus on React, Next.js, and Tailwind, and a real attention to design, UX, and pixel-perfect execution. Over the years, I’ve worked on ambitious projects within collaborative teams — including a 10-developer squad at Uptoo. I’m curious, organized, and enjoy turning designs into smooth, high-performing web experiences. I care about clean code, SEO, and business impact, always aiming to deliver quality with clarity and intention.",
-    "description2": "Outside of coding, I’m passionate about sports: running, trail running, football, and anything that pushes me to excel. I appreciate simplicity, quality time with friends and family, and daily discoveries. Currently based in Valencia (Spain), I find a balance between work, sunshine, sports, and social life — a source of inspiration for everything I create."
+    "description1": "As a front-end developer, I have built my expertise around React, Next.js, and Tailwind. But my real role goes beyond code: I help companies evolve their products, improve their acquisition, and transform their interfaces into business levers. At Uptoo, I worked with a tech team of about ten developers on complex projects directly linked to revenue. This experience taught me how to create interfaces that aren't just beautiful—they convert, simplify, and support growth. I like to understand how a company works, identify what's holding it back (performance, UX, user journey, SEO, product consistency), and then propose and implement concrete solutions. I'm not just an executor: I integrate myself into the team, I challenge, I improve, and I move forward methodically. My goal: to help my clients go faster, further, and with a more efficient product.",
+    "description2": "Outside of code, I’m passionate about sports: running, trail running, soccer, and basically anything that pushes me to excel. I love simplicity, moments shared with friends or family, and daily discoveries. I now live in Valencia (Spain), where I find balance between work, sunshine, sports, and social life — a precious source of inspiration in everything I create."
   },
   "posts": {
-    "title": "Someting interesting coming soon 🤭"
+    "title": "Something is brewing behind the scenes 🤭"
   }
 }
