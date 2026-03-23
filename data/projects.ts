@@ -95,8 +95,8 @@ export const projects: Project[] = [
     url: "https://www.uptoo.fr",
     cover: "/images/projects/uptoo/cover.webp",
     excerpt: {
-      fr: "Responsable Frontend pendant 3 ans, j'ai piloté et développé des dizaines de projets web pour Uptoo : outils internes pour les collaborateurs, plateformes pour les candidats (ex : CV Maker connecté à nos bases de données et système de matching), et interfaces clients pour le suivi de recrutement, la formation et la gestion d'annonces. J'ai été référent technique sur tout ce qui touche au frontend.",
-      en: "Frontend Lead for 3 years, I led and developed dozens of web projects for Uptoo: internal tools for employees, platforms for candidates (e.g., CV Maker connected to our databases and matching system), and client interfaces for recruitment tracking, training, and job posting. I was the technical reference for all things frontend.",
+      fr: "3 ans comme Lead Developer Frontend chez Uptoo : j'ai conçu et maintenu des dizaines d'outils web (plateformes candidats, interfaces clients, outils internes), mis en place tous les process frontend, et atteint le score parfait Lighthouse sur les projets clés. Référent technique sur tout le périmètre frontend pour une boîte à +25M€ de CA.",
+      en: "3 years as Frontend Lead at Uptoo: I designed and maintained dozens of web tools (candidate platforms, client interfaces, internal tools), implemented all frontend processes, and achieved perfect Lighthouse scores on key projects. Technical reference for all things frontend at a €25M+ revenue company.",
     },
     about: {
       fr: "Uptoo est une agence spécialisée dans la vente, générant +25 millions d'euros de chiffre d'affaires annuel, avec une base de +700 000 candidats et +9 000 clients entreprises. J'ai mis en place tous les process frontend, collaboré avec les équipes métiers, marketing, produit et dev pour fluidifier la communication et garantir une agilité optimale.",
@@ -155,6 +155,102 @@ export const projects: Project[] = [
   },
 
   {
+    name: "MasteredByEdouard",
+    year: "2026",
+    domain: {
+      fr: "Studio de mastering audio professionnel",
+      en: "Professional audio mastering studio",
+    },
+    dialog: {
+      title1: {
+        fr: "Ce que j'ai apporté au projet MasteredByEdouard : ",
+        en: "What I brought to the project MasteredByEdouard : ",
+      },
+      title2: {
+        fr: "Chiffres clés : ",
+        en: "Key figures : ",
+      },
+      title3: {
+        fr: "Stack technique : ",
+        en: "Tech stack : ",
+      },
+      title4: {
+        fr: "À propos du studio : ",
+        en: "About the studio : ",
+      },
+      title5: {
+        fr: "Challenges techniques : ",
+        en: "Technical challenges : ",
+      },
+    },
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Dropbox SDK",
+      "jsPDF",
+      "Strapi",
+      "Vercel",
+    ],
+    url: "https://www.masteredbyedouard.com",
+    cover: "/images/projects/masteredbyedouard/cover.webp",
+    excerpt: {
+      fr: "Conception et développement complet du site de Edouard Carbonne, ingénieur de mastering international. Site pensé comme une app — non-scrollable, full-screen, ultra-rapide. Les clients déposent leurs fichiers audio directement dans son Dropbox via le site. Bilingue FR/EN.",
+      en: "Full design and development of Edouard Carbonne's site — international mastering engineer. Built like an app: non-scrollable, full-screen, ultra-fast. Clients upload their audio files directly to his Dropbox through the site. Bilingual FR/EN.",
+    },
+    about: {
+      fr: "Edouard Carbonne est ingénieur de mastering international, ayant travaillé avec des artistes reconnus. Son ancien site ne reflétait pas son niveau d'exigence. Ensemble, on a repensé l'expérience de A à Z pour créer un outil qui lui ressemble vraiment — minimaliste, premium, fonctionnel.",
+      en: "Edouard Carbonne is an international mastering engineer who has worked with acclaimed artists. His previous site didn't reflect his level of quality. Together, we reimagined the experience from scratch to create a tool that truly represents him — minimal, premium, functional.",
+    },
+    KPIs: [
+      {
+        number: "App-like",
+        fr: "Expérience non-scrollable full-screen",
+        en: "Non-scrollable full-screen experience",
+      },
+      {
+        number: "Dropbox",
+        fr: "Dépôt de fichiers intégré directement",
+        en: "Integrated direct file upload",
+      },
+      {
+        number: "FR/EN",
+        fr: "Site entièrement bilingue",
+        en: "Fully bilingual site",
+      },
+      {
+        number: "From scratch",
+        fr: "Conçu et développé seul",
+        en: "Designed & built solo",
+      },
+    ],
+    technicalChallenges: [
+      {
+        fr: "Conception d'une navigation non-scrollable pensée comme une application mobile — chaque section est une 'page' full-screen avec transitions fluides.",
+        en: "Designing a non-scrollable navigation built like a mobile app — each section is a full-screen 'page' with smooth transitions.",
+      },
+      {
+        fr: "Intégration du Dropbox SDK pour permettre aux clients de déposer leurs fichiers audio directement dans l'espace Dropbox d'Edouard, sans intermédiaire.",
+        en: "Integration of the Dropbox SDK to allow clients to upload their audio files directly to Edouard's Dropbox, without any middleman.",
+      },
+      {
+        fr: "Génération de fiches de production PDF (jsPDF) — les clients remplissent un formulaire multi-étapes et reçoivent un récapitulatif en PDF.",
+        en: "PDF production sheet generation (jsPDF) — clients fill in a multi-step form and receive a PDF summary.",
+      },
+      {
+        fr: "Site entièrement bilingue FR/EN avec gestion des contenus via Strapi.",
+        en: "Fully bilingual FR/EN site with content management via Strapi.",
+      },
+    ],
+    images: [
+      "/images/projects/masteredbyedouard/cover.webp",
+      "/images/projects/masteredbyedouard/mbe-1.webp",
+      "/images/projects/masteredbyedouard/mbe-2.webp",
+      "/images/projects/masteredbyedouard/mbe-3.webp",
+    ],
+  },
+
+  {
     name: "Padel15",
     year: "2025",
     domain: {
@@ -187,14 +283,31 @@ export const projects: Project[] = [
     url: "https://www.padel15.fr",
     cover: "/images/projects/padel15/cover.webp",
     excerpt: {
-      fr: "Création complète du site web du club Padel15 à Paris, de la conception au déploiement. Performances Lighthouse : 100/100 en SEO, 100/100 en bonnes pratiques, 94/100 en performance, 91/100 en accessibilité. La V2 avec réservation en ligne et blog arrive prochainement.",
-      en: "Complete creation of the Padel15 club website in Paris, from design to deployment. Lighthouse scores: 100/100 in SEO, 100/100 in best practices, 94/100 in performance, 91/100 in accessibility. V2 with online booking and blog coming soon.",
+      fr: "Padel15 n'avait qu'un nom de domaine. J'ai conçu et développé le site complet from scratch, seul, en quelques jours. Résultat : 3 500 à 4 000 visiteurs par mois, terrains complets tous les jours, bar et restaurant qui cartonnent — zéro blog, zéro pub.",
+      en: "Padel15 had nothing but a domain name. I designed and built the entire site from scratch, solo, in a few days. Result: 3,500 to 4,000 monthly visitors, fully booked courts every day, a thriving bar and restaurant — no blog, no paid ads.",
     },
     about: {
-      fr: "Padel15 est un club de padel situé à Paris, pour lequel j'ai conçu et développé le site web seul, en quelques jours, avec Next.js, React, Tailwind et déploiement sur Vercel. La V2 apportera de nombreuses nouvelles fonctionnalités.",
-      en: "Padel15 is a padel club in Paris for which I designed and developed the website solo, in just a few days, using Next.js, React, Tailwind, and deployment on Vercel. V2 will bring many new features.",
+      fr: "Padel15 est un club de padel parisien alliant sport, lifestyle et restauration. Ils m'ont contacté sans maquette ni contenu — juste une vision. J'ai pris en charge l'ensemble : design, développement, SEO local, déploiement Vercel. Le site génère aujourd'hui un trafic organique constant sans aucun investissement publicitaire.",
+      en: "Padel15 is a Parisian padel club combining sport, lifestyle and dining. They came to me with no mockup, no content — just a vision. I handled everything: design, development, local SEO, Vercel deployment. The site now generates consistent organic traffic with zero ad spend.",
     },
-    KPIs: [],
+    KPIs: [
+      {
+        number: "3 500 - 4 000",
+        fr: "Visiteurs par mois",
+        en: "Monthly visitors",
+      },
+      {
+        number: "100/100",
+        fr: "Score SEO Lighthouse",
+        en: "Lighthouse SEO score",
+      },
+      { number: "0€", fr: "Budget publicitaire", en: "Ad spend" },
+      {
+        number: "From scratch",
+        fr: "Conçu et développé seul",
+        en: "Designed & built solo",
+      },
+    ],
     technicalChallenges: [
       {
         fr: "Développement et design from scratch en quelques jours, gestion complète du projet.",
