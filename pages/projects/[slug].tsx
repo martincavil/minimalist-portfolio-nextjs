@@ -19,6 +19,11 @@ export default function ProjectPage({ project }: ProjectPageProps) {
   const { t, lang } = useTranslation("common");
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
+  // Helper function to check if URL is a video
+  const isVideo = (url: string) => {
+    return url.endsWith(".mp4") || url.endsWith(".webm") || url.endsWith(".mov");
+  };
+
   // Close modal on Escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -256,16 +261,27 @@ export default function ProjectPage({ project }: ProjectPageProps) {
               {project.images.map((image, idx) => (
                 <div
                   key={idx}
-                  className="rounded-lg overflow-hidden border border-interactive cursor-pointer hover:border-primary transition-colors group"
+                  className="rounded-lg overflow-hidden border border-interactive cursor-pointer hover:border-primary transition-colors group flex items-center justify-center"
                   onClick={() => setSelectedImage(image)}
                 >
-                  <Image
-                    src={image}
-                    alt={`${project.name} - Screenshot ${idx + 1}`}
-                    width={800}
-                    height={500}
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
-                  />
+                  {isVideo(image) ? (
+                    <video
+                      src={image}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <Image
+                      src={image}
+                      alt={`${project.name} - Screenshot ${idx + 1}`}
+                      width={800}
+                      height={500}
+                      className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
+                    />
+                  )}
                 </div>
               ))}
             </div>
@@ -289,13 +305,24 @@ export default function ProjectPage({ project }: ProjectPageProps) {
               className="relative max-w-[90vw] max-h-[90vh]"
               onClick={(e) => e.stopPropagation()}
             >
-              <Image
-                src={selectedImage}
-                alt="Project preview"
-                width={1920}
-                height={1080}
-                className="max-w-[90vw] max-h-[90vh] w-auto h-auto object-contain rounded-lg"
-              />
+              {isVideo(selectedImage) ? (
+                <video
+                  src={selectedImage}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="max-w-[90vw] max-h-[90vh] w-auto h-auto object-contain rounded-lg"
+                />
+              ) : (
+                <Image
+                  src={selectedImage}
+                  alt="Project preview"
+                  width={1920}
+                  height={1080}
+                  className="max-w-[90vw] max-h-[90vh] w-auto h-auto object-contain rounded-lg"
+                />
+              )}
             </div>
           </div>
         )}

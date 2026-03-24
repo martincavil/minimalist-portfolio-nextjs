@@ -145,9 +145,9 @@ export const projects: Project[] = [
     skills: ["Shopify", "Liquid", "JavaScript", "HTML", "CSS", "SEO"],
     url: "https://maisondutemps.com/",
     cover:
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147434/portfolio/projects/maisondutemps/cover.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1774356596/portfolio/projects/maisondutemps/maisondutemps-cover_ubcqly.webp",
     gifCover:
-      "https://res.cloudinary.com/martincvl/video/upload/v1763147438/portfolio/projects/maisondutemps/maisondutemps.mp4",
+      "https://res.cloudinary.com/martincvl/video/upload/v1774356005/portfolio/projects/maisondutemps/maisondutemps_voav1s.mp4",
     excerpt: {
       fr: "Refonte complète et optimisation continue d'une boutique e-commerce de montres haut de gamme avec création de modules Shopify sur-mesure et amélioration de l'expérience utilisateur.",
       en: "Complete redesign and ongoing optimization of a high-end watch e-commerce store with custom Shopify module development and user experience enhancement.",
@@ -226,10 +226,10 @@ export const projects: Project[] = [
       en: "3 years as Frontend Lead at Uptoo: I designed and maintained dozens of web tools (candidate platforms, client interfaces, internal tools), implemented all frontend processes, and achieved perfect Lighthouse scores on key projects. Technical reference for all things frontend at a €25M+ revenue company.",
     },
     images: [
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147456/portfolio/projects/uptoo/uptoo-1.webp",
+      "https://res.cloudinary.com/martincvl/video/upload/v1774356109/portfolio/projects/uptoo/uptoo-1_f6w17f.mp4",
       "https://res.cloudinary.com/martincvl/image/upload/v1763147459/portfolio/projects/uptoo/uptoo-4.webp",
       "https://res.cloudinary.com/martincvl/image/upload/v1763147457/portfolio/projects/uptoo/uptoo-2.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147458/portfolio/projects/uptoo/uptoo-3.webp",
+      "https://res.cloudinary.com/martincvl/video/upload/v1774356103/portfolio/projects/uptoo/uptoo-4_avho7d.mp4",
     ],
     companyHistory: {
       fr: "Uptoo est le leader français du recrutement commercial, générant plus de 25 millions d'euros de chiffre d'affaires annuel. Avec une base de données de plus de 700 000 candidats et plus de 9 000 clients entreprises, Uptoo accompagne les entreprises dans leur développement commercial depuis plus de 15 ans. L'entreprise se distingue par son expertise pointue du métier de la vente et sa capacité à matcher les meilleurs profils avec les opportunités les plus pertinentes.",
@@ -392,9 +392,9 @@ export const projects: Project[] = [
     skills: ["Next.js", "TypeScript", "Tailwind CSS", "Brevo", "SEO", "Vercel"],
     url: "https://les-yeux-detectives.com/",
     cover:
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147430/portfolio/projects/les-yeux-detectives/cover.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1774355952/portfolio/projects/les-yeux-detectives/lyd-cover_pz9oto.webp",
     gifCover:
-      "https://res.cloudinary.com/martincvl/video/upload/v1763147432/portfolio/projects/les-yeux-detectives/les-yeux-detectives.mp4",
+      "https://res.cloudinary.com/martincvl/video/upload/v1774355821/portfolio/projects/les-yeux-detectives/les-yeux-detectives.mp4",
     excerpt: {
       fr: "Création d'une plateforme web sobre et professionnelle pour Les Yeux - Détectives Privés, conçue pour inspirer confiance, valoriser l'expertise juridique du cabinet et faciliter la prise de contact sécurisée.",
       en: "Creation of a sober and professional web platform for Les Yeux - Détectives Privés, designed to inspire trust, showcase the agency's legal expertise, and facilitate secure contact.",
