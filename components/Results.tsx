@@ -20,7 +20,7 @@ export default function Results() {
     {
       key: "padel15",
       emoji: "🎾",
-      metric: "+3000",
+      metric: "+5000",
       metricLabel: "results.padel15.metricLabel",
       title: "results.padel15.title",
       description: "results.padel15.description",
@@ -38,7 +38,7 @@ export default function Results() {
   useEffect(() => {
     if (!cardsRef.current) return;
     const elements = cardsRef.current.filter(
-      (el): el is HTMLDivElement => el !== null
+      (el): el is HTMLDivElement => el !== null,
     );
     gsap.set(elements, { opacity: 0, scale: 0.95 });
 
@@ -53,8 +53,8 @@ export default function Results() {
     for (let i = 0; i < elements.length; i += cols) {
       lines.push(
         Array.from({ length: cols }, (_, j) => i + j).filter(
-          (idx) => idx < elements.length
-        )
+          (idx) => idx < elements.length,
+        ),
       );
     }
 
@@ -76,7 +76,7 @@ export default function Results() {
           }
         });
       },
-      { threshold: 0.8 }
+      { threshold: 0.8 },
     );
     lines.forEach((line) => {
       const first = elements[line[0]];
