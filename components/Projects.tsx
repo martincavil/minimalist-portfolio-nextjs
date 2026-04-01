@@ -27,7 +27,7 @@ export default function Projects() {
       </div>
       <div className="relative">
         <ul className="divide-y divide-interactive">
-          {projects.slice(0, 3).map((project, idx) => (
+          {projects.slice(0, 4).map((project, idx) => (
             <li key={project.slug}>
               <Link
                 href={`/projects/${project.slug}`}
@@ -68,16 +68,27 @@ export default function Projects() {
                     className="pointer-events-none absolute z-30 transition-transform duration-75"
                     style={{
                       left: mouse.x + 24,
-                      top: mouse.y - 150,
+                      top: mouse.y - 220,
                     }}
                   >
-                    <Image
-                      src={project.cover}
-                      alt={project.name}
-                      width={300}
-                      height={169}
-                      className="w-[300px] h-[169px] object-cover rounded-lg shadow-lg border border-interactive bg-primary-inverted"
-                    />
+                    {project.gifCover ? (
+                      <video
+                        src={project.gifCover}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-[300px] h-[169px] object-cover rounded-lg shadow-lg border border-interactive bg-primary-inverted"
+                      />
+                    ) : (
+                      <Image
+                        src={project.cover}
+                        alt={project.name}
+                        width={300}
+                        height={169}
+                        className="w-[300px] h-[169px] object-cover rounded-lg shadow-lg border border-interactive bg-primary-inverted"
+                      />
+                    )}
                   </span>
                 )}
               </Link>
