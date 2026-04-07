@@ -67,13 +67,24 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
                         : mouse.y - 150,
                   }}
                 >
-                  <Image
-                    src={project.cover}
-                    alt={project.name}
-                    width={300}
-                    height={169}
-                    className="w-[300px] h-[169px] object-cover rounded-lg shadow-lg border border-interactive bg-primary-inverted"
-                  />
+                  {project.gifCover ? (
+                    <video
+                      src={project.gifCover}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-[300px] h-[169px] object-cover rounded-lg shadow-lg border border-interactive bg-primary-inverted"
+                    />
+                  ) : (
+                    <Image
+                      src={project.cover}
+                      alt={project.name}
+                      width={300}
+                      height={169}
+                      className="w-[300px] h-[169px] object-cover rounded-lg shadow-lg border border-interactive bg-primary-inverted"
+                    />
+                  )}
                 </span>
               )}
             </Link>

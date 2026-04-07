@@ -86,6 +86,12 @@ export const projects: Project[] = [
       fr: "Edouard Carbonne est ingénieur de mastering international, ayant travaillé avec des artistes reconnus dans l'industrie musicale. Fort d'une expertise technique pointue et d'une oreille affûtée par des années d'expérience, il accompagne musiciens, producteurs et labels dans la dernière étape cruciale de la production musicale : le mastering. Son approche allie maîtrise technique des outils audio professionnels et sensibilité artistique pour sublimer chaque projet musical.",
       en: "Edouard Carbonne is an international mastering engineer who has worked with acclaimed artists in the music industry. With sharp technical expertise and an ear honed by years of experience, he supports musicians, producers, and labels in the crucial final stage of music production: mastering. His approach combines technical mastery of professional audio tools with artistic sensitivity to elevate each musical project.",
     },
+    testimony: {
+      fr: "Merci Martin Cavil pour ton travail ! Efficace et professionnel jusqu'au bout, je suis super content du résultat ! Et les premiers retours des artistes et ingénieurs du son sont super positifs.",
+      en: "Thank you, Martin Cavil, for your work! You were efficient and professional from start to finish, and I’m really happy with the result! And the initial feedback from the artists and sound engineers has been overwhelmingly positive.",
+      author: "Edouard C.",
+      role: "Founder & CEO",
+    },
     context: {
       fr: "Edouard Carbonne avait besoin d'un site web qui reflète son niveau d'exigence professionnelle et se démarque dans l'univers du mastering audio. Son ancien site ne correspondait plus à son positionnement premium ni à l'évolution de son activité. L'objectif était de créer une expérience unique, pensée comme une application web moderne, avec un parcours client fluide permettant aux artistes de déposer leurs fichiers audio directement et de générer des fiches de production professionnelles.",
       en: "Edouard Carbonne needed a website that reflects his level of professional quality and stands out in the audio mastering world. His previous site no longer matched his premium positioning or his business evolution. The goal was to create a unique experience, designed as a modern web application, with a smooth client journey allowing artists to upload their audio files directly and generate professional production sheets.",
@@ -159,12 +165,12 @@ export const projects: Project[] = [
       fr: "Maison du Temps est une boutique en ligne spécialisée dans les montres haut de gamme, offrant une sélection raffinée de pièces horlogères d'exception. Fondée avec une passion profonde pour l'horlogerie et un souci constant du détail, l'entreprise s'est rapidement imposée comme une référence pour les amateurs de belles montres en quête de qualité, d'authenticité et de service personnalisé. Chaque montre est sélectionnée avec soin pour répondre aux exigences des connaisseurs et collectionneurs.",
       en: "Maison du Temps is an online boutique specializing in high-end watches, offering a refined selection of exceptional timepieces. Founded with a deep passion for watchmaking and constant attention to detail, the company has quickly established itself as a benchmark for watch enthusiasts seeking quality, authenticity, and personalized service. Each watch is carefully selected to meet the demands of connoisseurs and collectors.",
     },
-    // testimony: {
-    //   fr: "Martin a su comprendre nos besoins et transformer notre vision en réalité. Son expertise technique et son sens du détail ont considérablement amélioré l'expérience de nos clients.",
-    //   en: "Martin understood our needs and transformed our vision into reality. His technical expertise and attention to detail significantly improved our customers' experience.",
-    //   author: "Client Maison Du Temps",
-    //   role: "Founder",
-    // },
+    testimony: {
+      fr: "Martin a transformé notre boutique en ligne. Son expertise en e-commerce et son sens du détail ont donné vie à une expérience utilisateur qui reflète véritablement le raffinement de nos montres. Les performances du site et le design élégant ont dépassé nos espérances.",
+      en: "Martin transformed our online boutique. His e-commerce expertise and attention to detail brought to life a user experience that truly reflects the refinement of our watches. The site's performance and elegant design exceeded our expectations.",
+      author: "Hugo D.",
+      role: "Founder & CEO",
+    },
     context: {
       fr: "Maison Du Temps souhaitait moderniser en profondeur son site e-commerce pour offrir une expérience utilisateur premium digne de ses produits haut de gamme et augmenter significativement ses conversions. L'objectif était de créer une boutique en ligne élégante, performante et facile à maintenir, tout en valorisant l'excellence et le prestige des montres proposées.",
       en: "Maison Du Temps wanted to thoroughly modernize its e-commerce site to provide a premium user experience worthy of its high-end products and significantly increase conversions. The goal was to create an elegant, high-performing, and easy-to-maintain online store while highlighting the excellence and prestige of the watches offered.",
@@ -236,8 +242,8 @@ export const projects: Project[] = [
       en: "Uptoo is France's leading sales recruitment agency, generating over €25 million in annual revenue. With a database of over 700,000 candidates and more than 9,000 corporate clients, Uptoo has been supporting companies in their commercial development for over 15 years. The company stands out through its sharp expertise in sales professions and its ability to match top profiles with the most relevant opportunities.",
     },
     testimony: {
-      fr: "J’ai eu la chance de travailler avec Martin sur beaucoup de projets Frontend (React, Tailwind, Shadcn...), et c’est un développeur que je recommande sans hésiter. Sérieux, exigeant sur la qualité de ses rendus, il comprend vite les enjeux et fait toujours attention aux détails. Martin est aussi quelqu’un de très à l’écoute, toujours dans le dialogue pour trouver la meilleure solution. Bref, un vrai pro, fiable et agréable à avoir dans une équipe.",
-      en: "I had the chance to work with Martin on many Frontend projects (React, Tailwind, Shadcn...), and he is a developer I recommend without hesitation. Serious, demanding about the quality of his work, he quickly understands the stakes and always pays attention to details. Martin is also very attentive, always engaging in dialogue to find the best solution. In short, a true professional, reliable and pleasant to have on a team.",
+      fr: "J'ai eu la chance de travailler avec Martin sur beaucoup de projets Frontend (React, Tailwind, Shadcn...), et c’est un développeur que je recommande sans hésiter. Sérieux, exigeant sur la qualité de ses rendus, il comprend vite les enjeux et fait toujours attention aux détails. Martin est aussi quelqu’un de très à l’écoute, toujours dans le dialogue pour trouver la meilleure solution. Bref, un vrai pro, fiable et agréable à avoir dans une équipe.",
+      en: "I’ve had the opportunity to work with Martin on many front-end projects (React, Tailwind, Shadcn...), and he’s a developer I’d recommend without hesitation. He’s dedicated, exacting about the quality of his work, quick to grasp the challenges at hand, and always pays close attention to detail. Martin is also a great listener, always open to discussion to find the best solution. In short, he’s a true professional—reliable and a pleasure to have on the team.",
       author: "Alexandre A.",
       role: "CTO",
     },

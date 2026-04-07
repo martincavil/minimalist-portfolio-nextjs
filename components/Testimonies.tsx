@@ -4,34 +4,31 @@ import useTranslation from "next-translate/useTranslation";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 
-export default function Results() {
+export default function Testimonies() {
   const { t } = useTranslation("common");
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
 
-  const results = [
+  const testimonies = [
     {
-      key: "maison-du-temps",
-      emoji: "⌚",
-      metric: "+20 000",
-      metricLabel: "results.maisonDuTemps.metricLabel",
-      title: "results.maisonDuTemps.title",
-      description: "results.maisonDuTemps.description",
+      key: "testimony1",
+      author: "testimonies.testimony1.author",
+      role: "testimonies.testimony1.role",
+      company: "testimonies.testimony1.company",
+      text: "testimonies.testimony1.text",
     },
     {
-      key: "padel15",
-      emoji: "🎾",
-      metric: "+5000",
-      metricLabel: "results.padel15.metricLabel",
-      title: "results.padel15.title",
-      description: "results.padel15.description",
+      key: "testimony2",
+      author: "testimonies.testimony2.author",
+      role: "testimonies.testimony2.role",
+      company: "testimonies.testimony2.company",
+      text: "testimonies.testimony2.text",
     },
     {
-      key: "uptoo",
-      emoji: "📈",
-      metric: "25M€",
-      metricLabel: "results.uptoo.metricLabel",
-      title: "results.uptoo.title",
-      description: "results.uptoo.description",
+      key: "testimony3",
+      author: "testimonies.testimony3.author",
+      role: "testimonies.testimony3.role",
+      company: "testimonies.testimony3.company",
+      text: "testimonies.testimony3.text",
     },
   ];
 
@@ -86,20 +83,18 @@ export default function Results() {
   }, []);
 
   return (
-    <section id="results" className="container pb-10 relative z-20">
-      <div className="md:border md:border-interactive md:px-8 py-10 md:py-16 rounded-lg bg-background space-y-6 relative z-20">
+    <section id="testimonies" className="container pb-10 relative z-20">
+      <div className="py-10 md:py-16 rounded-lg bg-background space-y-6 relative z-20">
         <div className="text-center space-y-6">
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-semibold bg-gradient-to-r from-primary to-text-tertiary bg-clip-text text-transparent">
-            {t("results.title")}
+            {t("testimonies.title")}
           </h2>
-          {/* Description */}
-          <p className="text-text-tertiary">{t("results.description")}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {results.map((result, i) => (
+          {testimonies.map((testimony, i) => (
             <div
-              key={result.key}
+              key={testimony.key}
               ref={(el) => {
                 cardsRef.current[i] = el;
                 return undefined;
@@ -107,27 +102,22 @@ export default function Results() {
               className="md:min-h-80 border border-interactive p-6 flex justify-between rounded-lg flex-col space-y-4"
               style={{ opacity: 0, transform: "scale(0.95)" }}
             >
-              {/* Emoji */}
-              <div className="text-5xl mb-2" aria-hidden="true">
-                {result.emoji}
+              {/* Quote */}
+              <div className="text-base italic text-text-tertiary leading-relaxed flex-1">
+                &ldquo;{t(testimony.text)}&rdquo;
               </div>
 
-              {/* Metric */}
-              <div className="space-y-1">
-                <div className="text-3xl font-bold text-primary">
-                  {result.metric}
+              {/* Author info */}
+              <div className="space-y-1 pt-4 border-t border-interactive">
+                <div className="text-lg font-semibold">
+                  {t(testimony.author)}
                 </div>
                 <div className="text-sm text-text-tertiary">
-                  {t(result.metricLabel)}
+                  {t(testimony.role)}
                 </div>
-              </div>
-
-              {/* Title */}
-              <div className="text-lg font-semibold">{t(result.title)}</div>
-
-              {/* Description */}
-              <div className="text-sm text-text-tertiary">
-                {t(result.description)}
+                <div className="text-sm text-primary font-medium">
+                  {t(testimony.company)}
+                </div>
               </div>
             </div>
           ))}

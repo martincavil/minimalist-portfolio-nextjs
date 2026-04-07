@@ -117,7 +117,28 @@
     "description1": "Développeur front de formation, j’ai construit mon expertise autour de React, Next.js et Tailwind. Mais mon vrai rôle va au-delà du code : j’aide les entreprises à faire évoluer leurs produits, améliorer leur acquisition et transformer leurs interfaces en leviers business. Chez Uptoo, j’ai travaillé au sein d’une équipe tech d’une dizaine de développeurs sur des projets complexes directement connectés au chiffre d’affaires. Cette expérience m’a appris à créer des interfaces qui ne sont pas juste belles — mais qui convertissent, qui simplifient, et qui accompagnent la croissance. J’aime comprendre comment une entreprise fonctionne, identifier ce qui bloque (performance, UX, parcours, SEO, cohérence produit), puis proposer et implémenter des solutions concrètes. Je ne suis pas un simple exécutant : je m’intègre dans l’équipe, je challenge, j’améliore, et j’avance avec méthode. Mon objectif : aider mes clients à aller plus vite, plus loin, et avec un produit plus performant.",
     "description2": "En dehors du code, je suis un passionné de sport : running, trail, football, et globalement tout ce qui me pousse à me dépasser. J’aime la simplicité, les moments partagés avec mes amis ou ma famille, et les découvertes au quotidien. Je vis aujourd’hui à Valencia (Espagne), où je trouve l’équilibre entre travail, soleil, sport et vie sociale — une source d’inspiration précieuse dans tout ce que je crée."
   },
+  "testimonies": {
+    "title": "Mes clients en parlent mieux que moi",
+    "testimony1": {
+      "author": "Edouard C.",
+      "role": "Founder & CEO",
+      "company": "MasteredByEdouard",
+      "text": "Merci Martin Cavil pour ton travail ! Efficace et professionnel jusqu'au bout, je suis super content du résultat ! Et les premiers retours des artistes et ingénieurs du son sont super positifs."
+    },
+    "testimony2": {
+      "author": "Hugo D.",
+      "role": "Founder & CEO",
+      "company": "Maison du Temps",
+      "text": "Martin a transformé notre boutique en ligne. Son expertise en e-commerce et son sens du détail ont donné vie à une expérience utilisateur qui reflète véritablement le raffinement de nos montres. Les performances du site et le design élégant ont dépassé nos espérances."
+    },
+    "testimony3": {
+      "author": "Alexandre A.",
+      "role": "CTO",
+      "company": "Uptoo",
+      "text": "J'ai eu la chance de travailler avec Martin sur beaucoup de projets Frontend (React, Tailwind, Shadcn...), et c’est un développeur que je recommande sans hésiter. Sérieux, exigeant sur la qualité de ses rendus, il comprend vite les enjeux et fait toujours attention aux détails. Martin est aussi quelqu’un de très à l’écoute, toujours dans le dialogue pour trouver la meilleure solution. Bref, un vrai pro, fiable et agréable à avoir dans une équipe."
+    }
+  },
   "posts": {
-    "title": "Quelque chose se prépare en coulisses 🤭"
+    "title": "Quelque chose se prépare en coulisses 😉"
   }
 }

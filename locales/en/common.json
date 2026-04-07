@@ -117,7 +117,28 @@
     "description1": "As a front-end developer, I have built my expertise around React, Next.js, and Tailwind. But my real role goes beyond code: I help companies evolve their products, improve their acquisition, and transform their interfaces into business levers. At Uptoo, I worked with a tech team of about ten developers on complex projects directly linked to revenue. This experience taught me how to create interfaces that aren't just beautiful—they convert, simplify, and support growth. I like to understand how a company works, identify what's holding it back (performance, UX, user journey, SEO, product consistency), and then propose and implement concrete solutions. I'm not just an executor: I integrate myself into the team, I challenge, I improve, and I move forward methodically. My goal: to help my clients go faster, further, and with a more efficient product.",
     "description2": "Outside of code, I’m passionate about sports: running, trail running, soccer, and basically anything that pushes me to excel. I love simplicity, moments shared with friends or family, and daily discoveries. I now live in Valencia (Spain), where I find balance between work, sunshine, sports, and social life — a precious source of inspiration in everything I create."
   },
+  "testimonies": {
+    "title": "My clients can describe it better",
+    "testimony1": {
+      "author": "Edouard C.",
+      "role": "Founder & CEO",
+      "company": "MasteredByEdouard",
+      "text": "Thank you, Martin Cavil, for your work! You were efficient and professional from start to finish, and I’m really happy with the result! And the initial feedback from the artists and sound engineers has been overwhelmingly positive."
+    },
+    "testimony2": {
+      "author": "Hugo D.",
+      "role": "Founder & CEO",
+      "company": "Maison du Temps",
+      "text": "Martin transformed our online boutique. His e-commerce expertise and attention to detail brought to life a user experience that truly reflects the refinement of our watches. The site's performance and elegant design exceeded our expectations."
+    },
+    "testimony3": {
+      "author": "Alexandre A.",
+      "role": "CTO",
+      "company": "Uptoo",
+      "text": "I’ve had the opportunity to work with Martin on many front-end projects (React, Tailwind, Shadcn...), and he’s a developer I’d recommend without hesitation. He’s dedicated, exacting about the quality of his work, quick to grasp the challenges at hand, and always pays close attention to detail. Martin is also a great listener, always open to discussion to find the best solution. In short, he’s a true professional—reliable and a pleasure to have on the team."
+    }
+  },
   "posts": {
-    "title": "Something is brewing behind the scenes 🤭"
+    "title": "Something is brewing behind the scenes 😉"
   }
 }

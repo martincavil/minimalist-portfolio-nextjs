@@ -3,6 +3,7 @@ import DotGridBackground from "@/components/DotGridBackground";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Results from "@/components/Results";
+import Testimonies from "@/components/Testimonies";
 import Skills from "@/components/Skills";
 import Process from "@/components/Process";
 import About from "@/components/About";
@@ -70,6 +71,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Results />
+      <Testimonies />
       <Skills />
       <Process />
       <About />
