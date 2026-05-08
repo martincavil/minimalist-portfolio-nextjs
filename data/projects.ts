@@ -51,6 +51,91 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    name: "Ulysse & Victor Art Expertise",
+    slug: "ulysse-victor-art-expertise",
+    year: "2026",
+    domain: {
+      fr: "Maison de vente aux enchères — Estimation d'objets d'art",
+      en: "Auction house — Art object appraisal",
+    },
+    skills: [
+      "Next.js 15",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Strapi 5",
+      "Claude Vision API",
+      "Resend",
+      "GA4",
+      "Vercel",
+    ],
+    url: "https://www.ulyssevictor-art-expertise.fr/",
+    cover:
+      "https://res.cloudinary.com/martincvl/image/upload/v1778237627/portfolio/projects/uv-art-expertise/uv-cover_ocx44b.webp",
+    gifCover:
+      "https://res.cloudinary.com/martincvl/video/upload/v1778236925/portfolio/projects/uv-art-expertise/uv-art-expertise-cover_zo6hn1.mp4",
+    excerpt: {
+      fr: "Conception et développement complet du site d'acquisition de leads pour Ulysse & Victor, maison de vente aux enchères parisienne. Les particuliers peuvent faire estimer gratuitement leurs objets d'art en ligne via un formulaire multi-étapes ou une estimation instantanée par IA. Le site génère automatiquement des centaines de pages SEO ciblées par ville et spécialité.",
+      en: "Full design and development of the lead acquisition website for Ulysse & Victor, a Parisian auction house. Individuals can get their art objects appraised for free online via a multi-step form or instant AI appraisal. The site automatically generates hundreds of SEO-targeted pages by city and specialty.",
+    },
+    images: [
+      "https://res.cloudinary.com/martincvl/video/upload/v1778236925/portfolio/projects/uv-art-expertise/uv-art-expertise-cover_zo6hn1.mp4",
+      "https://res.cloudinary.com/martincvl/image/upload/v1778237627/portfolio/projects/uv-art-expertise/uv-cover_ocx44b.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1778237626/portfolio/projects/uv-art-expertise/uv-3_e9am5o.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1778237628/portfolio/projects/uv-art-expertise/uv-4_oapwim.webp",
+    ],
+    companyHistory: {
+      fr: "Ulysse & Victor Art Expertise a été fondé par les créateurs de la maison de ventes Ulysse & Victor. La structure propose un service d'expertise et d'estimation assuré par une équipe de commissaires-priseurs et d'experts, régulièrement sollicités dans le cadre d'inventaires de collections, de successions, d'assurances et dans les différents domaines du marché de l'art. Leur réseau d'experts indépendants reconnus leur permet de couvrir 12 spécialités, des tableaux modernes à l'automobile de collection.",
+      en: "Ulysse & Victor Art Expertise was founded by the creators of the Ulysse & Victor auction house. The firm offers an appraisal and estimation service provided by a team of auctioneers and experts, regularly called upon for collection inventories, estate settlements, insurance purposes, and across various segments of the art market. Their network of recognized independent experts allows them to cover 12 specialties, from modern paintings to collector automobiles.",
+    },
+    context: {
+      fr: "Ulysse & Victor avait besoin d'un site d'acquisition de leads qui reflète leur positionnement premium et leur permette de capter des particuliers souhaitant faire estimer leurs objets. L'objectif était double : créer une expérience utilisateur fluide pour soumettre une demande d'estimation, et dominer le référencement naturel sur les requêtes de longue traîne liées à l'estimation d'objets d'art en France.",
+      en: "Ulysse & Victor needed a lead acquisition website that reflects their premium positioning and enables them to capture individuals seeking art object appraisals. The goal was twofold: create a smooth user experience for submitting an appraisal request, and dominate organic search rankings for long-tail queries related to art object appraisal in France.",
+    },
+    challenges: [
+      {
+        fr: "Générer des centaines de pages SEO programmatiques (ville × spécialité) sans créer de thin content pénalisé par Google",
+        en: "Generate hundreds of programmatic SEO pages (city × specialty) without producing thin content penalized by Google",
+      },
+      {
+        fr: "Intégrer une estimation IA instantanée via Claude Vision avec contrôle strict des coûts (budget cap, rate limiting par IP et global)",
+        en: "Integrate instant AI appraisal via Claude Vision with strict cost controls (budget cap, per-IP and global rate limiting)",
+      },
+      {
+        fr: "Brancher un CMS headless Strapi 5 avec un format de réponse aplati différent des versions précédentes, sur un hébergement optimisé sans cold start",
+        en: "Connect a Strapi 5 headless CMS with a flattened response format different from previous versions, on optimized hosting without cold starts",
+      },
+      {
+        fr: "Configurer l'infrastructure DNS complète (Vercel + Strapi Cloud + Resend) pour une délivrabilité email optimale",
+        en: "Configure the full DNS infrastructure (Vercel + Strapi Cloud + Resend) for optimal email deliverability",
+      },
+    ],
+    work: {
+      fr: "J'ai conçu et développé une plateforme d'acquisition complète avec une architecture SEO programmatique générant 120 landing pages géolocalisées (15 villes × 8 spécialités), chacune avec metadata unique, JSON-LD contextualisé et maillage interne automatique. J'ai intégré une estimation IA instantanée via l'API Claude Vision (Anthropic) avec un système de contrôle des coûts : email obligatoire avant analyse, rate limiting par IP et global, redimensionnement image côté client, budget cap configurable. Le site est entièrement branché sur Strapi 5 (CMS headless) avec ISR pour les performances. Un script de génération d'articles SEO automatise la création de contenu via l'API Claude. L'infrastructure DNS a été configurée de A à Z : domaine OVH, Vercel, Strapi Cloud Essential, et Resend avec SPF/DKIM/DMARC pour une délivrabilité optimale. Technologies : Next.js 15, TypeScript, Tailwind CSS v4, Strapi 5, Resend, Claude Vision API, GA4 Consent Mode v2, Vercel.",
+      en: "I designed and developed a complete lead acquisition platform with a programmatic SEO architecture generating 120 geolocated landing pages (15 cities × 8 specialties), each with unique metadata, contextualized JSON-LD, and automatic internal linking. I integrated instant AI appraisal via the Claude Vision API (Anthropic) with a cost control system: mandatory email before analysis, per-IP and global rate limiting, client-side image resizing, configurable budget cap. The site is fully connected to Strapi 5 (headless CMS) with ISR for performance. An SEO article generation script automates content creation via the Claude API. The DNS infrastructure was configured end-to-end: OVH domain, Vercel, Strapi Cloud Essential, and Resend with SPF/DKIM/DMARC for optimal deliverability. Technologies: Next.js 15, TypeScript, Tailwind CSS v4, Strapi 5, Resend, Claude Vision API, GA4 Consent Mode v2, Vercel.",
+    },
+    results: {
+      fr: "Lancement d'une plateforme SEO-first avec 120 pages de longue traîne indexées dès le départ, couvrant les principales requêtes d'estimation d'objets d'art par ville et spécialité en France. Le système d'estimation IA instantanée se distingue dans un marché où aucune maison de ventes concurrente ne propose cette fonctionnalité, chaque analyse capturant l'email du visiteur comme lead qualifié. Le script de génération d'articles permet une production de contenu SEO à cadence hebdomadaire sans ressource éditoriale supplémentaire.",
+      en: "Launch of a SEO-first platform with 120 long-tail pages indexed from day one, covering the main art object appraisal queries by city and specialty in France. The instant AI appraisal system stands out in a market where no competing auction house offers this feature, with each analysis capturing the visitor's email as a qualified lead. The article generation script enables weekly SEO content production without additional editorial resources.",
+    },
+    KPIs: [
+      {
+        number: "120 pages",
+        fr: "Landing pages SEO programmatiques géolocalisées",
+        en: "Geolocated programmatic SEO landing pages",
+      },
+      {
+        number: "Estimation IA",
+        fr: "Claude Vision intégré avec capture email et contrôle de coûts",
+        en: "Claude Vision integrated with email capture and cost controls",
+      },
+      {
+        number: "Full SEO",
+        fr: "JSON-LD, sitemap dynamique, schema markup avancé sur chaque page",
+        en: "JSON-LD, dynamic sitemap, advanced schema markup on every page",
+      },
+    ],
+  },
+  {
     name: "MasteredByEdouard",
     slug: "masteredbyedouard",
     year: "2026",
