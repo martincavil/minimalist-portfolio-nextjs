@@ -58,6 +58,7 @@ export const saasProjects: Saas[] = [
       en: "NoteShip.app is a changelog SaaS for indie makers and solo founders, built in public. Current phase: landing page to validate interest before writing a single line of product code.",
     },
     url: "https://noteship.app",
+    github: "https://github.com/martincavil/noteship",
     color: "#FF6B00",
     createdAt: "2026",
     status: "in-progress",
