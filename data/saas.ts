@@ -47,25 +47,123 @@ export type Saas = {
 
 export const saasProjects: Saas[] = [
   {
+    name: "NoteShip.app",
+    slug: "noteship-app",
+    tagline: {
+      fr: "Build in public — en cours de création",
+      en: "Build in public — currently being built",
+    },
+    description: {
+      fr: "NoteShip.app est un SaaS de changelog pour indie makers et solo founders, développé en build in public. Phase actuelle : landing page pour valider l'intérêt avant de coder quoi que ce soit.",
+      en: "NoteShip.app is a changelog SaaS for indie makers and solo founders, built in public. Current phase: landing page to validate interest before writing a single line of product code.",
+    },
+    url: "https://noteship.app",
+    color: "#FF6B00",
+    createdAt: "2026",
+    status: "in-progress",
+    team: ["Martin Cavil"],
+    statusNote: {
+      fr: "Phase 0 — Validation via landing page. Zéro code produit, zéro MRR.",
+      en: "Phase 0 — Idea validation via landing page. Zero product code, zero MRR.",
+    },
+    mrr: 0,
+    customers: 0,
+    monthlyVisits: 0,
+    skills: ["Next.js 15", "TypeScript", "Tailwind CSS", "Supabase", "Resend", "Vercel"],
+    problem: {
+      fr: "Headway est mort (aucune update depuis 2020), Beamer coûte 99$/mois, et la plupart des indie makers gèrent leurs updates produit dans un Notion que personne ne lit.",
+      en: "Headway is dead (no updates since 2020), Beamer costs $99/month, and most indie makers manage their product updates in a Notion doc nobody reads.",
+    },
+    solution: {
+      fr: "Une page changelog publique belle et rapide + un widget embarquable + des emails automatiques aux subscribers. Le tout pour 9$/mois.",
+      en: "A beautiful public changelog page + embeddable widget + automatic emails to subscribers. All for $9/month.",
+    },
+    whyBuilt: {
+      fr: "Après l'échec de ratee.me (codé avant de valider), j'applique la leçon inverse : landing page d'abord, distribution, et seulement si des gens s'inscrivent — je code. Je documente tout en build in public.",
+      en: "After ratee.me's failure (built before validating), I'm applying the opposite lesson: landing page first, distribution, and only if people sign up — I build. Documenting everything in public.",
+    },
+    features: [
+      {
+        title: { fr: "Page changelog publique", en: "Public changelog page" },
+        description: {
+          fr: "Une page dédiée, belle et rapide pour afficher toutes les mises à jour produit. Design dark mode premium, brandable.",
+          en: "A dedicated, beautiful and fast page to display all product updates. Premium dark mode design, fully brandable.",
+        },
+      },
+      {
+        title: { fr: "Widget embarquable", en: "Embeddable widget" },
+        description: {
+          fr: "Un widget iframe intégrable directement dans ton app pour notifier tes utilisateurs des nouveautés sans qu'ils quittent le produit.",
+          en: "An iframe widget embeddable directly in your app to notify users of updates without leaving the product.",
+        },
+      },
+      {
+        title: { fr: "Emails automatiques", en: "Automatic email notifications" },
+        description: {
+          fr: "Chaque nouvelle update est envoyée automatiquement par email aux subscribers du projet.",
+          en: "Every new update is automatically emailed to the project's subscribers.",
+        },
+      },
+      {
+        title: { fr: "AI drafts depuis GitHub", en: "AI drafts from GitHub" },
+        description: {
+          fr: "Connecte ton repo GitHub et Claude Haiku génère automatiquement un draft de changelog à partir de tes commits.",
+          en: "Connect your GitHub repo and Claude Haiku automatically generates a changelog draft from your commits.",
+        },
+      },
+    ],
+    businessModel: {
+      fr: "Freemium : plan gratuit (1 projet, 50 subscribers, branding NoteShip) + plan Pro à 9$/mois ou 49$/an (projets illimités, widget, custom domain, emails, AI drafts).",
+      en: "Freemium: free plan (1 project, 50 subscribers, NoteShip branding) + Pro plan at $9/month or $49/year (unlimited projects, widget, custom domain, emails, AI drafts).",
+    },
+    roadmap: [
+      {
+        fr: "Phase 0 (Mai 2026) — Landing page + collecte d'emails waitlist.",
+        en: "Phase 0 (May 2026) — Landing page + waitlist email collection.",
+      },
+      {
+        fr: "Phase 1 — Build in public : articles Substack + posts LinkedIn/X pour acquérir une audience avant le lancement.",
+        en: "Phase 1 — Build in public: Substack articles + LinkedIn/X posts to grow an audience before launch.",
+      },
+      {
+        fr: "Phase 2 — MVP uniquement si validation positive (emails + feedback qualitatif).",
+        en: "Phase 2 — MVP only if validation is positive (emails + qualitative feedback).",
+      },
+      {
+        fr: "Phase 3 — Lancement bêta privé pour les inscrits sur la waitlist.",
+        en: "Phase 3 — Private beta launch for waitlist subscribers.",
+      },
+    ],
+    KPIs: [
+      { number: "$0", fr: "MRR", en: "MRR" },
+      { number: "Phase 0", fr: "Landing page live", en: "Landing page live" },
+      { number: "9$/mois", fr: "Prix cible Pro", en: "Target Pro price" },
+    ],
+    metrics: {
+      fr: "Phase actuelle : landing page live + waitlist active. Objectif : valider l'intérêt avant d'écrire la moindre ligne de code produit.",
+      en: "Current phase: landing page live + active waitlist. Goal: validate interest before writing a single line of product code.",
+    },
+  },
+  {
     name: "Ratee.me",
     slug: "ratee-me",
     tagline: {
-      fr: "Obtiens un feedback honnête et anonyme sur n'importe quoi en 2 minutes",
-      en: "Get honest anonymous feedback on anything in 2 minutes",
+      fr: "Feedback anonyme communautaire — projet à l'abandon",
+      en: "Community anonymous feedback — abandoned project",
     },
     description: {
-      fr: "Ratee.me est une plateforme communautaire de feedback anonyme. Soumets ton profil LinkedIn, ta landing page, ton idée de startup ou n'importe quel projet et reçois des notes (0-10) et des commentaires constructifs de la communauté. Rapide, honnête, sans filtre.",
-      en: "Ratee.me is a community-powered anonymous feedback platform. Submit your LinkedIn profile, landing page, startup idea, or any project and get ratings (0-10) and honest feedback from the community. Fast, candid, unfiltered.",
+      fr: "Ratee.me était une plateforme de feedback anonyme. Soumets ton profil, ta landing page ou ton idée et reçois des notes et avis de la communauté. Lancé en décembre 2025, le projet est aujourd'hui à l'abandon : j'ai codé l'app entière avant d'avoir validé que ça intéressait quelqu'un.",
+      en: "Ratee.me was an anonymous feedback platform. Submit your profile, landing page, or idea and get ratings and comments from the community. Launched in December 2025, the project is now abandoned: I built the entire app before validating whether anyone actually wanted it.",
     },
     url: "https://ratee.me",
     github: "https://github.com/martincavil/ratee-me",
     color: "#10B981",
-    createdAt: "2026-01",
-    status: "beta",
+    createdAt: "2025-12",
+    status: "paused",
     team: ["Martin Cavil"],
     statusNote: {
-      fr: "2 mois, 0 revenue — en cours de lancement sur le marché US + exploration de partnerships",
-      en: "2 months, $0 MRR — launching on US market + exploring partnerships",
+      fr: "Lancé en décembre 2025 — à l'abandon. Erreur classique : code avant validation.",
+      en: "Launched December 2025 — abandoned. Classic mistake: code before validation.",
     },
     mrr: 0,
     customers: 0,
@@ -76,12 +174,12 @@ export const saasProjects: Saas[] = [
       en: "Getting honest feedback is nearly impossible. Friends won't criticize you, forums are noisy and subjective, professional feedback agencies cost thousands. So you build blind, never knowing if your idea, profile, or project actually resonates.",
     },
     solution: {
-      fr: "Ratee.me résout ça en 2 minutes. Tu soumets ce que tu veux : un lien, une image, du texte, une idée. La communauté évalue anonymement (0-10) et laisse des commentaires sincères. Tu reçois un score agrégé + feedback détaillé pour itérer rapidement. Pas de complaisance, pas d'amis qui ménagent, juste la vérité.",
-      en: "Ratee.me solves this in 2 minutes. Submit what you want: a link, image, text, or idea. The community rates it anonymously (0-10) and leaves honest feedback. You get an aggregated score + detailed comments to iterate fast. No sugar-coating, just truth.",
+      fr: "Ratee.me résolvait ça en 2 minutes. Tu soumets ce que tu veux : un lien, une image, du texte, une idée. La communauté évalue anonymement (0-10) et laisse des commentaires sincères. Tu reçois un score agrégé + feedback détaillé pour itérer rapidement.",
+      en: "Ratee.me solved this in 2 minutes. Submit what you want: a link, image, text, or idea. The community rates it anonymously (0-10) and leaves honest feedback. You get an aggregated score + detailed comments to iterate fast.",
     },
     whyBuilt: {
-      fr: "Au début, j'ai construit ratee.me comme outil d'automatisation de feedback pour freelancers (collecte NPS, témoignages automatiques). Mais j'ai vite réalisé le vrai problème : les gens ont besoin de feedback honnête, pas d'automatisation. Et ils ont peur. Peur de construire quelque chose que personne ne veut. Du coup j'ai pivoté en plateforme communautaire.",
-      en: "Initially, I built ratee.me as a feedback automation tool for freelancers (NPS collection, auto testimonials). But I quickly realized the real problem: people need honest feedback, not automation. And they're scared — scared to build something nobody wants. So I pivoted to a community platform.",
+      fr: "J'ai construit ratee.me en décembre 2025, motivé par l'idée. J'ai codé l'app complète en quelques semaines — auth, dashboard, système de notation, base de données, paiements Stripe. Et puis j'ai essayé de trouver des utilisateurs. Personne. Zéro traction, zéro intérêt mesurable. L'erreur était évidente en rétrospective : j'aurais dû valider l'idée avec une simple landing page avant d'écrire une seule ligne de code. C'est la leçon principale que j'ai tirée de ce projet, et que j'applique directement sur NoteShip.io.",
+      en: "I built ratee.me in December 2025, driven by excitement about the idea. I coded the full app in a few weeks — auth, dashboard, rating system, database, Stripe payments. Then I tried to find users. Nobody. Zero traction, zero measurable interest. The mistake was obvious in hindsight: I should have validated the idea with a simple landing page before writing a single line of code. That's the main lesson I took from this project, and I'm applying it directly to NoteShip.io.",
     },
     features: [
       {
@@ -112,56 +210,38 @@ export const saasProjects: Saas[] = [
           en: "View all your submissions, their scores, and feedback history. Track progress as you iterate on feedback.",
         },
       },
-      {
-        title: { fr: "Système de catégories", en: "Category system" },
-        description: {
-          fr: "Chaque catégorie a son contexte : profils (recrutement), landing pages (conversion), idées (viabilité), designs (esthétique). Les retours sont contextualisés.",
-          en: "Each category has context: profiles (hiring), landing pages (conversion), ideas (viability), designs (aesthetics). Feedback is contextualized.",
-        },
-      },
-      {
-        title: { fr: "Export & partage", en: "Export & sharing" },
-        description: {
-          fr: "Exporte ton score + feedbacks en PDF. Partage les résultats sur LinkedIn, email, etc. Preuve sociale instantanée.",
-          en: "Export your score + feedback as PDF. Share results on LinkedIn, email, etc. Instant social proof.",
-        },
-      },
     ],
     businessModel: {
-      fr: "Freemium : 5 soumissions/mois gratuites + feedback basique. Plan PRO (9,99€/mois) : soumissions illimitées, commentaires détaillés, analytics avancée, pas de limites de catégories, mise en avant sur la plateforme.",
-      en: "Freemium: 5 submissions/month free + basic feedback. Pro plan (€9.99/month): unlimited submissions, detailed comments, advanced analytics, no category limits, featured on platform.",
+      fr: "Freemium prévu : 5 soumissions/mois gratuites + Plan PRO (9,99€/mois). Non implémenté — le projet a été abandonné avant d'atteindre cette phase.",
+      en: "Planned freemium: 5 free submissions/month + Pro plan (€9.99/month). Not implemented — the project was abandoned before reaching this stage.",
     },
     roadmap: [
       {
-        fr: "Phase 1 (Janvier 2026) — Lancement public sur les produits US (Product Hunt, Reddit, HN). Focus acquisition des premiers 1000 users.",
-        en: "Phase 1 (January 2026) — Public launch on US platforms (Product Hunt, Reddit, HN). Focus on acquiring first 1,000 users.",
+        fr: "✅ Développement de l'app complète (auth, dashboard, notation, Stripe) — Décembre 2025",
+        en: "✅ Full app development (auth, dashboard, rating, Stripe) — December 2025",
       },
       {
-        fr: "Phase 2 (Février) — Système de catégories avancées avec templates spécifiques (landing page checklist, profil hiring, pitch startup).",
-        en: "Phase 2 (February) — Advanced category system with specific templates (landing page checklist, hiring profile, startup pitch).",
+        fr: "✅ Lancement public — Décembre 2025",
+        en: "✅ Public launch — December 2025",
       },
       {
-        fr: "Phase 3 (Mars) — Tableau de bord analytics pour comprendre les tendances (quel type de contenu score le mieux, patterns par catégorie).",
-        en: "Phase 3 (March) — Analytics dashboard to understand trends (what content scores best, patterns by category).",
+        fr: "❌ Acquisition utilisateurs — Zéro traction obtenue",
+        en: "❌ User acquisition — Zero traction achieved",
       },
       {
-        fr: "Phase 4 (Avril) — Plan premium avec soumissions illimitées, export avancé, badges 'top rated', intégration Slack/Zapier.",
-        en: "Phase 4 (April) — Premium plan with unlimited submissions, advanced export, 'top rated' badges, Slack/Zapier integration.",
-      },
-      {
-        fr: "Phase 5 (Mai+) — API publique pour devs tiers, marketplace de templates custom, possible acquisition par une plateforme plus large.",
-        en: "Phase 5 (May+) — Public API for third-party devs, custom template marketplace, possible acquisition by a larger platform.",
+        fr: "⛔ Projet abandonné — Janvier 2026",
+        en: "⛔ Project abandoned — January 2026",
       },
     ],
     metrics: {
-      fr: "Phase actuelle : lancement sur le marché US + exploration de partnerships/acquisition. Objectif : 50+ signups US + 1 partnership d'ici 2 semaines.",
-      en: "Current phase: US market launch + exploring partnerships/acquisition. Goal: 50+ US signups + 1 partnership within 2 weeks.",
+      fr: "Projet abandonné en janvier 2026 après un lancement en décembre 2025 sans traction. L'erreur principale : avoir codé l'intégralité de l'app avant de valider l'intérêt du marché.",
+      en: "Project abandoned in January 2026 after a December 2025 launch with no traction. Main mistake: building the entire app before validating market interest.",
     },
     KPIs: [
       {
         number: "$0",
-        fr: "MRR (Janvier 2026)",
-        en: "MRR (January 2026)",
+        fr: "MRR total",
+        en: "Total MRR",
       },
       {
         number: "0",
@@ -169,32 +249,15 @@ export const saasProjects: Saas[] = [
         en: "Paying customers",
       },
       {
-        number: "~1 000",
-        fr: "Soumissions en bêta",
-        en: "Beta submissions",
+        number: "Déc. 2025",
+        fr: "Date de lancement",
+        en: "Launch date",
       },
       {
-        number: "2026",
-        fr: "Année de création",
-        en: "Year founded",
+        number: "Janv. 2026",
+        fr: "Date d'abandon",
+        en: "Abandoned date",
       },
     ],
-    acquisition: {
-      isOpen: true,
-      notes: {
-        fr: "Ouvert aux propositions d'acquisition. Je considère aussi les partnerships stratégiques : intégration, white-label, revenue share.",
-        en: "Open to acquisition offers. Also considering strategic partnerships: integration, white-label, revenue share.",
-      },
-      contact: "martin.cavil98@gmail.com",
-    },
-    partnership: {
-      isOpen: true,
-      types: ["integration", "acquisition", "reseller", "white-label"],
-      contact: "martin.cavil98@gmail.com",
-      details: {
-        fr: "Intéressé par : embed dans ton écosystème, revenue share sur users premium, white-label, ou acquisition complète.",
-        en: "Interested in: embed in your ecosystem, revenue share on premium users, white-label, or full acquisition.",
-      },
-    },
   },
 ];

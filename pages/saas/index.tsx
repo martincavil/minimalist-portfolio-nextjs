@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { ExternalLink, Github, ArrowLeft, ArrowUpRight } from "lucide-react";
 import useTranslation from "next-translate/useTranslation";
 import { saasProjects } from "@/data/saas";
@@ -9,6 +10,7 @@ import DotGridBackground from "@/components/DotGridBackground";
 
 export default function SaasPage() {
   const { t, lang } = useTranslation("common");
+  const router = useRouter();
 
   return (
     <>
@@ -50,10 +52,10 @@ export default function SaasPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {saasProjects.map((saas) => (
-            <Link
+            <div
               key={saas.slug}
-              href={`/saas/${saas.slug}`}
-              className="group flex flex-col bg-primary-inverted border border-interactive rounded-xl p-6 hover:border-opacity-80 transition-all duration-300 relative overflow-hidden"
+              onClick={() => router.push(`/saas/${saas.slug}`)}
+              className="group flex flex-col bg-primary-inverted border border-interactive rounded-xl p-6 hover:border-opacity-80 transition-all duration-300 relative overflow-hidden cursor-pointer"
             >
               <div
                 className="absolute top-0 left-0 right-0 h-0.5"
@@ -132,7 +134,7 @@ export default function SaasPage() {
                   <ArrowUpRight className="w-4 h-4" />
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </main>

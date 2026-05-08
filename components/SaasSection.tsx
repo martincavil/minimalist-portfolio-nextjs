@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import useTranslation from "next-translate/useTranslation";
 import { saasProjects } from "../data/saas";
 
 export default function SaasSection() {
   const { t, lang } = useTranslation("common");
+  const router = useRouter();
 
   return (
     <section id="saas" className="container py-10 md:pt-12 md:pb-16">
@@ -24,10 +26,10 @@ export default function SaasSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {saasProjects.map((saas) => (
-          <Link
+          <div
             key={saas.slug}
-            href={`/saas/${saas.slug}`}
-            className="group flex flex-col bg-primary-inverted border border-interactive rounded-xl p-6 hover:border-opacity-80 transition-all duration-300 relative overflow-hidden"
+            onClick={() => router.push(`/saas/${saas.slug}`)}
+            className="group flex flex-col bg-primary-inverted border border-interactive rounded-xl p-6 hover:border-opacity-80 transition-all duration-300 relative overflow-hidden cursor-pointer"
           >
             {/* Color accent top bar */}
             <div
@@ -109,7 +111,7 @@ export default function SaasSection() {
                 <ArrowUpRight className="w-4 h-4" />
               </div>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </section>
