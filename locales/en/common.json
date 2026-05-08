@@ -153,10 +153,28 @@
       "visitSaas": "Visit SaaS",
       "problem": "The Problem",
       "solution": "The Solution",
+      "whyBuilt": "Why I Built This",
       "features": "Key Features",
       "techStack": "Tech Stack",
       "businessModel": "Business Model",
-      "roadmap": "Roadmap"
+      "roadmap": "Roadmap",
+      "metrics": "Where I'm At",
+      "partnership": "Partnerships & Acquisition",
+      "partnershipSubtitle": "Looking for the right home for this product.",
+      "partnershipCurrentStatus": "Current Status",
+      "partnershipInterestedIn": "Open to",
+      "partnershipContact": "Let's talk",
+      "statusBeta": "Beta",
+      "statusLive": "Live",
+      "statusInProgress": "In Progress",
+      "statusPaused": "Paused",
+      "statusAcquired": "Acquired",
+      "partnershipTypes": {
+        "integration": "Integration",
+        "acquisition": "Acquisition",
+        "reseller": "Reseller",
+        "white-label": "White-label"
+      }
     }
   },
   "saasPage": {

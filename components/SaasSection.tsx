@@ -47,10 +47,11 @@ export default function SaasSection() {
               </div>
               <span
                 className="text-xs font-bold px-2.5 py-1 rounded-full"
-                style={{
-                  backgroundColor: `${saas.color}20`,
-                  color: saas.color,
-                }}
+                style={
+                  saas.mrr === 0
+                    ? { backgroundColor: "#ef444420", color: "#ef4444" }
+                    : { backgroundColor: `${saas.color}20`, color: saas.color }
+                }
               >
                 {saas.mrr === 0
                   ? "$0 MRR"
