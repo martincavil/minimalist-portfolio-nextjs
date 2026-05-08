@@ -8,6 +8,7 @@
     "skills": "Compétences",
     "about": "À propos",
     "projects": "Projets",
+    "saas": "SaaS",
     "posts": "Articles",
     "github": "Github",
     "linkedin": "Linkedin",
@@ -140,5 +141,26 @@
   },
   "posts": {
     "title": "Quelque chose se prépare en coulisses 😉"
+  },
+  "saas": {
+    "title": "Mes SaaS",
+    "viewAll": "Voir tous les SaaS",
+    "card": {
+      "visit": "Voir le SaaS"
+    },
+    "details": {
+      "backToSaas": "Retour aux SaaS",
+      "visitSaas": "Voir le SaaS",
+      "problem": "Le problème",
+      "solution": "La solution",
+      "features": "Fonctionnalités clés",
+      "techStack": "Stack technique",
+      "businessModel": "Modèle économique",
+      "roadmap": "Roadmap"
+    }
+  },
+  "saasPage": {
+    "title": "Mes SaaS",
+    "description": "Des produits que je construis en public. MRR, clients, stack technique — tout est transparent."
   }
 }

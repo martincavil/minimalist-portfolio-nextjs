@@ -8,6 +8,7 @@
     "skills": "Skills",
     "about": "About",
     "projects": "Projects",
+    "saas": "SaaS",
     "posts": "Posts",
     "github": "Github",
     "linkedin": "Linkedin",
@@ -140,5 +141,26 @@
   },
   "posts": {
     "title": "Something is brewing behind the scenes 😉"
+  },
+  "saas": {
+    "title": "My SaaS",
+    "viewAll": "View all SaaS",
+    "card": {
+      "visit": "Visit SaaS"
+    },
+    "details": {
+      "backToSaas": "Back to SaaS",
+      "visitSaas": "Visit SaaS",
+      "problem": "The Problem",
+      "solution": "The Solution",
+      "features": "Key Features",
+      "techStack": "Tech Stack",
+      "businessModel": "Business Model",
+      "roadmap": "Roadmap"
+    }
+  },
+  "saasPage": {
+    "title": "My SaaS",
+    "description": "Products I build in public. MRR, customers, tech stack — full transparency."
   }
 }

@@ -29,6 +29,7 @@ export default function Header() {
 
   const navItems = [
     { label: t("header.projects"), href: "/projects/", isPage: true },
+    { label: t("header.saas"), href: "/saas/", isPage: true },
     { label: t("header.skills"), href: "skills", isPage: false },
     { label: t("header.about"), href: "about", isPage: false },
     // { label: t("header.posts"), href: "posts", isPage: true },

@@ -8,6 +8,7 @@ import Skills from "@/components/Skills";
 import Process from "@/components/Process";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import SaasSection from "@/components/SaasSection";
 import Posts from "@/components/Posts";
 import Footer from "@/components/Footer";
 import useTranslation from "next-translate/useTranslation";
@@ -70,6 +71,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Projects />
+      <SaasSection />
       <Results />
       <Testimonies />
       <Skills />
