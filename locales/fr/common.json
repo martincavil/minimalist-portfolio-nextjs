@@ -141,7 +141,8 @@
     }
   },
   "posts": {
-    "title": "Quelque chose se prépare en coulisses 😉"
+    "title": "Mes dernières actualités",
+    "viewAll": "Voir tous les articles"
   },
   "saas": {
     "title": "Mes SaaS",
@@ -181,5 +182,12 @@
   "saasPage": {
     "title": "Mes SaaS",
     "description": "Des produits que je construis en public. MRR, clients, stack technique — tout est transparent."
+  },
+  "blogPage": {
+    "title": "Blog",
+    "description": "Mes articles sur le développement web, l'entrepreneuriat et le freelance. Publiés sur Substack.",
+    "readOnSubstack": "Lire sur Substack",
+    "viewAll": "Voir tous les articles sur Substack",
+    "empty": "Aucun article disponible pour le moment."
   }
 }

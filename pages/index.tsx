@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { GetStaticProps } from "next";
 import DotGridBackground from "@/components/DotGridBackground";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -12,8 +13,13 @@ import SaasSection from "@/components/SaasSection";
 import Posts from "@/components/Posts";
 import Footer from "@/components/Footer";
 import useTranslation from "next-translate/useTranslation";
+import { fetchSubstackPosts, Post } from "@/lib/substack";
 
-export default function Home() {
+interface HomeProps {
+  posts: Post[];
+}
+
+export default function Home({ posts }: HomeProps) {
   const { t } = useTranslation("common");
 
   return (
@@ -67,6 +73,7 @@ export default function Home() {
           }}
         />
       </Head>
+
       <DotGridBackground />
       <Header />
       <Hero />
@@ -76,9 +83,18 @@ export default function Home() {
       <Testimonies />
       <Skills />
       <Process />
+      <Posts posts={posts} />
       <About />
-      <Posts />
       <Footer />
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  try {
+    const posts = await fetchSubstackPosts();
+    return { props: { posts }, revalidate: 3600 };
+  } catch {
+    return { props: { posts: [] }, revalidate: 3600 };
+  }
+};

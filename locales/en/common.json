@@ -141,7 +141,8 @@
     }
   },
   "posts": {
-    "title": "Something is brewing behind the scenes 😉"
+    "title": "Latest News",
+    "viewAll": "View all articles"
   },
   "saas": {
     "title": "My SaaS",
@@ -181,5 +182,12 @@
   "saasPage": {
     "title": "My SaaS",
     "description": "Products I build in public. MRR, customers, tech stack — full transparency."
+  },
+  "blogPage": {
+    "title": "Blog",
+    "description": "Articles on web development, entrepreneurship, and freelancing. Published on Substack.",
+    "readOnSubstack": "Read on Substack",
+    "viewAll": "View all articles on Substack",
+    "empty": "No articles available yet."
   }
 }
