@@ -47,6 +47,33 @@ export type Project = {
     fr: string;
     en: string;
   }[];
+  // Previous versions of the project, shown below the current one to highlight the evolution
+  previousVersions?: ProjectVersion[];
+};
+
+export type ProjectVersion = {
+  year: string;
+  context?: {
+    fr: string;
+    en: string;
+  };
+  challenges?: {
+    fr: string;
+    en: string;
+  }[];
+  work?: {
+    fr: string;
+    en: string;
+  };
+  results?: {
+    fr: string;
+    en: string;
+  };
+  KPIs?: {
+    number: string;
+    fr: string;
+    en: string;
+  }[];
 };
 
 export const projects: Project[] = [
@@ -226,6 +253,154 @@ export const projects: Project[] = [
     ],
   },
   {
+    name: "Padel15",
+    slug: "padel15",
+    year: "2025-2026",
+    domain: {
+      fr: "Site vitrine pour club de padel parisien",
+      en: "Showcase website for Parisian padel club",
+    },
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "SEO",
+      "Vercel",
+      "Playtomic API",
+      "Mailchimp",
+      "Schema.org",
+    ],
+    url: "https://www.padel15.fr",
+    cover:
+      "https://res.cloudinary.com/martincvl/image/upload/v1781257515/portfolio/projects/padel15/padel-club_j9qehu.webp",
+    gifCover:
+      "https://res.cloudinary.com/martincvl/video/upload/v1781257709/portfolio/projects/padel15/padel15-video_yvupfx.mp4",
+    excerpt: {
+      fr: "Padel15 passe de la landing page one-page à un site vitrine multi-page complet, pensé pour convertir aussi bien les joueurs individuels que les entreprises. Réservation Playtomic en direct, page Entreprises dédiée, restaurant & guinguette mis en valeur, SEO local renforcé et conformité RGPD.",
+      en: "Padel15 evolves from a one-page landing page into a full multi-page showcase site, designed to convert both individual players and businesses. Live Playtomic booking, a dedicated Corporate page, a showcased restaurant & guinguette, stronger local SEO, and GDPR compliance.",
+    },
+    images: [
+      "https://res.cloudinary.com/martincvl/image/upload/v1781257515/portfolio/projects/padel15/padel-club_j9qehu.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1781257515/portfolio/projects/padel15/padel-terrains_nscypj.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1781257516/portfolio/projects/padel15/padel-restaurant_tysydy.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1781257517/portfolio/projects/padel15/padel-entreprises_ys87ip.webp",
+    ],
+    companyHistory: {
+      fr: "Padel15 est un club premium situé dans le 15ème arrondissement de Paris : 2 terrains indoor/outdoor, un restaurant et une guinguette, et une clientèle corporate haut de gamme (BlackRock, BNP Paribas, BCG, Kering, AXA, et plus de 100 entreprises au total). Après une V1 qui a permis de lancer rapidement le club en ligne, Padel15 a souhaité une refonte complète à la hauteur de son ambition : un site qui reflète la diversité de son offre — terrains, restauration, coaching, événements — et son potentiel pour devenir une référence du padel premium à Paris.",
+      en: "Padel15 is a premium club located in Paris's 15th arrondissement: 2 indoor/outdoor courts, a restaurant and a guinguette, and a high-end corporate clientele (BlackRock, BNP Paribas, BCG, Kering, AXA, and over 100 companies in total). After a V1 that quickly got the club online, Padel15 wanted a complete redesign matching its ambition: a site reflecting the diversity of its offering — courts, dining, coaching, events — and its potential to become a reference for premium padel in Paris.",
+    },
+    testimony: {
+      fr: "Martin a créé un site qui reflète parfaitement l'esprit de notre club : moderne, dynamique et accessible. Le résultat a dépassé nos attentes et nous avons déjà eu de nombreux retours positifs de nos membres.",
+      en: "Martin created a website that perfectly reflects the spirit of our club: modern, dynamic, and accessible. The result exceeded our expectations and we've already received numerous positive feedback from our members.",
+      author: "Gaspard M.",
+      role: "Founder & CEO",
+    },
+    context: {
+      fr: "La V1 — une landing page one-page — avait rempli son rôle de lancement, mais ne reflétait plus l'ambition du club ni la diversité de son offre (restauration, événements, coaching), ni son potentiel SEO en tant que lieu complet. L'objectif de la V2 était de faire évoluer le site vers une architecture multi-page capable de convertir deux publics très différents : le joueur qui veut réserver un terrain en quelques secondes, et l'entreprise qui veut organiser un événement privé.",
+      en: "V1 — a one-page landing page — had done its job at launch, but no longer reflected the club's ambition, the diversity of its offering (dining, events, coaching), or its SEO potential as a full-service venue. The goal of V2 was to evolve the site into a multi-page architecture able to convert two very different audiences: the player who wants to book a court in seconds, and the company that wants to organize a private event.",
+    },
+    challenges: [
+      {
+        fr: "Faire cohabiter sur un même site deux publics très différents : le joueur qui veut réserver un terrain en 30 secondes, et l'entreprise qui veut organiser une soirée privée",
+        en: "Bringing together two very different audiences on the same site: the player who wants to book a court in 30 seconds, and the company that wants to organize a private evening",
+      },
+      {
+        fr: "Donner de l'autonomie au client pour mettre à jour le contenu du quotidien (carte du restaurant, suggestions du jour) sans dépendre du développeur",
+        en: "Giving the client autonomy to update day-to-day content (restaurant menu, daily specials) without depending on the developer",
+      },
+      {
+        fr: "Intégrer la réservation Playtomic nativement plutôt qu'en simple lien externe",
+        en: "Integrating Playtomic booking natively rather than as a simple external link",
+      },
+      {
+        fr: "Conserver et valoriser tout le contenu existant (photos, témoignages clients, identité visuelle) tout en structurant une vraie stratégie SEO multi-page",
+        en: "Preserving and showcasing all existing content (photos, client testimonials, visual identity) while structuring a real multi-page SEO strategy",
+      },
+    ],
+    work: {
+      fr: "J'ai fait évoluer le site d'une page unique vers une architecture multi-page complète : Accueil, Terrains, Restaurant, Coaching, Événements, Le Club, Tarifs, Contact, ainsi que les pages légales (mentions légales, politique de confidentialité, RGPD). La réservation Playtomic est désormais intégrée directement sur la page Terrains, avec les créneaux disponibles affichés en direct — fini la simple redirection. J'ai créé une page Entreprises dédiée avec des formules packagées (séminaires, tournois corpo, soirées privées), une galerie d'événements, un formulaire de devis qualifié et la mise en avant des partenaires corporate. Le restaurant et la guinguette bénéficient désormais d'une section dédiée avec galerie photo et un widget carte que le client peut mettre à jour lui-même, sans intervention technique. J'ai ajouté un formulaire d'inscription Mailchimp (footer et sections dédiées) ainsi qu'un tracking GA4 avec événements de conversion sur les réservations, formulaires et inscriptions newsletter. Côté SEO local, j'ai mis en place des données structurées Schema.org (LocalBusiness, Restaurant, SportsClub), un sitemap dynamique et des metadata optimisées par page. La conformité RGPD a été renforcée avec un bandeau cookies et des mentions légales et politique de confidentialité conformes (SIRET, forme juridique, hébergeur). Enfin, un travail important de performance et d'accessibilité a été réalisé : conversion des images en WebP avec compression (une photo passée de 8,3 Mo à 211 Ko), lazy loading, contrastes WCAG AA, navigation clavier et zones tactiles agrandies sur mobile.",
+      en: "I evolved the site from a single page into a complete multi-page architecture: Home, Courts, Restaurant, Coaching, Events, The Club, Pricing, Contact, plus the legal pages (legal notice, privacy policy, GDPR). Playtomic booking is now integrated directly on the Courts page, with live available time slots — no more simple redirection. I built a dedicated Corporate page with packaged offers (seminars, corporate tournaments, private evenings), an event gallery, a qualified quote form, and highlighting of corporate partners. The restaurant and guinguette now have a dedicated section with a photo gallery and a menu widget the client can update themselves, with no developer involvement. I added a Mailchimp signup form (footer and dedicated sections) along with GA4 tracking with conversion events for bookings, forms, and newsletter signups. On local SEO, I implemented Schema.org structured data (LocalBusiness, Restaurant, SportsClub), a dynamic sitemap, and optimized metadata per page. GDPR compliance was strengthened with a cookie banner and compliant legal notice and privacy policy (SIRET, legal form, host). Finally, significant performance and accessibility work was done: images converted to WebP with compression (one photo went from 8.3 MB to 211 KB), lazy loading, WCAG AA contrast, keyboard navigation, and enlarged touch targets on mobile.",
+    },
+    results: {
+      fr: "La V2 a transformé Padel15 en un véritable site vitrine multi-page, mobile-first, déployé sur Vercel. La réservation et les demandes de devis événements sont désormais directement actionnables depuis le site, et le client gère lui-même le contenu du quotidien (carte du restaurant) sans solliciter le développeur. Le score Lighthouse a été optimisé (LCP, bundle, cache) pour conserver les excellentes performances de la V1 sur une base de code bien plus riche.",
+      en: "V2 transformed Padel15 into a true multi-page, mobile-first showcase site deployed on Vercel. Booking and event quote requests are now directly actionable from the site, and the client manages day-to-day content (restaurant menu) themselves without needing the developer. The Lighthouse score was optimized (LCP, bundle, cache) to maintain V1's excellent performance on a much richer codebase.",
+    },
+    KPIs: [
+      {
+        number: "4 000",
+        fr: "Visiteurs par mois",
+        en: "Monthly visitors",
+      },
+      {
+        number: "+100",
+        fr: "Entreprises clientes",
+        en: "Corporate clients",
+      },
+      {
+        number: "100",
+        fr: "Score Lighthouse (tous indicateurs)",
+        en: "Lighthouse score (all metrics)",
+      },
+    ],
+    previousVersions: [
+      {
+        year: "2025",
+        context: {
+          fr: "Padel15 avait besoin d'une présence en ligne professionnelle pour développer sa visibilité auprès des joueurs parisiens et faciliter la découverte du club par de nouveaux membres. Le site devait être rapide, moderne, parfaitement optimisé pour le référencement local (recherches Google à Paris) et conçu avec une architecture évolutive permettant l'ajout futur de fonctionnalités avancées comme un système de réservation en ligne et un blog communautaire.",
+          en: "Padel15 needed a professional online presence to develop its visibility among Parisian players and make it easier for new members to discover the club. The site had to be fast, modern, perfectly optimized for local SEO (Google searches in Paris), and designed with a scalable architecture enabling future addition of advanced features like an online booking system and a community blog.",
+        },
+        challenges: [
+          {
+            fr: "Livraison rapide d'un site de qualité en quelques jours pour répondre aux besoins urgents du club",
+            en: "Fast delivery of a quality site within a few days to meet the club's urgent needs",
+          },
+          {
+            fr: "Optimisation SEO locale poussée pour se positionner sur les requêtes 'padel Paris 15' et capter une audience locale qualifiée",
+            en: "Advanced local SEO optimization to rank for 'padel Paris 15' queries and capture a qualified local audience",
+          },
+          {
+            fr: "Conception d'une architecture modulaire et scalable facilitant l'ajout futur de réservation en ligne et blog",
+            en: "Design of a modular and scalable architecture facilitating future addition of online booking and blog",
+          },
+          {
+            fr: "Atteindre des performances optimales (Lighthouse 100/100) tout en conservant un design moderne et attractif",
+            en: "Achieve optimal performance (Lighthouse 100/100) while maintaining a modern and attractive design",
+          },
+        ],
+        work: {
+          fr: "J'ai pris en charge l'intégralité du projet de A à Z : design UX/UI, développement frontend et déploiement. Le site a été développé avec Next.js pour garantir des performances optimales et un excellent référencement naturel, Tailwind CSS pour un design moderne, responsive et facilement maintenable, et déployé sur Vercel pour une mise en ligne instantanée avec CI/CD automatique. Un travail d'optimisation SEO local approfondi a été effectué pour maximiser la visibilité sur les recherches parisiennes. L'architecture a été pensée dès le départ pour faciliter l'évolution vers la V2 (réservation, blog). Technologies utilisées : Next.js, TypeScript, Tailwind CSS, Vercel. Méthodologie : design rapide centré utilisateur, développement itératif, tests de performance, optimisation SEO locale, architecture scalable.",
+          en: "I handled the entire project from A to Z: UX/UI design, frontend development, and deployment. The site was built with Next.js to ensure optimal performance and excellent organic SEO, Tailwind CSS for a modern, responsive, and easily maintainable design, and deployed on Vercel for instant deployment with automatic CI/CD. Comprehensive local SEO optimization work was performed to maximize visibility for Parisian searches. The architecture was designed from the start to facilitate evolution to V2 (booking, blog). Technologies used: Next.js, TypeScript, Tailwind CSS, Vercel. Methodology: rapid user-centered design, iterative development, performance testing, local SEO optimization, scalable architecture.",
+        },
+        results: {
+          fr: "Lancement réussi du site avec plus de 10 000 visiteurs depuis septembre 2025, démontrant l'efficacité de l'optimisation SEO locale. Scores Lighthouse parfaits de 100/100 sur les bonnes pratiques et le SEO, garantissant une expérience utilisateur optimale et une excellente visibilité sur Google. L'architecture modulaire et scalable a permis d'envisager sereinement la V2, qui intègre désormais un système de réservation en ligne et une page Entreprises pour renforcer l'engagement de la communauté de joueurs.",
+          en: "Successful site launch with over 10,000 visitors since September 2025, demonstrating the effectiveness of local SEO optimization. Perfect Lighthouse scores of 100/100 on best practices and SEO, ensuring optimal user experience and excellent Google visibility. The modular and scalable architecture enabled confident planning for V2, which now integrates an online booking system and a Corporate page to strengthen player community engagement.",
+        },
+        KPIs: [
+          {
+            number: "3 500 - 4 000",
+            fr: "Visiteurs par mois",
+            en: "Monthly visitors",
+          },
+          {
+            number: "100/100",
+            fr: "Score SEO Lighthouse",
+            en: "Lighthouse SEO score",
+          },
+          {
+            number: "0€",
+            fr: "Budget publicitaire",
+            en: "Ad spend",
+          },
+          {
+            number: "From scratch",
+            fr: "Conçu et développé seul",
+            en: "Designed & built solo",
+          },
+        ],
+      },
+    ],
+  },
+  {
     name: "Maison Du Temps",
     slug: "maison-du-temps",
     year: "2025",
@@ -382,93 +557,6 @@ export const projects: Project[] = [
         number: "100",
         en: "Accessibility, SEO, Best Practices (Lighthouse)",
         fr: "Accessibilité, SEO, Bonnes pratiques (Lighthouse)",
-      },
-    ],
-  },
-  {
-    name: "Padel15",
-    slug: "padel15",
-    year: "2025",
-    domain: {
-      fr: "Site vitrine pour club de padel parisien",
-      en: "Showcase website for Parisian padel club",
-    },
-    skills: ["Next.js", "TypeScript", "Tailwind CSS", "SEO", "Vercel"],
-    url: "https://www.padel15.fr",
-    cover:
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147441/portfolio/projects/padel15/cover.webp",
-    gifCover:
-      "https://res.cloudinary.com/martincvl/video/upload/v1763147447/portfolio/projects/padel15/padel15.mp4",
-    excerpt: {
-      fr: "Padel15 n'avait qu'un nom de domaine. J'ai conçu et développé le site complet from scratch, seul, en quelques jours. Résultat : 3 500 à 4 000 visiteurs par mois, terrains complets tous les jours, bar et restaurant qui cartonnent — zéro blog, zéro pub.",
-      en: "Padel15 had nothing but a domain name. I designed and built the entire site from scratch, solo, in a few days. Result: 3,500 to 4,000 monthly visitors, fully booked courts every day, a thriving bar and restaurant — no blog, no paid ads.",
-    },
-    images: [
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147441/portfolio/projects/padel15/cover.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147441/portfolio/projects/padel15/padel15-1.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147443/portfolio/projects/padel15/padel15-2.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147444/portfolio/projects/padel15/padel15-3.webp",
-    ],
-    companyHistory: {
-      fr: "Padel15 est un club de padel dynamique et convivial situé dans le 15ème arrondissement de Paris. Fondé par une équipe de passionnés de ce sport en pleine expansion, le club propose des terrains de qualité dans une ambiance chaleureuse et accessible à tous les niveaux de jeu, du débutant au joueur confirmé. Grâce à son emplacement stratégique au cœur de Paris, la qualité de ses installations modernes et son esprit communautaire, Padel15 s'est rapidement imposé comme une référence incontournable dans la scène parisienne du padel.",
-      en: "Padel15 is a dynamic and welcoming padel club located in Paris's 15th arrondissement. Founded by a team of enthusiasts of this rapidly growing sport, the club offers quality courts in a warm atmosphere accessible to all skill levels, from beginners to experienced players. Thanks to its strategic location in the heart of Paris, the quality of its modern facilities, and its community spirit, Padel15 has quickly become an essential reference in the Parisian padel scene.",
-    },
-    testimony: {
-      fr: "Martin a créé un site qui reflète parfaitement l'esprit de notre club : moderne, dynamique et accessible. Le résultat a dépassé nos attentes et nous avons déjà eu de nombreux retours positifs de nos membres.",
-      en: "Martin created a website that perfectly reflects the spirit of our club: modern, dynamic, and accessible. The result exceeded our expectations and we've already received numerous positive feedback from our members.",
-      author: "Gaspard M.",
-      role: "Founder & CEO",
-    },
-    context: {
-      fr: "Padel15 avait besoin d'une présence en ligne professionnelle pour développer sa visibilité auprès des joueurs parisiens et faciliter la découverte du club par de nouveaux membres. Le site devait être rapide, moderne, parfaitement optimisé pour le référencement local (recherches Google à Paris) et conçu avec une architecture évolutive permettant l'ajout futur de fonctionnalités avancées comme un système de réservation en ligne et un blog communautaire.",
-      en: "Padel15 needed a professional online presence to develop its visibility among Parisian players and make it easier for new members to discover the club. The site had to be fast, modern, perfectly optimized for local SEO (Google searches in Paris), and designed with a scalable architecture enabling future addition of advanced features like an online booking system and a community blog.",
-    },
-    challenges: [
-      {
-        fr: "Livraison rapide d'un site de qualité en quelques jours pour répondre aux besoins urgents du club",
-        en: "Fast delivery of a quality site within a few days to meet the club's urgent needs",
-      },
-      {
-        fr: "Optimisation SEO locale poussée pour se positionner sur les requêtes 'padel Paris 15' et capter une audience locale qualifiée",
-        en: "Advanced local SEO optimization to rank for 'padel Paris 15' queries and capture a qualified local audience",
-      },
-      {
-        fr: "Conception d'une architecture modulaire et scalable facilitant l'ajout futur de réservation en ligne et blog",
-        en: "Design of a modular and scalable architecture facilitating future addition of online booking and blog",
-      },
-      {
-        fr: "Atteindre des performances optimales (Lighthouse 100/100) tout en conservant un design moderne et attractif",
-        en: "Achieve optimal performance (Lighthouse 100/100) while maintaining a modern and attractive design",
-      },
-    ],
-    work: {
-      fr: "J'ai pris en charge l'intégralité du projet de A à Z : design UX/UI, développement frontend et déploiement. Le site a été développé avec Next.js pour garantir des performances optimales et un excellent référencement naturel, Tailwind CSS pour un design moderne, responsive et facilement maintenable, et déployé sur Vercel pour une mise en ligne instantanée avec CI/CD automatique. Un travail d'optimisation SEO local approfondi a été effectué pour maximiser la visibilité sur les recherches parisiennes. L'architecture a été pensée dès le départ pour faciliter l'évolution vers la V2 (réservation, blog). Technologies utilisées : Next.js, TypeScript, Tailwind CSS, Vercel. Méthodologie : design rapide centré utilisateur, développement itératif, tests de performance, optimisation SEO locale, architecture scalable.",
-      en: "I handled the entire project from A to Z: UX/UI design, frontend development, and deployment. The site was built with Next.js to ensure optimal performance and excellent organic SEO, Tailwind CSS for a modern, responsive, and easily maintainable design, and deployed on Vercel for instant deployment with automatic CI/CD. Comprehensive local SEO optimization work was performed to maximize visibility for Parisian searches. The architecture was designed from the start to facilitate evolution to V2 (booking, blog). Technologies used: Next.js, TypeScript, Tailwind CSS, Vercel. Methodology: rapid user-centered design, iterative development, performance testing, local SEO optimization, scalable architecture.",
-    },
-    results: {
-      fr: "Lancement réussi du site avec plus de 10 000 visiteurs depuis septembre 2025, démontrant l'efficacité de l'optimisation SEO locale. Scores Lighthouse parfaits de 100/100 sur les bonnes pratiques et le SEO, garantissant une expérience utilisateur optimale et une excellente visibilité sur Google. L'architecture modulaire et scalable permet désormais d'envisager sereinement la V2 qui intégrera un système de réservation en ligne et un blog pour renforcer l'engagement de la communauté de joueurs.",
-      en: "Successful site launch with over 10,000 visitors since September 2025, demonstrating the effectiveness of local SEO optimization. Perfect Lighthouse scores of 100/100 on best practices and SEO, ensuring optimal user experience and excellent Google visibility. The modular and scalable architecture now enables confident planning for V2, which will integrate an online booking system and a blog to strengthen player community engagement.",
-    },
-    KPIs: [
-      {
-        number: "3 500 - 4 000",
-        fr: "Visiteurs par mois",
-        en: "Monthly visitors",
-      },
-      {
-        number: "100/100",
-        fr: "Score SEO Lighthouse",
-        en: "Lighthouse SEO score",
-      },
-      {
-        number: "0€",
-        fr: "Budget publicitaire",
-        en: "Ad spend",
-      },
-      {
-        number: "From scratch",
-        fr: "Conçu et développé seul",
-        en: "Designed & built solo",
       },
     ],
   },

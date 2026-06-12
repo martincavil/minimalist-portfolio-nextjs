@@ -254,6 +254,91 @@ export default function ProjectPage({ project }: ProjectPageProps) {
           </section>
         )}
 
+        {/* Previous Versions */}
+        {project.previousVersions && project.previousVersions.length > 0 && (
+          <>
+            {project.previousVersions.map((version, vIdx) => (
+              <section key={vIdx} className="mb-16">
+                <h2 className="text-2xl md:text-3xl font-semibold mb-6 pb-4 border-b border-interactive">
+                  {t("projects.details.previousVersion")} — {version.year}
+                </h2>
+
+                {version.context && (
+                  <div className="mb-10">
+                    <h3 className="text-xl font-semibold mb-4">
+                      {t("projects.details.context")}
+                    </h3>
+                    <p className="text-text-tertiary leading-relaxed text-lg">
+                      {version.context[lang as "fr" | "en"]}
+                    </p>
+                  </div>
+                )}
+
+                {version.challenges && version.challenges.length > 0 && (
+                  <div className="mb-10">
+                    <h3 className="text-xl font-semibold mb-4">
+                      {t("projects.details.challenges")}
+                    </h3>
+                    <ul className="space-y-4">
+                      {version.challenges.map((challenge, idx) => (
+                        <li
+                          key={idx}
+                          className="flex gap-4 items-start text-text-tertiary text-lg"
+                        >
+                          <span className="text-primary font-bold">•</span>
+                          <span className="leading-relaxed">
+                            {challenge[lang as "fr" | "en"]}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {version.work && (
+                  <div className="mb-10">
+                    <h3 className="text-xl font-semibold mb-4">
+                      {t("projects.details.work")}
+                    </h3>
+                    <p className="text-text-tertiary leading-relaxed text-lg">
+                      {version.work[lang as "fr" | "en"]}
+                    </p>
+                  </div>
+                )}
+
+                {version.results && (
+                  <div className="mb-10">
+                    <h3 className="text-xl font-semibold mb-4">
+                      {t("projects.details.results")}
+                    </h3>
+                    <p className="text-text-tertiary leading-relaxed text-lg mb-8">
+                      {version.results[lang as "fr" | "en"]}
+                    </p>
+
+                    {version.KPIs && version.KPIs.length > 0 && (
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                        {version.KPIs.map((kpi, idx) => (
+                          <div
+                            key={idx}
+                            className="flex flex-col items-center gap-2 p-6 bg-background rounded-lg border border-interactive"
+                          >
+                            <span className="text-4xl font-bold text-primary">
+                              {kpi.number}
+                            </span>
+                            <span className="text-text-tertiary text-center">
+                              {kpi[lang as "fr" | "en"]}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </section>
+            ))}
+          </>
+        )}
+
         {/* Project Images */}
         {project.images && project.images.length > 1 && (
           <section className="mb-16">
