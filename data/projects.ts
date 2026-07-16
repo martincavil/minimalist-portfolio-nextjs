@@ -255,35 +255,34 @@ export const projects: Project[] = [
   {
     name: "Padel15",
     slug: "padel15",
-    year: "2025-2026",
+    year: "2026",
     domain: {
       fr: "Site vitrine pour club de padel parisien",
       en: "Showcase website for Parisian padel club",
     },
     skills: [
-      "Next.js",
+      "Next.js 15",
       "TypeScript",
-      "Tailwind CSS",
-      "SEO",
-      "Vercel",
+      "Tailwind CSS v4",
       "Playtomic API",
       "Mailchimp",
-      "Schema.org",
+      "GA4",
+      "Vercel",
     ],
     url: "https://www.padel15.fr",
     cover:
-      "https://res.cloudinary.com/martincvl/image/upload/v1781257515/portfolio/projects/padel15/padel-club_j9qehu.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1784197755/portfolio/projects/padel15/v2-padel15-cover_ic3ktx.webp",
     gifCover:
-      "https://res.cloudinary.com/martincvl/video/upload/v1781257709/portfolio/projects/padel15/padel15-video_yvupfx.mp4",
+      "https://res.cloudinary.com/martincvl/video/upload/v1784197759/portfolio/projects/padel15/v2-padel15-video_w6m9gz.mp4",
     excerpt: {
       fr: "Padel15 passe de la landing page one-page à un site vitrine multi-page complet, pensé pour convertir aussi bien les joueurs individuels que les entreprises. Réservation Playtomic en direct, page Entreprises dédiée, restaurant & guinguette mis en valeur, SEO local renforcé et conformité RGPD.",
       en: "Padel15 evolves from a one-page landing page into a full multi-page showcase site, designed to convert both individual players and businesses. Live Playtomic booking, a dedicated Corporate page, a showcased restaurant & guinguette, stronger local SEO, and GDPR compliance.",
     },
     images: [
-      "https://res.cloudinary.com/martincvl/image/upload/v1781257515/portfolio/projects/padel15/padel-club_j9qehu.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1781257515/portfolio/projects/padel15/padel-terrains_nscypj.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1781257516/portfolio/projects/padel15/padel-restaurant_tysydy.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1781257517/portfolio/projects/padel15/padel-entreprises_ys87ip.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1784197755/portfolio/projects/padel15/v2-padel15-cover_ic3ktx.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1784197756/portfolio/projects/padel15/v2-padel15-terrain_o4gxbu.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1784197755/portfolio/projects/padel15/v2-padel15-restaurant_tf8txl.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1784197755/portfolio/projects/padel15/v2-padel15-events_zua4l6.webp",
     ],
     companyHistory: {
       fr: "Padel15 est un club premium situé dans le 15ème arrondissement de Paris : 2 terrains indoor/outdoor, un restaurant et une guinguette, et une clientèle corporate haut de gamme (BlackRock, BNP Paribas, BCG, Kering, AXA, et plus de 100 entreprises au total). Après une V1 qui a permis de lancer rapidement le club en ligne, Padel15 a souhaité une refonte complète à la hauteur de son ambition : un site qui reflète la diversité de son offre — terrains, restauration, coaching, événements — et son potentiel pour devenir une référence du padel premium à Paris.",
@@ -337,9 +336,9 @@ export const projects: Project[] = [
         en: "Corporate clients",
       },
       {
-        number: "100",
-        fr: "Score Lighthouse (tous indicateurs)",
-        en: "Lighthouse score (all metrics)",
+        number: "10",
+        fr: "Pages optimisées SEO",
+        en: "SEO-optimized pages",
       },
     ],
     previousVersions: [
