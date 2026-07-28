@@ -47,17 +47,17 @@ export type Saas = {
 
 export const saasProjects: Saas[] = [
   {
-    name: "Pound4Pound",
-    slug: "pound4pound",
+    name: "Cage Legacy",
+    slug: "cage-legacy",
     tagline: {
       fr: "Simulateur de carrière MMA — en développement actif",
       en: "MMA career simulator — actively in development",
     },
     description: {
-      fr: "Pound4Pound est un jeu de simulation de carrière MMA dans le navigateur : construis ton combattant de 18 ans jusqu'à la retraite, sans chance, uniquement à travers tes choix. Défi quotidien, classement mondial, badges et Hall of Fame.",
-      en: "Pound4Pound is a browser-based MMA career simulation game: build your fighter from age 18 to retirement, no luck, only your choices. Daily challenge, global rankings, badges and a Hall of Fame.",
+      fr: "Cage Legacy est un jeu de simulation de carrière MMA dans le navigateur : construis ton combattant de 18 ans jusqu'à la retraite, sans chance, uniquement à travers tes choix. Défi quotidien, classement mondial, badges et Hall of Fame.",
+      en: "Cage Legacy is a browser-based MMA career simulation game: build your fighter from age 18 to retirement, no luck, only your choices. Daily challenge, global rankings, badges and a Hall of Fame.",
     },
-    url: "https://pound4pound-ten.vercel.app/",
+    url: "https://cage-legacy.vercel.app/",
     color: "#DC2626",
     createdAt: "2026-07",
     status: "in-progress",
@@ -75,8 +75,8 @@ export const saasProjects: Saas[] = [
       en: "Sports simulation games often fall into two traps: either too RNG-dependent (luck breaks strategy) or too repetitive to feel like a real career. MMA fans don't really have a place to live out a credible career progression, choice by choice.",
     },
     solution: {
-      fr: "Pound4Pound retire le hasard de l'équation : chaque décision (style de combat, poids, lieu d'entraînement, gestion des blessures) façonne directement la trajectoire du combattant, de ses débuts amateurs jusqu'à sa retraite. Un défi de combattant renouvelé chaque jour et un classement mondial ajoutent une couche de compétition et de rejouabilité.",
-      en: "Pound4Pound removes luck from the equation: every decision (fighting style, weight class, training location, injury management) directly shapes the fighter's trajectory, from amateur beginnings to retirement. A daily rotating fighter challenge and a global leaderboard add competition and replayability.",
+      fr: "Cage Legacy retire le hasard de l'équation : chaque décision (style de combat, poids, lieu d'entraînement, gestion des blessures) façonne directement la trajectoire du combattant, de ses débuts amateurs jusqu'à sa retraite. Un défi de combattant renouvelé chaque jour et un classement mondial ajoutent une couche de compétition et de rejouabilité.",
+      en: "Cage Legacy removes luck from the equation: every decision (fighting style, weight class, training location, injury management) directly shapes the fighter's trajectory, from amateur beginnings to retirement. A daily rotating fighter challenge and a global leaderboard add competition and replayability.",
     },
     whyBuilt: {
       fr: "Fan de MMA, je voulais un jeu de carrière où la stratégie prime vraiment sur le hasard, et où les blessures amateurs ont de vraies conséquences plus tard dans la carrière. Le projet est encore en construction active : je pousse pour offrir la meilleure expérience possible avant de penser à autre chose.",
@@ -260,8 +260,8 @@ export const saasProjects: Saas[] = [
     status: "paused",
     team: ["Martin Cavil"],
     statusNote: {
-      fr: "À l'abandon · $0 MRR · Mis en pause faute de temps, au profit de terribleidea et pound4pound.",
-      en: "Abandoned · $0 MRR · Put on hold for lack of time, in favor of terribleidea and pound4pound.",
+      fr: "À l'abandon · $0 MRR · Mis en pause faute de temps, au profit de terribleidea et cage legacy.",
+      en: "Abandoned · $0 MRR · Put on hold for lack of time, in favor of terribleidea and cage legacy.",
     },
     mrr: 0,
     customers: 0,
@@ -276,8 +276,8 @@ export const saasProjects: Saas[] = [
       en: "ZeroToSale is a gamified two-act journey: Act 1 (7 steps) from idea to first sale, Act 2 (7 levels) from first sale to $10k MRR. At each step, an AI generates a personalized output (pitch, landing page, validation strategy, etc.) based on the user's project, with a progression system (XP, levels, unlockable rewards).",
     },
     whyBuilt: {
-      fr: "Après Ratee.me (construit sans jamais valider la demande), j'ai voulu tester l'inverse : un produit déjà construit, mais avec 0€ de budget et 0 audience, et tout le build-in-public fait en temps réel pour prouver qu'on peut décrocher des clients sans dépenser un centime. En pratique, le temps et l'énergie sont partis sur terribleidea et pound4pound, deux projets plus excitants à construire, et ZeroToSale est resté sur l'étagère.",
-      en: "After Ratee.me (built without ever validating demand), I wanted to test the opposite: a product already built, but with €0 budget and 0 audience, doing the entire build-in-public process in real time to prove you can land customers without spending a cent. In practice, time and energy went into terribleidea and pound4pound instead — two more exciting projects to build — and ZeroToSale stayed on the shelf.",
+      fr: "Après Ratee.me (construit sans jamais valider la demande), j'ai voulu tester l'inverse : un produit déjà construit, mais avec 0€ de budget et 0 audience, et tout le build-in-public fait en temps réel pour prouver qu'on peut décrocher des clients sans dépenser un centime. En pratique, le temps et l'énergie sont partis sur terribleidea et cage legacy, deux projets plus excitants à construire, et ZeroToSale est resté sur l'étagère.",
+      en: "After Ratee.me (built without ever validating demand), I wanted to test the opposite: a product already built, but with €0 budget and 0 audience, doing the entire build-in-public process in real time to prove you can land customers without spending a cent. In practice, time and energy went into terribleidea and cage legacy instead — two more exciting projects to build — and ZeroToSale stayed on the shelf.",
     },
     features: [
       {
@@ -334,13 +334,13 @@ export const saasProjects: Saas[] = [
         en: "❌ Search for the first 10-20 beta testers — abandoned.",
       },
       {
-        fr: "⛔ Projet mis en pause — Juillet 2026, au profit de terribleidea et pound4pound.",
-        en: "⛔ Project put on hold — July 2026, in favor of terribleidea and pound4pound.",
+        fr: "⛔ Projet mis en pause — Juillet 2026, au profit de terribleidea et cage legacy.",
+        en: "⛔ Project put on hold — July 2026, in favor of terribleidea and cage legacy.",
       },
     ],
     metrics: {
-      fr: "Projet à l'abandon. Construit mais jamais réellement lancé en build in public : le temps est parti sur terribleidea et pound4pound.",
-      en: "Abandoned project. Built but never really launched in public: time went into terribleidea and pound4pound instead.",
+      fr: "Projet à l'abandon. Construit mais jamais réellement lancé en build in public : le temps est parti sur terribleidea et cage legacy.",
+      en: "Abandoned project. Built but never really launched in public: time went into terribleidea and cage legacy instead.",
     },
     KPIs: [
       { number: "$0", fr: "MRR", en: "MRR" },
@@ -383,8 +383,8 @@ export const saasProjects: Saas[] = [
       en: "A beautiful public changelog page + embeddable widget + automatic emails to subscribers. All for $9/month.",
     },
     whyBuilt: {
-      fr: "Après l'échec de ratee.me (codé avant de valider), je voulais appliquer la leçon inverse : landing page d'abord, distribution, et seulement si des gens s'inscrivent — je code. Dans les faits, le temps et l'énergie sont partis sur terribleidea et pound4pound, et la validation de NoteShip.app n'a jamais été poussée jusqu'au bout.",
-      en: "After ratee.me's failure (built before validating), I wanted to apply the opposite lesson: landing page first, distribution, and only if people sign up — I build. In practice, time and energy went into terribleidea and pound4pound instead, and NoteShip.app's validation was never pushed through.",
+      fr: "Après l'échec de ratee.me (codé avant de valider), je voulais appliquer la leçon inverse : landing page d'abord, distribution, et seulement si des gens s'inscrivent — je code. Dans les faits, le temps et l'énergie sont partis sur terribleidea et cage legacy, et la validation de NoteShip.app n'a jamais été poussée jusqu'au bout.",
+      en: "After ratee.me's failure (built before validating), I wanted to apply the opposite lesson: landing page first, distribution, and only if people sign up — I build. In practice, time and energy went into terribleidea and cage legacy instead, and NoteShip.app's validation was never pushed through.",
     },
     features: [
       {
@@ -434,8 +434,8 @@ export const saasProjects: Saas[] = [
         en: "❌ Phase 2 — MVP never started.",
       },
       {
-        fr: "⛔ Projet mis en pause — Juillet 2026, au profit de terribleidea et pound4pound.",
-        en: "⛔ Project put on hold — July 2026, in favor of terribleidea and pound4pound.",
+        fr: "⛔ Projet mis en pause — Juillet 2026, au profit de terribleidea et cage legacy.",
+        en: "⛔ Project put on hold — July 2026, in favor of terribleidea and cage legacy.",
       },
     ],
     KPIs: [
