@@ -47,24 +47,221 @@ export type Saas = {
 
 export const saasProjects: Saas[] = [
   {
+    name: "Pound4Pound",
+    slug: "pound4pound",
+    tagline: {
+      fr: "Simulateur de carrière MMA — en développement actif",
+      en: "MMA career simulator — actively in development",
+    },
+    description: {
+      fr: "Pound4Pound est un jeu de simulation de carrière MMA dans le navigateur : construis ton combattant de 18 ans jusqu'à la retraite, sans chance, uniquement à travers tes choix. Défi quotidien, classement mondial, badges et Hall of Fame.",
+      en: "Pound4Pound is a browser-based MMA career simulation game: build your fighter from age 18 to retirement, no luck, only your choices. Daily challenge, global rankings, badges and a Hall of Fame.",
+    },
+    url: "https://pound4pound-ten.vercel.app/",
+    color: "#DC2626",
+    createdAt: "2026-07",
+    status: "in-progress",
+    team: ["Martin Cavil"],
+    statusNote: {
+      fr: "$0 MRR · En développement actif · Je continue de peaufiner l'expérience pour la rendre la meilleure possible.",
+      en: "$0 MRR · Actively in development · Still refining the experience to make it the best it can be.",
+    },
+    mrr: 0,
+    customers: 0,
+    monthlyVisits: 0,
+    skills: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    problem: {
+      fr: "Les jeux de simulation sportive tombent souvent dans deux travers : soit trop dépendants du hasard (RNG qui casse la stratégie), soit trop répétitifs pour donner l'impression d'une vraie carrière. Les fans de MMA n'ont pas vraiment d'endroit pour vivre une progression de carrière crédible, choix après choix.",
+      en: "Sports simulation games often fall into two traps: either too RNG-dependent (luck breaks strategy) or too repetitive to feel like a real career. MMA fans don't really have a place to live out a credible career progression, choice by choice.",
+    },
+    solution: {
+      fr: "Pound4Pound retire le hasard de l'équation : chaque décision (style de combat, poids, lieu d'entraînement, gestion des blessures) façonne directement la trajectoire du combattant, de ses débuts amateurs jusqu'à sa retraite. Un défi de combattant renouvelé chaque jour et un classement mondial ajoutent une couche de compétition et de rejouabilité.",
+      en: "Pound4Pound removes luck from the equation: every decision (fighting style, weight class, training location, injury management) directly shapes the fighter's trajectory, from amateur beginnings to retirement. A daily rotating fighter challenge and a global leaderboard add competition and replayability.",
+    },
+    whyBuilt: {
+      fr: "Fan de MMA, je voulais un jeu de carrière où la stratégie prime vraiment sur le hasard, et où les blessures amateurs ont de vraies conséquences plus tard dans la carrière. Le projet est encore en construction active : je pousse pour offrir la meilleure expérience possible avant de penser à autre chose.",
+      en: "As an MMA fan, I wanted a career game where strategy actually beats luck, and where amateur injuries carry real consequences later in a career. The project is still under active construction: I'm pushing to deliver the best possible experience before thinking about anything else.",
+    },
+    features: [
+      {
+        title: { fr: "Aucune chance, que des choix", en: "No luck, only choices" },
+        description: {
+          fr: "Style de combat, catégorie de poids, lieu d'entraînement : chaque décision façonne directement la progression du combattant, sans dé à lancer.",
+          en: "Fighting style, weight class, training location: every decision directly shapes the fighter's progression, with no dice roll involved.",
+        },
+      },
+      {
+        title: { fr: "Défi quotidien", en: "Daily challenge" },
+        description: {
+          fr: "Un combattant vedette change chaque jour, affronté par tous les joueurs en même temps pour une expérience partagée.",
+          en: "A featured fighter changes every day, faced by all players at the same time for a shared experience.",
+        },
+      },
+      {
+        title: { fr: "Classement mondial", en: "Global ranking" },
+        description: {
+          fr: "Grimpe dans le classement mondial au fil de ta progression et compare ta carrière à celle des autres joueurs.",
+          en: "Climb the global ranking as you progress and compare your career against other players.",
+        },
+      },
+      {
+        title: { fr: "Blessures avec conséquences", en: "Injuries with consequences" },
+        description: {
+          fr: "Les blessures encaissées en amateur suivent le combattant tout au long de sa carrière et affectent ses performances.",
+          en: "Injuries taken as an amateur follow the fighter throughout their career and affect performance.",
+        },
+      },
+      {
+        title: { fr: "Badges et Hall of Fame", en: "Badges and Hall of Fame" },
+        description: {
+          fr: "35 badges à débloquer et un Hall of Fame qui garde une trace des carrières terminées et des accomplissements marquants.",
+          en: "35 badges to unlock and a Hall of Fame that tracks completed careers and notable accomplishments.",
+        },
+      },
+    ],
+    businessModel: {
+      fr: "Encore non défini — le jeu est actuellement gratuit pendant la phase de développement et d'affinage de l'expérience.",
+      en: "Not yet defined — the game is currently free while the experience is still being developed and refined.",
+    },
+    roadmap: [
+      {
+        fr: "Affiner l'équilibrage des choix de carrière et le système de blessures.",
+        en: "Refine the balance of career choices and the injury system.",
+      },
+      {
+        fr: "Étoffer le système de badges et le Hall of Fame.",
+        en: "Expand the badge system and the Hall of Fame.",
+      },
+      {
+        fr: "Continuer à peaufiner l'expérience avant d'envisager une monétisation.",
+        en: "Keep polishing the experience before considering monetization.",
+      },
+    ],
+    metrics: {
+      fr: "En développement actif. Aucune monétisation pour l'instant : la priorité est de peaufiner l'expérience de jeu.",
+      en: "Actively in development. No monetization yet: the priority is polishing the game experience.",
+    },
+    KPIs: [
+      { number: "$0", fr: "MRR", en: "MRR" },
+      { number: "35", fr: "Badges à débloquer", en: "Badges to unlock" },
+      { number: "0", fr: "Part de hasard", en: "Luck involved" },
+      { number: "18 → retraite", fr: "Durée de carrière", en: "Career span" },
+    ],
+  },
+  {
+    name: "terribleidea",
+    slug: "terribleidea",
+    tagline: {
+      fr: "Simulateur de fondateur de startup — jeu 100% gratuit",
+      en: "Startup founder simulator — 100% free game",
+    },
+    description: {
+      fr: "terribleidea est un jeu satirique sur la culture startup : tu démarres avec 20k$ et une idée terrible, tu réponds à un quiz de plus de 10 questions, et tu reçois un verdict absurde sur ta carrière de fondateur. Un archétype de fondateur différent chaque jour, joué par tout le monde en même temps.",
+      en: "terribleidea is a satirical game about startup culture: you start with $20k and a terrible idea, answer a 10+ question quiz, and get an absurd verdict on your founder career. A different founder archetype every day, played by everyone at the same time.",
+    },
+    url: "https://terribleidea.vercel.app/",
+    color: "#F97316",
+    createdAt: "2026-07",
+    status: "live",
+    team: ["Martin Cavil"],
+    statusNote: {
+      fr: "$0 MRR · Lancé vendredi 24 juillet 2026 · Plusieurs centaines de visiteurs via LinkedIn et Reddit, 100% gratuit, aucune monétisation prévue.",
+      en: "$0 MRR · Launched Friday, July 24, 2026 · Several hundred visitors via LinkedIn and Reddit, 100% free, no monetization planned.",
+    },
+    mrr: 0,
+    customers: 0,
+    monthlyVisits: 0,
+    skills: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    problem: {
+      fr: "La culture startup regorge de clichés (le pivot permanent, le \"10x engineer\", le growth hacking à tout prix) que tout le monde reconnaît mais dont personne ne rit vraiment ensemble. Il manquait un endroit léger pour se moquer gentiment de tout ça, sans y passer des heures.",
+      en: "Startup culture is full of clichés (the endless pivot, the \"10x engineer\", growth hacking at all costs) that everyone recognizes but nobody really laughs about together. There was no lightweight place to gently poke fun at all of it without spending hours doing so.",
+    },
+    solution: {
+      fr: "Un quiz de plus de 10 questions où tu incarnes un archétype de fondateur qui change chaque jour (aujourd'hui : \"The 10x Engineer\"), avec 5 statistiques suivies et un verdict final absurde. Tout le monde joue le même personnage le même jour, ce qui crée une expérience partagée et des discussions autour du résultat.",
+      en: "A 10+ question quiz where you play a founder archetype that changes every day (today: \"The 10x Engineer\"), with 5 tracked stats and one absurd final verdict. Everyone plays the same character on the same day, which creates a shared experience and conversations around the result.",
+    },
+    whyBuilt: {
+      fr: "Un pur projet fun, sans aucune ambition commerciale : je voulais tester la distribution 100% organique et gratuite (LinkedIn, Reddit) pour voir si un petit jeu bien exécuté pouvait trouver une audience sans budget ni intention de monétiser. Lancé vendredi 24 juillet 2026, avec déjà plusieurs centaines de visiteurs.",
+      en: "A pure fun project, with zero commercial ambition: I wanted to test 100% organic, free distribution (LinkedIn, Reddit) to see if a small, well-executed game could find an audience with no budget and no intent to monetize. Launched Friday, July 24, 2026, already with several hundred visitors.",
+    },
+    features: [
+      {
+        title: { fr: "Quiz de fondateur", en: "Founder quiz" },
+        description: {
+          fr: "Plus de 10 questions pour incarner un fondateur de startup face à des décisions absurdes mais familières.",
+          en: "10+ questions to play a startup founder facing absurd but familiar decisions.",
+        },
+      },
+      {
+        title: { fr: "Archétype quotidien", en: "Daily archetype" },
+        description: {
+          fr: "Un archétype de fondateur différent chaque jour, joué par tous les visiteurs en même temps.",
+          en: "A different founder archetype every day, played by every visitor at the same time.",
+        },
+      },
+      {
+        title: { fr: "5 statistiques suivies", en: "5 tracked stats" },
+        description: {
+          fr: "Chaque réponse influence 5 statistiques qui déterminent le verdict final de ta carrière.",
+          en: "Every answer affects 5 stats that determine your career's final verdict.",
+        },
+      },
+      {
+        title: { fr: "Verdict absurde", en: "Absurd verdict" },
+        description: {
+          fr: "Un verdict final volontairement excessif et drôle, pensé pour être partagé.",
+          en: "A deliberately over-the-top, funny final verdict, designed to be shared.",
+        },
+      },
+    ],
+    businessModel: {
+      fr: "100% gratuit, sans publicité ni monétisation prévue. Le projet est distribué uniquement via LinkedIn et Reddit, sans budget marketing.",
+      en: "100% free, no ads or monetization planned. The project is distributed solely via LinkedIn and Reddit, with no marketing budget.",
+    },
+    roadmap: [
+      {
+        fr: "✅ Lancement — Vendredi 24 juillet 2026, via LinkedIn et Reddit.",
+        en: "✅ Launch — Friday, July 24, 2026, via LinkedIn and Reddit.",
+      },
+      {
+        fr: "✅ Plusieurs centaines de visiteurs en quelques jours, 100% organique.",
+        en: "✅ Several hundred visitors within days, 100% organic.",
+      },
+      {
+        fr: "Continuer à faire tourner de nouveaux archétypes de fondateurs au fil du temps.",
+        en: "Keep rotating in new founder archetypes over time.",
+      },
+    ],
+    metrics: {
+      fr: "Lancé le 24 juillet 2026. Plusieurs centaines de visiteurs via LinkedIn et Reddit, sans dépenser un centime en acquisition. Aucune monétisation prévue.",
+      en: "Launched July 24, 2026. Several hundred visitors via LinkedIn and Reddit, without spending a cent on acquisition. No monetization planned.",
+    },
+    KPIs: [
+      { number: "$0", fr: "MRR (voulu)", en: "MRR (by design)" },
+      { number: "Plusieurs centaines", fr: "Visiteurs depuis le lancement", en: "Visitors since launch" },
+      { number: "10+", fr: "Questions du quiz", en: "Quiz questions" },
+      { number: "24 juil. 2026", fr: "Date de lancement", en: "Launch date" },
+    ],
+  },
+  {
     name: "ZeroToSale",
     slug: "zerotosale",
     tagline: {
-      fr: "Build in public — in building, $0 MRR",
-      en: "Build in public — in building, $0 MRR",
+      fr: "Projet à l'abandon — $0 MRR",
+      en: "Abandoned project — $0 MRR",
     },
     description: {
-      fr: "ZeroToSale est un parcours gamifié pour indie hackers : Acte 1 (7 étapes) de l'idée à la première vente, Acte 2 (7 niveaux) de la première vente à $10k MRR. À chaque étape, une IA génère un output personnalisé basé sur le projet de l'utilisateur, avec un système de progression XP et des récompenses débloquées.",
-      en: "ZeroToSale is a gamified journey for indie hackers: Act 1 (7 steps) from idea to first sale, Act 2 (7 levels) from first sale to $10k MRR. At each step, an AI generates a personalized output based on the user's project, with an XP progression system and unlockable rewards.",
+      fr: "ZeroToSale était un parcours gamifié pour indie hackers : Acte 1 (7 étapes) de l'idée à la première vente, Acte 2 (7 niveaux) de la première vente à $10k MRR. À chaque étape, une IA générait un output personnalisé basé sur le projet de l'utilisateur, avec un système de progression XP et des récompenses débloquées. Le projet est aujourd'hui à l'abandon.",
+      en: "ZeroToSale was a gamified journey for indie hackers: Act 1 (7 steps) from idea to first sale, Act 2 (7 levels) from first sale to $10k MRR. At each step, an AI generated a personalized output based on the user's project, with an XP progression system and unlockable rewards. The project is now abandoned.",
     },
     url: "https://zeroto-sale.vercel.app/",
     color: "#8B5CF6",
     createdAt: "2026-06",
-    status: "in-progress",
+    status: "paused",
     team: ["Martin Cavil"],
     statusNote: {
-      fr: "$0 MRR · In building, build in public · Recherche des 10-20 premiers beta testeurs.",
-      en: "$0 MRR · In building, build in public · Looking for the first 10-20 beta testers.",
+      fr: "À l'abandon · $0 MRR · Mis en pause faute de temps, au profit de terribleidea et pound4pound.",
+      en: "Abandoned · $0 MRR · Put on hold for lack of time, in favor of terribleidea and pound4pound.",
     },
     mrr: 0,
     customers: 0,
@@ -79,8 +276,8 @@ export const saasProjects: Saas[] = [
       en: "ZeroToSale is a gamified two-act journey: Act 1 (7 steps) from idea to first sale, Act 2 (7 levels) from first sale to $10k MRR. At each step, an AI generates a personalized output (pitch, landing page, validation strategy, etc.) based on the user's project, with a progression system (XP, levels, unlockable rewards).",
     },
     whyBuilt: {
-      fr: "Après Ratee.me (construit sans jamais valider la demande), j'ai voulu tester l'inverse : un produit déjà construit, mais avec 0€ de budget et 0 audience, et tout le build-in-public fait en temps réel pour prouver qu'on peut décrocher des clients sans dépenser un centime. Reddit, X, LinkedIn, Substack, un post par jour.",
-      en: "After Ratee.me (built without ever validating demand), I wanted to test the opposite: a product already built, but with €0 budget and 0 audience, doing the entire build-in-public process in real time to prove you can land customers without spending a cent. Reddit, X, LinkedIn, Substack, one post a day.",
+      fr: "Après Ratee.me (construit sans jamais valider la demande), j'ai voulu tester l'inverse : un produit déjà construit, mais avec 0€ de budget et 0 audience, et tout le build-in-public fait en temps réel pour prouver qu'on peut décrocher des clients sans dépenser un centime. En pratique, le temps et l'énergie sont partis sur terribleidea et pound4pound, deux projets plus excitants à construire, et ZeroToSale est resté sur l'étagère.",
+      en: "After Ratee.me (built without ever validating demand), I wanted to test the opposite: a product already built, but with €0 budget and 0 audience, doing the entire build-in-public process in real time to prove you can land customers without spending a cent. In practice, time and energy went into terribleidea and pound4pound instead — two more exciting projects to build — and ZeroToSale stayed on the shelf.",
     },
     features: [
       {
@@ -125,53 +322,53 @@ export const saasProjects: Saas[] = [
     },
     roadmap: [
       {
-        fr: "Build in public — lancement de la documentation publique (Reddit, X, LinkedIn, Substack), un post par jour.",
-        en: "Build in public — public documentation kickoff (Reddit, X, LinkedIn, Substack), one post a day.",
+        fr: "✅ Construction du parcours complet (Acte 1 + Acte 2, 14 étapes) et du système XP.",
+        en: "✅ Full journey built (Act 1 + Act 2, 14 steps) and the XP system.",
       },
       {
-        fr: "Recherche des 10-20 premiers beta testeurs, en français et en anglais.",
-        en: "Looking for the first 10-20 beta testers, in French and English.",
+        fr: "❌ Build in public — jamais vraiment lancé, aucun post publié.",
+        en: "❌ Build in public — never really launched, no post ever published.",
       },
       {
-        fr: "Itération sur l'onboarding et le parcours Acte 1 (7 étapes) selon les retours beta.",
-        en: "Iterating on onboarding and the Act 1 journey (7 steps) based on beta feedback.",
+        fr: "❌ Recherche des 10-20 premiers beta testeurs — abandonnée.",
+        en: "❌ Search for the first 10-20 beta testers — abandoned.",
       },
       {
-        fr: "Ouverture du plan Pro (Acte 2, étapes 4-14) une fois la validation de l'Acte 1 confirmée.",
-        en: "Opening the Pro plan (Act 2, steps 4-14) once Act 1 is validated.",
+        fr: "⛔ Projet mis en pause — Juillet 2026, au profit de terribleidea et pound4pound.",
+        en: "⛔ Project put on hold — July 2026, in favor of terribleidea and pound4pound.",
       },
     ],
     metrics: {
-      fr: "En cours de construction, build in public. Recherche active des 10-20 premiers beta testeurs en français et en anglais via Reddit, X, LinkedIn et Substack, à raison d'un post par jour.",
-      en: "Currently in building, build in public. Actively looking for the first 10-20 beta testers in French and English via Reddit, X, LinkedIn and Substack, with one post a day.",
+      fr: "Projet à l'abandon. Construit mais jamais réellement lancé en build in public : le temps est parti sur terribleidea et pound4pound.",
+      en: "Abandoned project. Built but never really launched in public: time went into terribleidea and pound4pound instead.",
     },
     KPIs: [
       { number: "$0", fr: "MRR", en: "MRR" },
-      { number: "In building", fr: "Build in public", en: "Build in public" },
+      { number: "Abandonné", fr: "Statut", en: "Status" },
       { number: "14", fr: "Étapes du parcours", en: "Journey steps" },
-      { number: "9$/mois", fr: "Prix Pro", en: "Pro price" },
+      { number: "9$/mois", fr: "Prix Pro visé", en: "Target Pro price" },
     ],
   },
   {
     name: "NoteShip.app",
     slug: "noteship-app",
     tagline: {
-      fr: "Build in public — en cours de création",
-      en: "Build in public — currently being built",
+      fr: "Projet à l'abandon — landing page jamais suivie de produit",
+      en: "Abandoned project — landing page never followed by a product",
     },
     description: {
-      fr: "NoteShip.app est un SaaS de changelog pour indie makers et solo founders, développé en build in public. Phase actuelle : landing page pour valider l'intérêt avant de coder quoi que ce soit.",
-      en: "NoteShip.app is a changelog SaaS for indie makers and solo founders, built in public. Current phase: landing page to validate interest before writing a single line of product code.",
+      fr: "NoteShip.app devait être un SaaS de changelog pour indie makers et solo founders, développé en build in public. La landing page de validation a été mise en ligne, mais le projet est resté bloqué en phase 0, faute de temps disponible.",
+      en: "NoteShip.app was meant to be a changelog SaaS for indie makers and solo founders, built in public. The validation landing page went live, but the project stayed stuck at phase 0, for lack of available time.",
     },
     url: "https://noteship.app",
     github: "https://github.com/martincavil/noteship",
     color: "#FF6B00",
     createdAt: "2026",
-    status: "in-progress",
+    status: "paused",
     team: ["Martin Cavil"],
     statusNote: {
-      fr: "Phase 0 — Validation via landing page. Zéro code produit, zéro MRR.",
-      en: "Phase 0 — Idea validation via landing page. Zero product code, zero MRR.",
+      fr: "À l'abandon · Phase 0 jamais dépassée. Zéro code produit, zéro MRR.",
+      en: "Abandoned · Never got past phase 0. Zero product code, zero MRR.",
     },
     mrr: 0,
     customers: 0,
@@ -186,8 +383,8 @@ export const saasProjects: Saas[] = [
       en: "A beautiful public changelog page + embeddable widget + automatic emails to subscribers. All for $9/month.",
     },
     whyBuilt: {
-      fr: "Après l'échec de ratee.me (codé avant de valider), j'applique la leçon inverse : landing page d'abord, distribution, et seulement si des gens s'inscrivent — je code. Je documente tout en build in public.",
-      en: "After ratee.me's failure (built before validating), I'm applying the opposite lesson: landing page first, distribution, and only if people sign up — I build. Documenting everything in public.",
+      fr: "Après l'échec de ratee.me (codé avant de valider), je voulais appliquer la leçon inverse : landing page d'abord, distribution, et seulement si des gens s'inscrivent — je code. Dans les faits, le temps et l'énergie sont partis sur terribleidea et pound4pound, et la validation de NoteShip.app n'a jamais été poussée jusqu'au bout.",
+      en: "After ratee.me's failure (built before validating), I wanted to apply the opposite lesson: landing page first, distribution, and only if people sign up — I build. In practice, time and energy went into terribleidea and pound4pound instead, and NoteShip.app's validation was never pushed through.",
     },
     features: [
       {
@@ -225,30 +422,31 @@ export const saasProjects: Saas[] = [
     },
     roadmap: [
       {
-        fr: "Phase 0 (Mai 2026) — Landing page + collecte d'emails waitlist.",
-        en: "Phase 0 (May 2026) — Landing page + waitlist email collection.",
+        fr: "✅ Phase 0 (2026) — Landing page + collecte d'emails waitlist.",
+        en: "✅ Phase 0 (2026) — Landing page + waitlist email collection.",
       },
       {
-        fr: "Phase 1 — Build in public : articles Substack + posts LinkedIn/X pour acquérir une audience avant le lancement.",
-        en: "Phase 1 — Build in public: Substack articles + LinkedIn/X posts to grow an audience before launch.",
+        fr: "❌ Phase 1 — Build in public jamais lancé : aucun article, aucun post.",
+        en: "❌ Phase 1 — Build in public never launched: no articles, no posts.",
       },
       {
-        fr: "Phase 2 — MVP uniquement si validation positive (emails + feedback qualitatif).",
-        en: "Phase 2 — MVP only if validation is positive (emails + qualitative feedback).",
+        fr: "❌ Phase 2 — MVP jamais commencé.",
+        en: "❌ Phase 2 — MVP never started.",
       },
       {
-        fr: "Phase 3 — Lancement bêta privé pour les inscrits sur la waitlist.",
-        en: "Phase 3 — Private beta launch for waitlist subscribers.",
+        fr: "⛔ Projet mis en pause — Juillet 2026, au profit de terribleidea et pound4pound.",
+        en: "⛔ Project put on hold — July 2026, in favor of terribleidea and pound4pound.",
       },
     ],
     KPIs: [
       { number: "$0", fr: "MRR", en: "MRR" },
-      { number: "Phase 0", fr: "Landing page live", en: "Landing page live" },
-      { number: "9$/mois", fr: "Prix cible Pro", en: "Target Pro price" },
+      { number: "Abandonné", fr: "Statut", en: "Status" },
+      { number: "Phase 0", fr: "Dernière phase atteinte", en: "Last phase reached" },
+      { number: "9$/mois", fr: "Prix cible Pro visé", en: "Target Pro price" },
     ],
     metrics: {
-      fr: "Phase actuelle : landing page live + waitlist active. Objectif : valider l'intérêt avant d'écrire la moindre ligne de code produit.",
-      en: "Current phase: landing page live + active waitlist. Goal: validate interest before writing a single line of product code.",
+      fr: "Projet à l'abandon. La landing page et la waitlist sont restées en ligne, mais jamais suivies d'un build in public ni d'un produit.",
+      en: "Abandoned project. The landing page and waitlist stayed live, but were never followed by build in public or an actual product.",
     },
   },
   {
@@ -365,6 +563,112 @@ export const saasProjects: Saas[] = [
         fr: "Date d'abandon",
         en: "Abandoned date",
       },
+    ],
+  },
+  {
+    name: "MilestoneHit",
+    slug: "milestonehit",
+    tagline: {
+      fr: "Annonces automatiques de milestones — projet à l'abandon",
+      en: "Automated milestone announcements — abandoned project",
+    },
+    description: {
+      fr: "MilestoneHit automatisait l'annonce des milestones de fondateurs : connecté à Stripe, GitHub et aux réseaux sociaux, il postait automatiquement sur X et LinkedIn dès qu'un seuil de MRR, de followers ou d'utilisateurs était franchi. Lancé puis abandonné faute de traction.",
+      en: "MilestoneHit automated founder milestone announcements: connected to Stripe, GitHub and social accounts, it automatically posted to X and LinkedIn as soon as an MRR, follower, or user threshold was crossed. Launched, then abandoned for lack of traction.",
+    },
+    url: "https://saas-milestone.vercel.app/",
+    color: "#3B82F6",
+    createdAt: "2026",
+    status: "paused",
+    team: ["Martin Cavil"],
+    statusNote: {
+      fr: "À l'abandon · $0 MRR · Lancé puis délaissé, comme Ratee.me.",
+      en: "Abandoned · $0 MRR · Launched then abandoned, like Ratee.me.",
+    },
+    mrr: 0,
+    customers: 0,
+    monthlyVisits: 0,
+    skills: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe API", "Satori", "Vercel Cron", "OAuth"],
+    problem: {
+      fr: "Les fondateurs en build in public font des captures d'écran manuelles de leurs métriques et postent à la main sur X et LinkedIn dès qu'ils atteignent un cap. C'est chronophage, et l'annonce est souvent retardée ou carrément oubliée.",
+      en: "Founders building in public manually screenshot their metrics and post by hand to X and LinkedIn whenever they hit a milestone. It's time-consuming, and the announcement is often delayed or simply forgotten.",
+    },
+    solution: {
+      fr: "MilestoneHit se connectait à Stripe, GitHub et aux comptes sociaux, détectait automatiquement le franchissement de 6 types de seuils (MRR, followers X, utilisateurs, visites mensuelles, étoiles GitHub, abonnés email) via un cron horaire, générait une image de milestone et postait automatiquement l'annonce.",
+      en: "MilestoneHit connected to Stripe, GitHub and social accounts, automatically detected 6 types of threshold crossings (MRR, X followers, users, monthly visits, GitHub stars, email subscribers) via an hourly cron, generated a milestone image, and auto-posted the announcement.",
+    },
+    whyBuilt: {
+      fr: "Construit pour résoudre une vraie friction du build in public : l'annonce manuelle des milestones. Lancé publiquement, mais comme Ratee.me, le projet n'a pas trouvé de traction et a fini par être abandonné.",
+      en: "Built to solve a real build-in-public friction: manually announcing milestones. Launched publicly, but like Ratee.me, the project never found traction and ended up abandoned.",
+    },
+    features: [
+      {
+        title: { fr: "6 types de milestones", en: "6 milestone types" },
+        description: {
+          fr: "MRR, followers X, utilisateurs inscrits, visites mensuelles, étoiles GitHub et abonnés email, tous suivis automatiquement.",
+          en: "MRR, X followers, registered users, monthly visits, GitHub stars, and email subscribers, all tracked automatically.",
+        },
+      },
+      {
+        title: { fr: "Visuels auto-générés", en: "Auto-generated visuals" },
+        description: {
+          fr: "Des cartes de milestone (1200×630) générées côté serveur avec le nom du SaaS, le montant atteint et la progression vers le prochain cap.",
+          en: "Server-side rendered milestone cards (1200×630) showing the SaaS name, the amount reached, and progress toward the next threshold.",
+        },
+      },
+      {
+        title: { fr: "Multi-produits", en: "Multi-product support" },
+        description: {
+          fr: "Connecte plusieurs comptes Stripe pour suivre plusieurs SaaS indépendamment.",
+          en: "Connect multiple Stripe accounts to track several SaaS independently.",
+        },
+      },
+      {
+        title: { fr: "Publication automatique", en: "Automatic posting" },
+        description: {
+          fr: "Publication automatique sur X et LinkedIn dès qu'un seuil est franchi, sans validation manuelle.",
+          en: "Automatic publishing to X and LinkedIn as soon as a threshold is crossed, with no manual approval.",
+        },
+      },
+      {
+        title: { fr: "Clés Stripe en lecture seule", en: "Read-only Stripe keys" },
+        description: {
+          fr: "Utilise des clés API Stripe restreintes en lecture seule, sans permission d'écriture, révocables depuis le dashboard Stripe.",
+          en: "Uses restricted, read-only Stripe API keys, no write permissions, revocable from the Stripe dashboard.",
+        },
+      },
+    ],
+    businessModel: {
+      fr: "Gratuit tant que le MRR reste sous 100$ (toutes fonctionnalités incluses, sans carte bancaire). Plan Pro à 9$/mois au-delà de 100$ MRR, avec détail par produit et support prioritaire.",
+      en: "Free while MRR stays under $100 (all features included, no credit card required). Pro plan at $9/month above $100 MRR, with per-product breakdowns and priority support.",
+    },
+    roadmap: [
+      {
+        fr: "✅ Développement de l'app complète (connexions Stripe/GitHub/réseaux sociaux, génération de visuels, cron horaire).",
+        en: "✅ Full app development (Stripe/GitHub/social connections, visual generation, hourly cron).",
+      },
+      {
+        fr: "✅ Lancement public",
+        en: "✅ Public launch",
+      },
+      {
+        fr: "❌ Acquisition utilisateurs — Aucune traction obtenue",
+        en: "❌ User acquisition — No traction achieved",
+      },
+      {
+        fr: "⛔ Projet abandonné — 2026",
+        en: "⛔ Project abandoned — 2026",
+      },
+    ],
+    metrics: {
+      fr: "Projet abandonné après un lancement sans traction. Le produit était fonctionnel (connexions Stripe/GitHub, publication automatique), mais n'a jamais trouvé son audience.",
+      en: "Abandoned project after a launch with no traction. The product was functional (Stripe/GitHub connections, automatic posting), but never found its audience.",
+    },
+    KPIs: [
+      { number: "$0", fr: "MRR", en: "MRR" },
+      { number: "0", fr: "Clients payants", en: "Paying customers" },
+      { number: "6", fr: "Types de milestones suivis", en: "Milestone types tracked" },
+      { number: "100$ MRR", fr: "Seuil du plan gratuit", en: "Free plan threshold" },
     ],
   },
 ];
