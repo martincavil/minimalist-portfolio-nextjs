@@ -493,7 +493,7 @@ export const projects: Project[] = [
     images: [
       "https://res.cloudinary.com/martincvl/video/upload/v1774356109/portfolio/projects/uptoo/uptoo-1_f6w17f.mp4",
       "https://res.cloudinary.com/martincvl/image/upload/v1763147459/portfolio/projects/uptoo/uptoo-4.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147457/portfolio/projects/uptoo/uptoo-2.webp",
+      "https://res.cloudinary.com/martincvl/image/upload/v1763147456/portfolio/projects/uptoo/cover.webp",
       "https://res.cloudinary.com/martincvl/video/upload/v1774356103/portfolio/projects/uptoo/uptoo-4_avho7d.mp4",
     ],
     companyHistory: {
