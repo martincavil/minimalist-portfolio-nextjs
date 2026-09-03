@@ -47,6 +47,97 @@ export type Saas = {
 
 export const saasProjects: Saas[] = [
   {
+    name: "StreamersBid",
+    slug: "streamersbid",
+    tagline: {
+      fr: "Classement Twitch/Kick payant aux enchères — $3 MRR",
+      en: "Pay-to-rank Twitch/Kick leaderboard — $3 MRR",
+    },
+    description: {
+      fr: "StreamersBid est un classement ironique pour chaînes Twitch et Kick où n'importe qui peut enchérir pour placer un streamer en première place, sans que celui-ci n'ait besoin de participer ni même d'être au courant. Enchère minimum : 3$, chaque nouvelle offre doit dépasser la précédente d'au moins 1$.",
+      en: "StreamersBid is an ironic leaderboard for Twitch and Kick channels where anyone can bid to put a streamer in first place, with no need for the streamer to participate or even know about it. Minimum bid: $3, and every new bid must beat the previous one by at least $1.",
+    },
+    url: "https://streamersbid.lol/",
+    color: "#9146FF",
+    createdAt: "2026-08",
+    status: "live",
+    team: ["Martin Cavil"],
+    statusNote: {
+      fr: "$3 MRR · Lancé en août 2026 · Premier dollar généré, projet très récent.",
+      en: "$3 MRR · Launched August 2026 · First dollar generated, very early project.",
+    },
+    mrr: 3,
+    customers: 1,
+    monthlyVisits: 0,
+    skills: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Vercel"],
+    problem: {
+      fr: "Les classements de streamers traditionnels mesurent le talent ou l'audience, un critère lent à faire bouger et impossible à influencer directement. Il n'existait pas d'endroit où promouvoir instantanément une chaîne (la sienne ou celle qu'on regarde), sans dépendre de l'algorithme ni de l'accord du streamer.",
+      en: "Traditional streamer leaderboards measure talent or audience, a slow-moving metric you can't directly influence. There was no place to instantly promote a channel (yours, or one you just enjoy watching), without depending on an algorithm or the streamer's consent.",
+    },
+    solution: {
+      fr: "StreamersBid retourne le concept de classement : la position se gagne aux enchères, pas au mérite. N'importe qui peut miser sur n'importe quelle chaîne Twitch ou Kick pour la placer en tête, avec un lien dofollow vers la chaîne et une page de partage dédiée par classement. Enchère minimum 3$, chaque surenchère doit ajouter au moins 1$.",
+      en: "StreamersBid flips the leaderboard concept: rank is bought, not earned. Anyone can bid on any Twitch or Kick channel to put it in first place, complete with a dofollow link to the channel and a dedicated share page per leaderboard. Minimum bid $3, every outbid must add at least $1.",
+    },
+    whyBuilt: {
+      fr: "Un projet lancé rapidement pour tester une mécanique simple et volontairement absurde (payer pour classer quelqu'un d'autre) plutôt qu'un système de mérite classique. Premier dollar de MRR généré dès le lancement en août 2026.",
+      en: "A project shipped quickly to test a simple, deliberately absurd mechanic (pay to rank someone else) instead of a classic merit-based system. First dollar of MRR generated right at launch in August 2026.",
+    },
+    features: [
+      {
+        title: { fr: "Enchères ascendantes", en: "Ascending bids" },
+        description: {
+          fr: "Chaque nouvelle offre doit dépasser la précédente d'au moins 1$ pour réclamer la première place du classement.",
+          en: "Every new bid must beat the previous one by at least $1 to claim the top spot on the leaderboard.",
+        },
+      },
+      {
+        title: { fr: "Aucun accord requis", en: "No opt-in required" },
+        description: {
+          fr: "N'importe qui peut miser sur n'importe quelle chaîne Twitch ou Kick, sans que le streamer ait besoin de participer ou d'être au courant.",
+          en: "Anyone can bid on any Twitch or Kick channel, with no need for the streamer to participate or even know about it.",
+        },
+      },
+      {
+        title: { fr: "Lien dofollow", en: "Dofollow link" },
+        description: {
+          fr: "La chaîne en première place est mise en avant sur la page d'accueil avec un lien dofollow vers sa chaîne.",
+          en: "The top-ranked channel gets featured on the homepage with a dofollow link to its channel.",
+        },
+      },
+      {
+        title: { fr: "Page de partage dédiée", en: "Dedicated share page" },
+        description: {
+          fr: "Chaque classement dispose de sa propre page de partage, avec vue quotidienne et par catégories.",
+          en: "Every leaderboard has its own dedicated share page, with daily and per-category views.",
+        },
+      },
+    ],
+    businessModel: {
+      fr: "Enchères payantes en dollars réels via Stripe : 3$ minimum pour la première place, chaque surenchère doit ajouter au moins 1$.",
+      en: "Real-money bidding via Stripe: $3 minimum for first place, every outbid must add at least $1.",
+    },
+    roadmap: [
+      {
+        fr: "✅ Lancement — Août 2026, premières enchères et premier MRR généré.",
+        en: "✅ Launch — August 2026, first bids and first MRR generated.",
+      },
+      {
+        fr: "Continuer à faire tourner le concept et observer la traction sur les premières semaines.",
+        en: "Keep the concept running and watch traction over the first few weeks.",
+      },
+    ],
+    metrics: {
+      fr: "Lancé en août 2026. $3 de MRR généré dès le lancement, projet encore très récent.",
+      en: "Launched August 2026. $3 MRR generated right at launch, still a very early project.",
+    },
+    KPIs: [
+      { number: "$3", fr: "MRR", en: "MRR" },
+      { number: "1", fr: "Client payant", en: "Paying customer" },
+      { number: "3$", fr: "Enchère minimum", en: "Minimum bid" },
+      { number: "Août 2026", fr: "Date de lancement", en: "Launch date" },
+    ],
+  },
+  {
     name: "Cage Legacy",
     slug: "cage-legacy",
     tagline: {
