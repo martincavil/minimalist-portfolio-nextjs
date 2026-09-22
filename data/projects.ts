@@ -484,8 +484,6 @@ export const projects: Project[] = [
     url: "https://www.uptoo.fr",
     cover:
       "/images/projects/uptoo/cover.webp",
-    gifCover:
-      "https://res.cloudinary.com/martincvl/video/upload/v1763147461/portfolio/projects/uptoo/uptoo.mp4",
     excerpt: {
       fr: "3 ans comme Lead Developer Frontend chez Uptoo : j'ai conçu et maintenu des dizaines d'outils web (plateformes candidats, interfaces clients, outils internes), mis en place tous les process frontend, et atteint le score parfait Lighthouse sur les projets clés. Référent technique sur tout le périmètre frontend pour une boîte à +25M€ de CA.",
       en: "3 years as Frontend Lead at Uptoo: I designed and maintained dozens of web tools (candidate platforms, client interfaces, internal tools), implemented all frontend processes, and achieved perfect Lighthouse scores on key projects. Technical reference for all things frontend at a €25M+ revenue company.",
@@ -640,8 +638,6 @@ export const projects: Project[] = [
     url: "https://pharmexecutive.fr/",
     cover:
       "/images/projects/pharmExecutive/cover.webp",
-    gifCover:
-      "https://res.cloudinary.com/martincvl/video/upload/v1763147452/portfolio/projects/pharmExecutive/pharmexecutive.mp4",
     excerpt: {
       fr: "Conception d'une plateforme premium pour le programme de formation ESSEC à destination des pharmaciens propriétaires, avec un parcours de conversion optimisé et une architecture évolutive.",
       en: "Design of a premium platform for the ESSEC training program for pharmacy owners, with optimized conversion funnel and scalable architecture.",

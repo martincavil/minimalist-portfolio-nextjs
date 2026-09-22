@@ -122,8 +122,8 @@ export default function ProjectPage({ project }: ProjectPageProps) {
         </div>
 
         {/* Cover Video */}
-        <div className="mb-16 rounded-lg overflow-hidden">
-          {project.gifCover && (
+        {project.gifCover ? (
+          <div className="mb-16 rounded-lg overflow-hidden">
             <video
               src={project.gifCover}
               autoPlay
@@ -132,8 +132,20 @@ export default function ProjectPage({ project }: ProjectPageProps) {
               playsInline
               className="w-full h-auto"
             />
-          )}
-        </div>
+          </div>
+        ) : (
+          project.cover && (
+            <div className="mb-16 rounded-lg overflow-hidden">
+              <Image
+                src={project.cover}
+                alt={project.name}
+                width={1200}
+                height={675}
+                className="w-full h-auto"
+              />
+            </div>
+          )
+        )}
 
         {/* Company History */}
         {project.companyHistory && (
