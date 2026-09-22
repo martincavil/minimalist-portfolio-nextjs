@@ -38,14 +38,14 @@ export default function Home({ posts }: HomeProps) {
         <meta property="og:url" content="https://martincavil.com" />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/martincvl/image/upload/v1763147429/portfolio/hero/martin-profile.webp"
+          content="https://martincavil.com/images/hero/martin-profile.webp"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t("seo.title")} />
         <meta name="twitter:description" content={t("seo.description")} />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/martincvl/image/upload/v1763147429/portfolio/hero/martin-profile.webp"
+          content="https://martincavil.com/images/hero/martin-profile.webp"
         />
         <meta httpEquiv="Content-Language" content="fr,en" />
         <meta name="robots" content="index, follow" />
@@ -63,7 +63,7 @@ export default function Home({ posts }: HomeProps) {
               name: "Martin Cavil",
               url: "https://martincavil.com",
               image:
-                "https://res.cloudinary.com/martincvl/image/upload/v1763147429/portfolio/hero/martin-profile.webp",
+                "https://martincavil.com/images/hero/martin-profile.webp",
               jobTitle: "Freelance Next.js/React Developer",
               sameAs: [
                 "https://github.com/martincavil",

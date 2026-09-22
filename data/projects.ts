@@ -97,18 +97,18 @@ export const projects: Project[] = [
     ],
     url: "https://www.ulyssevictor-art-expertise.fr/",
     cover:
-      "https://res.cloudinary.com/martincvl/image/upload/v1778237627/portfolio/projects/uv-art-expertise/uv-cover_ocx44b.webp",
+      "/images/projects/uv-art-expertise/uv-cover.webp",
     gifCover:
-      "https://res.cloudinary.com/martincvl/video/upload/v1778236925/portfolio/projects/uv-art-expertise/uv-art-expertise-cover_zo6hn1.mp4",
+      "/images/projects/uv-art-expertise/uv-art-expertise-cover.mp4",
     excerpt: {
       fr: "Conception et développement complet du site d'acquisition de leads pour Ulysse & Victor, maison de vente aux enchères parisienne. Les particuliers peuvent faire estimer gratuitement leurs objets d'art en ligne via un formulaire multi-étapes ou une estimation instantanée par IA. Le site génère automatiquement des centaines de pages SEO ciblées par ville et spécialité.",
       en: "Full design and development of the lead acquisition website for Ulysse & Victor, a Parisian auction house. Individuals can get their art objects appraised for free online via a multi-step form or instant AI appraisal. The site automatically generates hundreds of SEO-targeted pages by city and specialty.",
     },
     images: [
-      "https://res.cloudinary.com/martincvl/video/upload/v1778236925/portfolio/projects/uv-art-expertise/uv-art-expertise-cover_zo6hn1.mp4",
-      "https://res.cloudinary.com/martincvl/image/upload/v1778237627/portfolio/projects/uv-art-expertise/uv-cover_ocx44b.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1778237626/portfolio/projects/uv-art-expertise/uv-3_e9am5o.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1778237628/portfolio/projects/uv-art-expertise/uv-4_oapwim.webp",
+      "/images/projects/uv-art-expertise/uv-art-expertise-cover.mp4",
+      "/images/projects/uv-art-expertise/uv-cover.webp",
+      "/images/projects/uv-art-expertise/uv-3.webp",
+      "/images/projects/uv-art-expertise/uv-4.webp",
     ],
     companyHistory: {
       fr: "Ulysse & Victor Art Expertise a été fondé par les créateurs de la maison de ventes Ulysse & Victor. La structure propose un service d'expertise et d'estimation assuré par une équipe de commissaires-priseurs et d'experts, régulièrement sollicités dans le cadre d'inventaires de collections, de successions, d'assurances et dans les différents domaines du marché de l'art. Leur réseau d'experts indépendants reconnus leur permet de couvrir 12 spécialités, des tableaux modernes à l'automobile de collection.",
@@ -181,18 +181,18 @@ export const projects: Project[] = [
     ],
     url: "https://www.masteredbyedouard.com",
     cover:
-      "https://res.cloudinary.com/martincvl/image/upload/v1774299452/portfolio/projects/masteredbyedouard/mastered-by-edourard-cover.webp",
+      "/images/projects/masteredbyedouard/mastered-by-edourard-cover.webp",
     gifCover:
-      "https://res.cloudinary.com/martincvl/video/upload/v1774299457/portfolio/projects/masteredbyedouard/masteredbyedouard.mp4",
+      "/images/projects/masteredbyedouard/masteredbyedouard.mp4",
     excerpt: {
       fr: "Conception et développement complet du site de Edouard Carbonne, ingénieur de mastering international. Site pensé comme une app — non-scrollable, full-screen, ultra-rapide. Les clients déposent leurs fichiers audio directement dans son Dropbox via le site. Bilingue FR/EN.",
       en: "Full design and development of Edouard Carbonne's site — international mastering engineer. Built like an app: non-scrollable, full-screen, ultra-fast. Clients upload their audio files directly to his Dropbox through the site. Bilingual FR/EN.",
     },
     images: [
-      "https://res.cloudinary.com/martincvl/image/upload/v1774299452/portfolio/projects/masteredbyedouard/mastered-by-edourard-cover.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1774299622/portfolio/projects/masteredbyedouard/mastered-by-edouard-1.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1774299449/portfolio/projects/masteredbyedouard/mastered-by-edouard-2.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1774299450/portfolio/projects/masteredbyedouard/mastered-by-edouard-3.webp",
+      "/images/projects/masteredbyedouard/mastered-by-edourard-cover.webp",
+      "/images/projects/masteredbyedouard/mastered-by-edouard-1.webp",
+      "/images/projects/masteredbyedouard/mastered-by-edouard-2.webp",
+      "/images/projects/masteredbyedouard/mastered-by-edouard-3.webp",
     ],
     companyHistory: {
       fr: "Edouard Carbonne est ingénieur de mastering international, ayant travaillé avec des artistes reconnus dans l'industrie musicale. Fort d'une expertise technique pointue et d'une oreille affûtée par des années d'expérience, il accompagne musiciens, producteurs et labels dans la dernière étape cruciale de la production musicale : le mastering. Son approche allie maîtrise technique des outils audio professionnels et sensibilité artistique pour sublimer chaque projet musical.",
@@ -271,18 +271,18 @@ export const projects: Project[] = [
     ],
     url: "https://www.padel15.fr",
     cover:
-      "https://res.cloudinary.com/martincvl/image/upload/v1784197755/portfolio/projects/padel15/v2-padel15-cover_ic3ktx.webp",
+      "/images/projects/padel15/v2-padel15-cover.webp",
     gifCover:
-      "https://res.cloudinary.com/martincvl/video/upload/v1784197759/portfolio/projects/padel15/v2-padel15-video_w6m9gz.mp4",
+      "/images/projects/padel15/v2-padel15-video.mp4",
     excerpt: {
       fr: "Padel15 passe de la landing page one-page à un site vitrine multi-page complet, pensé pour convertir aussi bien les joueurs individuels que les entreprises. Réservation Playtomic en direct, page Entreprises dédiée, restaurant & guinguette mis en valeur, SEO local renforcé et conformité RGPD.",
       en: "Padel15 evolves from a one-page landing page into a full multi-page showcase site, designed to convert both individual players and businesses. Live Playtomic booking, a dedicated Corporate page, a showcased restaurant & guinguette, stronger local SEO, and GDPR compliance.",
     },
     images: [
-      "https://res.cloudinary.com/martincvl/image/upload/v1784197755/portfolio/projects/padel15/v2-padel15-cover_ic3ktx.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1784197756/portfolio/projects/padel15/v2-padel15-terrain_o4gxbu.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1784197755/portfolio/projects/padel15/v2-padel15-restaurant_tf8txl.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1784197755/portfolio/projects/padel15/v2-padel15-events_zua4l6.webp",
+      "/images/projects/padel15/v2-padel15-cover.webp",
+      "/images/projects/padel15/v2-padel15-terrain.webp",
+      "/images/projects/padel15/v2-padel15-restaurant.webp",
+      "/images/projects/padel15/v2-padel15-events.webp",
     ],
     companyHistory: {
       fr: "Padel15 est un club premium situé dans le 15ème arrondissement de Paris : 2 terrains indoor/outdoor, un restaurant et une guinguette, et une clientèle corporate haut de gamme (BlackRock, BNP Paribas, BCG, Kering, AXA, et plus de 100 entreprises au total). Après une V1 qui a permis de lancer rapidement le club en ligne, Padel15 a souhaité une refonte complète à la hauteur de son ambition : un site qui reflète la diversité de son offre — terrains, restauration, coaching, événements — et son potentiel pour devenir une référence du padel premium à Paris.",
@@ -410,15 +410,15 @@ export const projects: Project[] = [
     skills: ["Shopify", "Liquid", "JavaScript", "HTML", "CSS", "SEO"],
     url: "https://maisondutemps.com/",
     cover:
-      "https://res.cloudinary.com/martincvl/image/upload/v1774356596/portfolio/projects/maisondutemps/maisondutemps-cover_ubcqly.webp",
+      "/images/projects/maisondutemps/maisondutemps-cover.webp",
     gifCover:
-      "https://res.cloudinary.com/martincvl/video/upload/v1774356005/portfolio/projects/maisondutemps/maisondutemps_voav1s.mp4",
+      "/images/projects/maisondutemps/maisondutemps.mp4",
     excerpt: {
       fr: "Refonte complète et optimisation continue d'une boutique e-commerce de montres haut de gamme avec création de modules Shopify sur-mesure et amélioration de l'expérience utilisateur.",
       en: "Complete redesign and ongoing optimization of a high-end watch e-commerce store with custom Shopify module development and user experience enhancement.",
     },
     images: [
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147434/portfolio/projects/maisondutemps/cover.webp",
+      "/images/projects/maisondutemps/cover.webp",
     ],
     companyHistory: {
       fr: "Maison du Temps est une boutique en ligne spécialisée dans les montres haut de gamme, offrant une sélection raffinée de pièces horlogères d'exception. Fondée avec une passion profonde pour l'horlogerie et un souci constant du détail, l'entreprise s'est rapidement imposée comme une référence pour les amateurs de belles montres en quête de qualité, d'authenticité et de service personnalisé. Chaque montre est sélectionnée avec soin pour répondre aux exigences des connaisseurs et collectionneurs.",
@@ -483,7 +483,7 @@ export const projects: Project[] = [
     ],
     url: "https://www.uptoo.fr",
     cover:
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147456/portfolio/projects/uptoo/cover.webp",
+      "/images/projects/uptoo/cover.webp",
     gifCover:
       "https://res.cloudinary.com/martincvl/video/upload/v1763147461/portfolio/projects/uptoo/uptoo.mp4",
     excerpt: {
@@ -491,10 +491,10 @@ export const projects: Project[] = [
       en: "3 years as Frontend Lead at Uptoo: I designed and maintained dozens of web tools (candidate platforms, client interfaces, internal tools), implemented all frontend processes, and achieved perfect Lighthouse scores on key projects. Technical reference for all things frontend at a €25M+ revenue company.",
     },
     images: [
-      "https://res.cloudinary.com/martincvl/video/upload/v1774356109/portfolio/projects/uptoo/uptoo-1_f6w17f.mp4",
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147459/portfolio/projects/uptoo/uptoo-4.webp",
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147456/portfolio/projects/uptoo/cover.webp",
-      "https://res.cloudinary.com/martincvl/video/upload/v1774356103/portfolio/projects/uptoo/uptoo-4_avho7d.mp4",
+      "/images/projects/uptoo/uptoo-1.mp4",
+      "/images/projects/uptoo/uptoo-4.webp",
+      "/images/projects/uptoo/cover.webp",
+      "/images/projects/uptoo/uptoo-4.mp4",
     ],
     companyHistory: {
       fr: "Uptoo est le leader français du recrutement commercial, générant plus de 25 millions d'euros de chiffre d'affaires annuel. Avec une base de données de plus de 700 000 candidats et plus de 9 000 clients entreprises, Uptoo accompagne les entreprises dans leur développement commercial depuis plus de 15 ans. L'entreprise se distingue par son expertise pointue du métier de la vente et sa capacité à matcher les meilleurs profils avec les opportunités les plus pertinentes.",
@@ -570,15 +570,15 @@ export const projects: Project[] = [
     skills: ["Next.js", "TypeScript", "Tailwind CSS", "Brevo", "SEO", "Vercel"],
     url: "https://les-yeux-detectives.com/",
     cover:
-      "https://res.cloudinary.com/martincvl/image/upload/v1774355952/portfolio/projects/les-yeux-detectives/lyd-cover_pz9oto.webp",
+      "/images/projects/les-yeux-detectives/lyd-cover.webp",
     gifCover:
-      "https://res.cloudinary.com/martincvl/video/upload/v1774355821/portfolio/projects/les-yeux-detectives/les-yeux-detectives.mp4",
+      "/images/projects/les-yeux-detectives/les-yeux-detectives.mp4",
     excerpt: {
       fr: "Création d'une plateforme web sobre et professionnelle pour Les Yeux - Détectives Privés, conçue pour inspirer confiance, valoriser l'expertise juridique du cabinet et faciliter la prise de contact sécurisée.",
       en: "Creation of a sober and professional web platform for Les Yeux - Détectives Privés, designed to inspire trust, showcase the agency's legal expertise, and facilitate secure contact.",
     },
     images: [
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147430/portfolio/projects/les-yeux-detectives/cover.webp",
+      "/images/projects/les-yeux-detectives/cover.webp",
     ],
     companyHistory: {
       fr: "Les Yeux est un cabinet de détectives privés professionnel basé en France, spécialisé dans les investigations privées et professionnelles pour particuliers et entreprises. Fort d'une approche rigoureuse, discrète et confidentielle, le cabinet accompagne ses clients dans leurs besoins d'enquête, de surveillance et de recherche de preuves. L'équipe se distingue par son expertise juridique pointue, sa connaissance approfondie du cadre légal des investigations privées et sa capacité à fournir des preuves recevables en justice, essentielles dans les procédures judiciaires.",
@@ -639,7 +639,7 @@ export const projects: Project[] = [
     ],
     url: "https://pharmexecutive.fr/",
     cover:
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147451/portfolio/projects/pharmExecutive/cover.webp",
+      "/images/projects/pharmExecutive/cover.webp",
     gifCover:
       "https://res.cloudinary.com/martincvl/video/upload/v1763147452/portfolio/projects/pharmExecutive/pharmexecutive.mp4",
     excerpt: {
@@ -647,7 +647,7 @@ export const projects: Project[] = [
       en: "Design of a premium platform for the ESSEC training program for pharmacy owners, with optimized conversion funnel and scalable architecture.",
     },
     images: [
-      "https://res.cloudinary.com/martincvl/image/upload/v1763147451/portfolio/projects/pharmExecutive/cover.webp",
+      "/images/projects/pharmExecutive/cover.webp",
     ],
     companyHistory: {
       fr: "pharmExecutive by ESSEC est un programme de formation d'excellence destiné aux pharmaciens propriétaires d'officine. Porté par ESSEC Business School, le programme combine l'expertise académique de référence en management et stratégie avec une connaissance approfondie du secteur pharmaceutique. Le programme vise à transformer les pharmacies en véritables entreprises performantes en abordant quatre piliers fondamentaux : croissance commerciale, leadership d'équipe, management opérationnel et rentabilité financière. Avec un positionnement premium, pharmExecutive se distingue par son approche pragmatique basée sur des études de cas réelles, des ateliers pratiques et des masterclasses animées par 9 intervenants experts (professeurs ESSEC, experts-comptables, avocats spécialisés).",
